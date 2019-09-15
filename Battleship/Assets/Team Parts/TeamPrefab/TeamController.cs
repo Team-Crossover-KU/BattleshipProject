@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TeamController : MonoBehaviour
 {
+    List<ShipController> Ships;
+    public int numberOfShips;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,20 @@ public class TeamController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void SetNumberOfShips(int shipAmmount)
+    {
+
+    }
+
+    void spawnShips(int length)
+    {
+
+    }
+
+    bool allShipsDestoryed()
+    {
+        return false;
     }
 }
