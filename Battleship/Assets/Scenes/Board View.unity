@@ -3876,143 +3876,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 411120156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1c557f43ffcce4a8bf8468f19b3287, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitOrMiss: 0
-  impactIcons:
-  - {fileID: 21300000, guid: c7305e2cc81dde049bbd0f64c9254be6, type: 3}
-  - {fileID: 21300000, guid: c367ca0712b62dd4da4f7595f1b1f70d, type: 3}
-  spacesAvailableBoard1:
-  - {fileID: 1526727429}
-  - {fileID: 549447193}
-  - {fileID: 1245149639}
-  - {fileID: 1394392504}
-  - {fileID: 1710672051}
-  - {fileID: 723810665}
-  - {fileID: 1849360524}
-  - {fileID: 1973152999}
-  - {fileID: 768520802}
-  - {fileID: 334523195}
-  - {fileID: 856814625}
-  - {fileID: 1715552207}
-  - {fileID: 440453931}
-  - {fileID: 1921186290}
-  - {fileID: 1026153572}
-  - {fileID: 1959875874}
-  - {fileID: 254068453}
-  - {fileID: 132965173}
-  - {fileID: 1700781601}
-  - {fileID: 34011311}
-  - {fileID: 707114888}
-  - {fileID: 132237212}
-  - {fileID: 1755059712}
-  - {fileID: 1641734441}
-  - {fileID: 714958338}
-  - {fileID: 1573892510}
-  - {fileID: 2092195183}
-  - {fileID: 936883903}
-  - {fileID: 64271892}
-  - {fileID: 401777052}
-  - {fileID: 1251618703}
-  - {fileID: 665858954}
-  - {fileID: 218475146}
-  - {fileID: 552506394}
-  - {fileID: 1334128547}
-  - {fileID: 965649486}
-  - {fileID: 269278259}
-  - {fileID: 943256783}
-  - {fileID: 1822196229}
-  - {fileID: 626373450}
-  - {fileID: 1144377500}
-  - {fileID: 84687312}
-  - {fileID: 113880499}
-  - {fileID: 811457160}
-  - {fileID: 1663986773}
-  - {fileID: 842088399}
-  - {fileID: 1518759355}
-  - {fileID: 94456966}
-  - {fileID: 1268944404}
-  - {fileID: 1927020106}
-  - {fileID: 2090350229}
-  - {fileID: 899255684}
-  - {fileID: 320894813}
-  - {fileID: 194338620}
-  - {fileID: 915142781}
-  - {fileID: 2110845492}
-  - {fileID: 1968695258}
-  - {fileID: 1397410290}
-  - {fileID: 196102408}
-  - {fileID: 138640209}
-  - {fileID: 1968460388}
-  - {fileID: 2146701307}
-  - {fileID: 1039749283}
-  - {fileID: 1193426345}
-  spacesAvailableBoard2:
-  - {fileID: 1635723993}
-  - {fileID: 1163507721}
-  - {fileID: 1347519681}
-  - {fileID: 1000369205}
-  - {fileID: 248363723}
-  - {fileID: 1472226710}
-  - {fileID: 2011599901}
-  - {fileID: 1593048974}
-  - {fileID: 1895902641}
-  - {fileID: 2096604491}
-  - {fileID: 1671057177}
-  - {fileID: 1641266369}
-  - {fileID: 14314054}
-  - {fileID: 2037068679}
-  - {fileID: 1549086689}
-  - {fileID: 606583854}
-  - {fileID: 200581655}
-  - {fileID: 1827935407}
-  - {fileID: 1221930233}
-  - {fileID: 2042840358}
-  - {fileID: 504717639}
-  - {fileID: 793548116}
-  - {fileID: 2076886678}
-  - {fileID: 596573598}
-  - {fileID: 1741329721}
-  - {fileID: 355742610}
-  - {fileID: 113632326}
-  - {fileID: 1897168522}
-  - {fileID: 248292494}
-  - {fileID: 1728492419}
-  - {fileID: 182868213}
-  - {fileID: 1559357692}
-  - {fileID: 1489359885}
-  - {fileID: 603864442}
-  - {fileID: 1520405229}
-  - {fileID: 1372282896}
-  - {fileID: 1344703010}
-  - {fileID: 1444116742}
-  - {fileID: 1218867308}
-  - {fileID: 738248691}
-  - {fileID: 259579670}
-  - {fileID: 596307563}
-  - {fileID: 872065932}
-  - {fileID: 2063531207}
-  - {fileID: 868999656}
-  - {fileID: 1734187182}
-  - {fileID: 1756238213}
-  - {fileID: 1794437412}
-  - {fileID: 1832316847}
-  - {fileID: 287569835}
-  - {fileID: 1354377084}
-  - {fileID: 146001641}
-  - {fileID: 1156070980}
-  - {fileID: 101002485}
-  - {fileID: 1959286400}
-  - {fileID: 685900433}
-  - {fileID: 1477463848}
-  - {fileID: 1223461759}
-  - {fileID: 1427608343}
-  - {fileID: 1108581654}
-  - {fileID: 1916440928}
-  - {fileID: 158845625}
-  - {fileID: 505111174}
-  - {fileID: 623015046}
 --- !u!4 &411120158
 Transform:
   m_ObjectHideFlags: 0
@@ -4265,8 +4131,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 07f3980680f6cee46a957d19abe4cc97, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8067,7 +7933,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 334e8e8af9cd0f74d840cb8e1a67d965, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07f3980680f6cee46a957d19abe4cc97, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16386,7 +16252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 334e8e8af9cd0f74d840cb8e1a67d965, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07f3980680f6cee46a957d19abe4cc97, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

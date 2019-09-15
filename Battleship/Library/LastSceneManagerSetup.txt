@@ -1,5 +1,6 @@
 sceneSetups:
-- path: Assets/Scenes/Chase'sLab.unity
+- path: C:/Users/Jack's PC/Documents/GitHub/Battleship_Project/Battleship/Assets/Scenes/Board
+    View.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
