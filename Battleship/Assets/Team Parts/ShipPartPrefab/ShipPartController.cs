@@ -4,14 +4,31 @@ using UnityEngine;
 
 public class ShipPartController : MonoBehaviour
 {
+    Collider2D collide;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
+    {
+
+    }
+
+    void Hit()
+    {
+
+    }
+
+    private void ResetPos()
+    {
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         
     }
