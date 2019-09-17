@@ -9,6 +9,7 @@ public class BoardInteraction : MonoBehaviour
     public Sprite[] impactIcons; //hit or miss icons
     public Button[] spacesAvailableBoard1; //Buttons on Board1
     public Button[] spacesAvailableBoard2; //Buttons on Board2
+    public bool player1Turn = true, player2Turn = true;
 
     // Start is called before the first frame update
     void Start()
@@ -36,30 +37,56 @@ public class BoardInteraction : MonoBehaviour
     //Separate script for the buttons on the Player1 Board to place hit or miss sprites on the respected spaces
     public void BattleshipSpacesBoard1(int num)
     {
-        spacesAvailableBoard1[num].image.sprite = impactIcons[hitOrMiss];
-        if (hitOrMiss == 0)
+        if (player1Turn)
         {
-            hitOrMiss = 1;
+            spacesAvailableBoard1[num].image.sprite = impactIcons[hitOrMiss];
+            if (hitOrMiss == 0)
+            {
+                hitOrMiss = 1;
+            }
+            else
+            {
+                hitOrMiss = 0;
+            }
+            spacesAvailableBoard1[num].interactable = false;
+            player1Turn = false;
+            player2Turn = true;
         }
-        else
+        for(int i = 0; i < spacesAvailableBoard1.Length; i++)
         {
-            hitOrMiss = 0;
+            spacesAvailableBoard1[i].interactable = false;
+            if(spacesAvailableBoard2[i].image.sprite == null)
+            {
+                spacesAvailableBoard2[i].interactable = true;
+            }
         }
-        spacesAvailableBoard1[num].interactable = false;
     }
 
     //Separate script for the buttons on the Player2 Board to place hit orm iss sprites on the respected spaces
     public void BattleshipSpacesBoard2(int num)
     {
-        spacesAvailableBoard2[num].image.sprite = impactIcons[hitOrMiss];
-        if (hitOrMiss == 0)
+        if (player2Turn)
         {
-            hitOrMiss = 1;
+            spacesAvailableBoard2[num].image.sprite = impactIcons[hitOrMiss];
+            if (hitOrMiss == 0)
+            {
+                hitOrMiss = 1;
+            }
+            else
+            {
+                hitOrMiss = 0;
+            }
+            spacesAvailableBoard2[num].interactable = false;
+            player2Turn = false;
+            player1Turn = true;
         }
-        else
+        for (int i = 0; i < spacesAvailableBoard2.Length; i++)
         {
-            hitOrMiss = 0;
+            spacesAvailableBoard2[i].interactable = false;
+            if (spacesAvailableBoard1[i].image.sprite == null)
+            {
+                spacesAvailableBoard1[i].interactable = true;
+            }
         }
-        spacesAvailableBoard2[num].interactable = false;
     }
 }
