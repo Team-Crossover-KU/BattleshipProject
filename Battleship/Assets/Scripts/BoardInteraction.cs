@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class BoardInteraction : MonoBehaviour
 {
     public int hitOrMiss = 1; //0 for a miss, 1 for a hit
-    public Sprite[] impactIcons; //hit or miss icons
+    public Sprite[] onClickIcons; //hit or miss icons
     public Button[] spacesAvailableBoard1; //Buttons on Board1
     public Button[] spacesAvailableBoard2; //Buttons on Board2
     public bool player1Turn = true, player2Turn = true;
-    public UnityEngine.UI.Button yesButton;
+    public UnityEngine.UI.Button yesButton, fireButton;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,7 @@ public class BoardInteraction : MonoBehaviour
         Setup();
 
         yesButton.onClick.AddListener(YesButtonReset);
+        fireButton.onClick.AddListener(FireButtonLockIn);
 
 
     }
@@ -44,7 +45,22 @@ public class BoardInteraction : MonoBehaviour
     {
         if (player1Turn)
         {
-            spacesAvailableBoard1[num].image.sprite = impactIcons[hitOrMiss];
+            for(int i = 0; i < spacesAvailableBoard1.Length; i++)
+            {
+                if(spacesAvailableBoard1[i].image.sprite == null)
+                {
+                    spacesAvailableBoard1[i].interactable = true;
+                }
+            }
+            spacesAvailableBoard1[num].image.sprite = onClickIcons[2];
+            spacesAvailableBoard1[num].interactable = false;
+
+            
+            
+            
+            
+            
+            /*spacesAvailableBoard1[num].image.sprite = onClickIcons[hitOrMiss];
             if (hitOrMiss == 0)
             {
                 hitOrMiss = 1;
@@ -55,7 +71,7 @@ public class BoardInteraction : MonoBehaviour
             }
             spacesAvailableBoard1[num].interactable = false;
             player1Turn = false;
-            player2Turn = true;
+            player2Turn = true;*/
         }
         for(int i = 0; i < spacesAvailableBoard1.Length; i++)
         {
@@ -72,26 +88,24 @@ public class BoardInteraction : MonoBehaviour
     {
         if (player2Turn)
         {
-            spacesAvailableBoard2[num].image.sprite = impactIcons[hitOrMiss];
-            if (hitOrMiss == 0)
+
+            for (int i = 0; i < spacesAvailableBoard2.Length; i++)
             {
-                hitOrMiss = 1;
+                if (spacesAvailableBoard2[i].image.sprite == null)
+                {
+                    spacesAvailableBoard2[i].interactable = true;
+                }
+
+                if (spacesAvailableBoard2[i].image.sprite = onClickIcons[2])
+                {
+                    spacesAvailableBoard2[i].image.sprite = null;
+                    spacesAvailableBoard2[i].interactable = true;
+                }
             }
-            else
-            {
-                hitOrMiss = 0;
-            }
+
+
+            spacesAvailableBoard2[num].image.sprite = onClickIcons[2];
             spacesAvailableBoard2[num].interactable = false;
-            player2Turn = false;
-            player1Turn = true;
-        }
-        for (int i = 0; i < spacesAvailableBoard2.Length; i++)
-        {
-            spacesAvailableBoard2[i].interactable = false;
-            if (spacesAvailableBoard1[i].image.sprite == null)
-            {
-                spacesAvailableBoard1[i].interactable = true;
-            }
         }
     }
 
@@ -105,8 +119,22 @@ public class BoardInteraction : MonoBehaviour
             spacesAvailableBoard2[i].GetComponent<Image>().sprite = null;
             player1Turn = true;
             player2Turn = true;
+        }
+    }
 
+    public void FireButtonLockIn()
+    {
+        for(int i = 0; i < spacesAvailableBoard1.Length; i++)
+        {
+            if(spacesAvailableBoard2[i].image.sprite == onClickIcons[2])
+            {
+                spacesAvailableBoard2[i].image.sprite = onClickIcons[hitOrMiss];
+            }
 
+            if(spacesAvailableBoard2[i].image.sprite == null)
+            {
+                spacesAvailableBoard2[i].interactable = false;
+            }
         }
     }
 }
