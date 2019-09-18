@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class CanvasScript : MonoBehaviour
 {
+    int numShips;
     public Dropdown shipSelector;
     public UnityEngine.UI.Button confirmButton, startButton, returnButton, pauseButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
-    public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, player1Board, player2Board, pauseMenu, gameOverMenu, confirmationPanel;
-
+    public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, player1Board, player2Board, pauseMenu, gameOverMenu, confirmationPanel, gameController;
+    public TeamController Team1;
+    public TeamController Team2;
     // Start is called before the first frame update
     public void Start()
     {
@@ -47,6 +49,7 @@ public class CanvasScript : MonoBehaviour
         if(value > 0)
         {
             confirmButton.interactable = true;
+            numShips = value;
         }
         else
         {
@@ -61,6 +64,8 @@ public class CanvasScript : MonoBehaviour
 
         shipSelectorPanel.SetActive(false);
         shipPlacementPanel.SetActive(true);
+        Team1.SetNumberOfShips(numShips);
+        Team2.SetNumberOfShips(numShips);
     }
 
     // BackToSettings method will return the game back to the Ship Selection Menu.

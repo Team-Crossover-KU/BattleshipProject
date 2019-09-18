@@ -11,6 +11,8 @@ public class BoardInteraction : MonoBehaviour
     public Button[] spacesAvailableBoard2; //Buttons on Board2
     public bool player1Turn = true, player2Turn = true;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {

@@ -6,6 +6,8 @@ public class TeamController : MonoBehaviour
 {
     List<ShipController> Ships;
     public int numberOfShips;
+    bool isNumShipsSelected = false;
+    public GameObject ship;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +18,17 @@ public class TeamController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isNumShipsSelected == false  && numberOfShips > 0)
+        {
+            Instantiate(ship, this.transform);
+            isNumShipsSelected = true;
+        }
+ 
     }
 
-    void SetNumberOfShips(int shipAmmount)
+    public void SetNumberOfShips(int shipAmmount)
     {
-
+        numberOfShips = shipAmmount;
     }
 
     void spawnShips(int length)

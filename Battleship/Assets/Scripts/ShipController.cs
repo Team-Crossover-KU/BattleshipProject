@@ -8,11 +8,13 @@ public class ShipController : MonoBehaviour
     bool isSpawned = false;
     List<ShipPartController> parts;
     private int shipLength = 0;
+    public GameObject shipPart;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Instantiate(shipPart, this.transform);
+       
     }
 
     // Update is called once per frame

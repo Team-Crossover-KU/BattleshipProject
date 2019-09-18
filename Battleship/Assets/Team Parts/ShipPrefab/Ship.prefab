@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9206218881881226208}
   - component: {fileID: -1142672663717402155}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,3 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4deeeafe110a4c7459c0dfbd17a07fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shipPart: {fileID: 4035593080759303965, guid: a1a6a1ae52045ee42af5207cb57e802c,
+    type: 3}
