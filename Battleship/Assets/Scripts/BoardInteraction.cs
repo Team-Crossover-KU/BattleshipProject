@@ -10,11 +10,16 @@ public class BoardInteraction : MonoBehaviour
     public Button[] spacesAvailableBoard1; //Buttons on Board1
     public Button[] spacesAvailableBoard2; //Buttons on Board2
     public bool player1Turn = true, player2Turn = true;
+    public UnityEngine.UI.Button yesButton;
 
     // Start is called before the first frame update
     void Start()
     {
         Setup();
+
+        yesButton.onClick.AddListener(YesButtonReset);
+
+
     }
 
     void Setup()
@@ -87,6 +92,21 @@ public class BoardInteraction : MonoBehaviour
             {
                 spacesAvailableBoard1[i].interactable = true;
             }
+        }
+    }
+
+    public void YesButtonReset()
+    {
+        for(int i = 0; i < spacesAvailableBoard1.Length; i++)
+        {
+            spacesAvailableBoard1[i].interactable = true;
+            spacesAvailableBoard1[i].GetComponent<Image>().sprite = null;
+            spacesAvailableBoard2[i].interactable = true;
+            spacesAvailableBoard2[i].GetComponent<Image>().sprite = null;
+            player1Turn = true;
+            player2Turn = true;
+
+
         }
     }
 }

@@ -15874,6 +15874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495956190}
   - component: {fileID: 1495956189}
+  - component: {fileID: 1495956191}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -16029,6 +16030,7 @@ MonoBehaviour:
   - {fileID: 1827175435}
   player1Turn: 1
   player2Turn: 1
+  yesButton: {fileID: 1066153090}
 --- !u!4 &1495956190
 Transform:
   m_ObjectHideFlags: 0
@@ -16043,6 +16045,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495956191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495956188}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7b71fc57a03f14b90a64d46b0ca538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1521916087
 GameObject:
   m_ObjectHideFlags: 0
