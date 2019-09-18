@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// All UI.Buttons, Dropdowns, and UI Panels set to GameObject variables derive from the UnityEngine.UI namespace Library.
 public class CanvasScript : MonoBehaviour
 {
     public Dropdown shipSelector;
@@ -39,6 +40,7 @@ public class CanvasScript : MonoBehaviour
     }
 
     // SelectShips method will set the confirmation button to be interactable for any selection other than the empty option.
+    // value parameter will recieve the Dropdown option value.
     private void SelectShips(int value)
     {
         value = shipSelector.value;
