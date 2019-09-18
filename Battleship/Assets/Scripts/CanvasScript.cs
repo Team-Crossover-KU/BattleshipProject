@@ -7,7 +7,7 @@ public class CanvasScript : MonoBehaviour
 {
     public Dropdown shipSelector;
     public UnityEngine.UI.Button confirmButton, startButton, returnButton, pauseButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
-    public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, pauseMenu, gameOverMenu, confirmationPanel;
+    public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, player1Board, player2Board, pauseMenu, gameOverMenu, confirmationPanel;
 
     // Start is called before the first frame update
     public void Start()
@@ -79,6 +79,8 @@ public class CanvasScript : MonoBehaviour
 
         shipPlacementPanel.SetActive(false);
         gameUIPanel.SetActive(true);
+        player1Board.SetActive(true);
+        player2Board.SetActive(true);
     }
 
     // PauseGame method will pull up the pause menu once the Pause button is clicked.
@@ -86,10 +88,14 @@ public class CanvasScript : MonoBehaviour
     {
         Debug.Log("You have clicked the Pause button!");
         gameUIPanel.SetActive(false);
+        player1Board.SetActive(false);
+        player2Board.SetActive(false);
         pauseMenu.SetActive(true);
         confirmationPanel.SetActive(false);
         quitButton.interactable = true;
         resumeButton.interactable = true;
+        //replayButton.interactable = true;
+        //mainMenuButton.interactable = true;
     }
 
     // ResumeGame method will disable the Pause menu and return back to the game.
@@ -97,6 +103,8 @@ public class CanvasScript : MonoBehaviour
     {
         Debug.Log("You have clicked the Resume button!");
         gameUIPanel.SetActive(true);
+        player1Board.SetActive(true);
+        player2Board.SetActive(true);
         pauseMenu.SetActive(false);
     }
 
@@ -107,6 +115,8 @@ public class CanvasScript : MonoBehaviour
         confirmationPanel.SetActive(true);
         quitButton.interactable = false;
         resumeButton.interactable = false;
+        //replayButton.interactable = false;
+        //mainMenuButton.interactable = false;
     }
 
     // GameReset method will start/restart the game at the Ship Selection menu.
@@ -117,10 +127,14 @@ public class CanvasScript : MonoBehaviour
         confirmButton.interactable = false;
         quitButton.interactable = true;
         resumeButton.interactable = true;
+        //replayButton.interactable = true;
+        //mainMenuButton.interactable = true;
 
         shipSelectorPanel.SetActive(true);
         shipPlacementPanel.SetActive(false);
         gameUIPanel.SetActive(false);
+        player1Board.SetActive(false);
+        player2Board.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         confirmationPanel.SetActive(false);
