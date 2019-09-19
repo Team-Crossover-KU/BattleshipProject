@@ -7,7 +7,7 @@ public class ShipController : MonoBehaviour
     bool allPartsDestroyed = false;
     bool isSpawned = false;
     List<ShipPartController> parts;
-    private int shipLength = 0;
+    public int shipLength = 0;
     public GameObject shipPart;
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class ShipController : MonoBehaviour
     //setter for ship length
     public void SetShipLength(int n)
     {
-
+        shipLength = n;
     }
 
     //Check 
