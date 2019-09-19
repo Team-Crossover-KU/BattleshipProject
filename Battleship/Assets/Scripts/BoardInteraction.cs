@@ -10,28 +10,18 @@ public class BoardInteraction : MonoBehaviour
     public Button[] spacesAvailableBoard1; //Buttons on Board1
     public Button[] spacesAvailableBoard2; //Buttons on Board2
     public bool player1Turn = true, player2Turn = false;
-    public UnityEngine.UI.Button yesButton, fireButton;
+    public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        Setup();
 
         yesButton.onClick.AddListener(YesButtonReset);
         fireButton.onClick.AddListener(FireButtonLockIn);
+        confirmButton.onClick.AddListener(ConfirmButtonInteractableOff);
+        startButton.onClick.AddListener(StartButtonCommencePlay);
 
 
-    }
-
-    void Setup()
-    {
-        for (int i = 0; i < spacesAvailableBoard1.Length; i++)
-        {
-            spacesAvailableBoard1[i].interactable = true; //setting buttons for board 1 to be interactable
-            spacesAvailableBoard1[i].GetComponent<Image>().sprite = null; //empty sprite, will display nothing
-            spacesAvailableBoard2[i].interactable = true; //setting buttons for board 2 to be interactable
-            spacesAvailableBoard2[i].GetComponent<Image>().sprite = null; //empty sprite, will display nothing
-        }
     }
 
     // Update is called once per frame
@@ -103,42 +93,117 @@ public class BoardInteraction : MonoBehaviour
     }
 
     public void FireButtonLockIn()
-    { 
-        if(player1Turn)
+    {
+        bool hasPlayed1 = false, hasPlayed2 = false;
+
+        if (player1Turn)
         {
-            for(int i = 0; i < spacesAvailableBoard1.Length; i++)
+            for (int i = 0; i < spacesAvailableBoard1.Length; i++)
             {
-                if(spacesAvailableBoard1[i].image.sprite == onClickIcons[2])
+
+                if (spacesAvailableBoard1[i].image.sprite == onClickIcons[2])
                 {
                     spacesAvailableBoard1[i].image.sprite = onClickIcons[hitOrMiss];
-                }
-                spacesAvailableBoard1[i].interactable = false;
-                if (spacesAvailableBoard2[i].image.sprite == null)
-                {
-                    spacesAvailableBoard2[i].interactable = true;
+                    hasPlayed1 = true;
+                    break;
                 }
             }
-            player1Turn = false;
-            player2Turn = true;
+
+            for (int i = 0; i < spacesAvailableBoard1.Length; i++)
+            {
+                if (hasPlayed1)
+                {
+                    spacesAvailableBoard1[i].interactable = false;
+                    if (spacesAvailableBoard2[i].image.sprite == null)
+                    {
+                        spacesAvailableBoard2[i].interactable = true;
+                    }
+                }
+                else
+                {
+                    if (spacesAvailableBoard1[i].image.sprite == null)
+                    {
+                        spacesAvailableBoard1[i].interactable = true;
+                    }
+                }
+            }
+
+            if(hasPlayed1)
+            {
+                player1Turn = false;
+                player2Turn = true;
+            }
+            else
+            {
+                player1Turn = true;
+                player2Turn = false;
+            }
         }
 
-        else if(player2Turn)
+        else if (player2Turn)
         {
-            for(int i = 0; i < spacesAvailableBoard2.Length; i++)
+            for (int i = 0; i < spacesAvailableBoard2.Length; i++)
             {
-                if(spacesAvailableBoard2[i].image.sprite == onClickIcons[2])
+
+                if (spacesAvailableBoard2[i].image.sprite == onClickIcons[2])
                 {
                     spacesAvailableBoard2[i].image.sprite = onClickIcons[hitOrMiss];
+                    hasPlayed2 = true;
+                    break;
                 }
-                spacesAvailableBoard2[i].interactable = false;
-                if (spacesAvailableBoard1[i].image.sprite == null)
-                {
-                    spacesAvailableBoard1[i].interactable = true;
-                }
-
             }
-            player1Turn = true;
-            player2Turn = false;
+
+            for (int i = 0; i < spacesAvailableBoard2.Length; i++)
+            {
+                if (hasPlayed2)
+                {
+                    spacesAvailableBoard2[i].interactable = false;
+                    if (spacesAvailableBoard1[i].image.sprite == null)
+                    {
+                        spacesAvailableBoard1[i].interactable = true;
+                    }
+                }
+                else
+                {
+                    if (spacesAvailableBoard2[i].image.sprite == null)
+                    {
+                        spacesAvailableBoard2[i].interactable = true;
+                    }
+                }
+            }
+
+            if (hasPlayed2)
+            {
+                player1Turn = true;
+                player2Turn = false;
+            }
+            else
+            {
+                player1Turn = false;
+                player2Turn = true;
+            }
+        }
+    }
+
+    public void ConfirmButtonInteractableOff()
+    {
+        for(int i = 0; i < spacesAvailableBoard1.Length; i++)
+        {
+            spacesAvailableBoard1[i].interactable = false;
+            spacesAvailableBoard2[i].interactable = false;
+        }
+    }
+
+    public void StartButtonCommencePlay()
+    {
+        for(int i = 0; i < spacesAvailableBoard1.Length; i++)
+        {
+            spacesAvailableBoard1[i].interactable = true;
+            spacesAvailableBoard2[i].interactable = false;
+            spacesAvailableBoard1[i].image.sprite = null;
+            spacesAvailableBoard2[i].image.sprite = null;
+
+
         }
     }
 }

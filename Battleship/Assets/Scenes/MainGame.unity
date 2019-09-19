@@ -16196,6 +16196,8 @@ MonoBehaviour:
   player2Turn: 0
   yesButton: {fileID: 1066153090}
   fireButton: {fileID: 1685918617}
+  confirmButton: {fileID: 1277868087}
+  startButton: {fileID: 1132288337}
 --- !u!4 &1495956190
 Transform:
   m_ObjectHideFlags: 0
