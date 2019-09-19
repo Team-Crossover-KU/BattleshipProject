@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79306ed58f988104ca4309235d505ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ships: []
+  numberOfShips: 0
+  ship: {fileID: 4430511920833222929, guid: a38fb2795a4b76a4a8e944fe09e36e66, type: 3}
