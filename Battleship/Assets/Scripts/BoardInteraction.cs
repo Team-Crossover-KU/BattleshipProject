@@ -9,7 +9,7 @@ public class BoardInteraction : MonoBehaviour
     public Sprite[] onClickIcons; //hit or miss icons
     public Button[] spacesAvailableBoard1; //Buttons on Board1
     public Button[] spacesAvailableBoard2; //Buttons on Board2
-    public bool player1Turn = true, player2Turn = true;
+    public bool player1Turn = true, player2Turn = false;
     public UnityEngine.UI.Button yesButton, fireButton;
 
     // Start is called before the first frame update
@@ -51,35 +51,15 @@ public class BoardInteraction : MonoBehaviour
                 {
                     spacesAvailableBoard1[i].interactable = true;
                 }
+
+                if (spacesAvailableBoard1[i].image.sprite == onClickIcons[2])
+                {
+                    spacesAvailableBoard1[i].image.sprite = null;
+                    spacesAvailableBoard1[i].interactable = true;
+                }
             }
             spacesAvailableBoard1[num].image.sprite = onClickIcons[2];
             spacesAvailableBoard1[num].interactable = false;
-
-            
-            
-            
-            
-            
-            /*spacesAvailableBoard1[num].image.sprite = onClickIcons[hitOrMiss];
-            if (hitOrMiss == 0)
-            {
-                hitOrMiss = 1;
-            }
-            else
-            {
-                hitOrMiss = 0;
-            }
-            spacesAvailableBoard1[num].interactable = false;
-            player1Turn = false;
-            player2Turn = true;*/
-        }
-        for(int i = 0; i < spacesAvailableBoard1.Length; i++)
-        {
-            spacesAvailableBoard1[i].interactable = false;
-            if(spacesAvailableBoard2[i].image.sprite == null)
-            {
-                spacesAvailableBoard2[i].interactable = true;
-            }
         }
     }
 
@@ -96,7 +76,7 @@ public class BoardInteraction : MonoBehaviour
                     spacesAvailableBoard2[i].interactable = true;
                 }
 
-                if (spacesAvailableBoard2[i].image.sprite = onClickIcons[2])
+                else if (spacesAvailableBoard2[i].image.sprite == onClickIcons[2])
                 {
                     spacesAvailableBoard2[i].image.sprite = null;
                     spacesAvailableBoard2[i].interactable = true;
@@ -123,18 +103,42 @@ public class BoardInteraction : MonoBehaviour
     }
 
     public void FireButtonLockIn()
-    {
-        for(int i = 0; i < spacesAvailableBoard1.Length; i++)
+    { 
+        if(player1Turn)
         {
-            if(spacesAvailableBoard2[i].image.sprite == onClickIcons[2])
+            for(int i = 0; i < spacesAvailableBoard1.Length; i++)
             {
-                spacesAvailableBoard2[i].image.sprite = onClickIcons[hitOrMiss];
+                if(spacesAvailableBoard1[i].image.sprite == onClickIcons[2])
+                {
+                    spacesAvailableBoard1[i].image.sprite = onClickIcons[hitOrMiss];
+                }
+                spacesAvailableBoard1[i].interactable = false;
+                if (spacesAvailableBoard2[i].image.sprite == null)
+                {
+                    spacesAvailableBoard2[i].interactable = true;
+                }
             }
+            player1Turn = false;
+            player2Turn = true;
+        }
 
-            if(spacesAvailableBoard2[i].image.sprite == null)
+        else if(player2Turn)
+        {
+            for(int i = 0; i < spacesAvailableBoard2.Length; i++)
             {
+                if(spacesAvailableBoard2[i].image.sprite == onClickIcons[2])
+                {
+                    spacesAvailableBoard2[i].image.sprite = onClickIcons[hitOrMiss];
+                }
                 spacesAvailableBoard2[i].interactable = false;
+                if (spacesAvailableBoard1[i].image.sprite == null)
+                {
+                    spacesAvailableBoard1[i].interactable = true;
+                }
+
             }
+            player1Turn = true;
+            player2Turn = false;
         }
     }
 }
