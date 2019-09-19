@@ -1392,7 +1392,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 898463297}
+  m_Father: {fileID: 968887328}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2567,7 +2567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.49014086, y: 0.63571435}
   m_AnchorMax: {x: 0.49014086, y: 0.63571435}
-  m_AnchoredPosition: {x: 0, y: -33}
+  m_AnchoredPosition: {x: 0, y: -41}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238943312
@@ -2717,10 +2717,8 @@ RectTransform:
   - {fileID: 1565339710}
   - {fileID: 2090441103}
   - {fileID: 1685918615}
-  - {fileID: 898463297}
-  - {fileID: 968887328}
   m_Father: {fileID: 1163036482}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4047,7 +4045,7 @@ RectTransform:
   - {fileID: 1915185061}
   - {fileID: 37090585}
   m_Father: {fileID: 1163036482}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9063,7 +9061,7 @@ GameObject:
   - component: {fileID: 858817118}
   - component: {fileID: 858817117}
   m_Layer: 5
-  m_Name: Battleship Grid
+  m_Name: Player 1 Battleship Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9145,7 +9143,7 @@ RectTransform:
   - {fileID: 1711104072}
   - {fileID: 545164681}
   m_Father: {fileID: 898463297}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9481,7 +9479,7 @@ GameObject:
   - component: {fileID: 880459673}
   - component: {fileID: 880459672}
   m_Layer: 5
-  m_Name: Battleship Grid
+  m_Name: Player 2 Battleship Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9562,7 +9560,7 @@ RectTransform:
   - {fileID: 2057085473}
   - {fileID: 1771438294}
   - {fileID: 1827175438}
-  m_Father: {fileID: 968887328}
+  m_Father: {fileID: 898463297}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -9642,7 +9640,7 @@ GameObject:
   - component: {fileID: 898463299}
   - component: {fileID: 898463298}
   m_Layer: 5
-  m_Name: Player 1 Board
+  m_Name: Battleship Grids
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9655,14 +9653,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898463296}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 95106492}
   - {fileID: 858817116}
-  m_Father: {fileID: 248601874}
-  m_RootOrder: 3
+  - {fileID: 880459671}
+  m_Father: {fileID: 1163036482}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10430,7 +10428,7 @@ GameObject:
   - component: {fileID: 968887330}
   - component: {fileID: 968887329}
   m_Layer: 5
-  m_Name: Player 2 Board
+  m_Name: Player Turn Tags
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10447,10 +10445,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 95106492}
   - {fileID: 1673639750}
-  - {fileID: 880459671}
-  m_Father: {fileID: 248601874}
-  m_RootOrder: 4
+  m_Father: {fileID: 1163036482}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13120,8 +13118,7 @@ MonoBehaviour:
   shipSelectorPanel: {fileID: 2078651638}
   shipPlacementPanel: {fileID: 851139855}
   gameUIPanel: {fileID: 248601871}
-  player1Board: {fileID: 898463296}
-  player2Board: {fileID: 968887327}
+  battleshipGrids: {fileID: 898463296}
   pauseMenu: {fileID: 426972636}
   gameOverMenu: {fileID: 1595192959}
   confirmationPanel: {fileID: 1959039277}
@@ -13201,9 +13198,11 @@ RectTransform:
   m_Children:
   - {fileID: 2078651641}
   - {fileID: 851139858}
+  - {fileID: 898463297}
+  - {fileID: 968887328}
   - {fileID: 248601874}
-  - {fileID: 426972639}
   - {fileID: 1959039280}
+  - {fileID: 426972639}
   - {fileID: 1595192962}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -16754,7 +16753,7 @@ RectTransform:
   - {fileID: 238943311}
   - {fileID: 1865837660}
   m_Father: {fileID: 1163036482}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17107,7 +17106,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 968887328}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20778,7 +20777,7 @@ RectTransform:
   - {fileID: 1066153087}
   - {fileID: 62594327}
   m_Father: {fileID: 1163036482}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
