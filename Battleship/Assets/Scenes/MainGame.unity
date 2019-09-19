@@ -18248,6 +18248,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 650811732520273546, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
+      propertyPath: Ships.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 650811732520273546, guid: 07e8e81dd78beff4e8d423eb32703fc0,
+        type: 3}
       propertyPath: ship
       value: 
       objectReference: {fileID: 461227255}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TeamController : MonoBehaviour
 {
-    List<ShipController> Ships;
+    public List<ShipController> Ships;
     public int numberOfShips;
     bool isNumShipsSelected = false;
     public GameObject ship;
@@ -20,7 +20,7 @@ public class TeamController : MonoBehaviour
     {
         if (isNumShipsSelected == false && numberOfShips > 0)
         {
-            Instantiate(ship, this.transform);
+            spawnShips(numberOfShips);
             isNumShipsSelected = true;
         }
 
@@ -33,7 +33,12 @@ public class TeamController : MonoBehaviour
 
     void spawnShips(int length)
     {
-
+        for (int i = 0; numberOfShips > i; i++)
+        {
+            Ships.Add(Instantiate(ship, this.transform).GetComponent<ShipController>());
+            Ships[i].SetShipLength(i+1);
+            Debug.Log(i);
+        }
     }
 
     bool allShipsDestoryed()
