@@ -18,7 +18,7 @@ public class buttonController : MonoBehaviour
         
     }
 
-    public void onclickhit()
+    public void Onclickhit()
     {
         if (target != null)
             target.Hit();

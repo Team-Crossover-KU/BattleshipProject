@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BoardInteraction : MonoBehaviour
 {
+    public ShipPartController shipController;
     public int hitOrMiss = 1; //0 for a miss, 1 for a hit
     public Sprite[] onClickIcons; //hit or miss icons
     public Button[] spacesAvailableBoard1; //Buttons on Board1
@@ -95,7 +96,7 @@ public class BoardInteraction : MonoBehaviour
     public void FireButtonLockIn()
     {
         bool hasPlayed1 = false, hasPlayed2 = false;
-
+        
         if (player1Turn)
         {
             for (int i = 0; i < spacesAvailableBoard1.Length; i++)
@@ -103,8 +104,18 @@ public class BoardInteraction : MonoBehaviour
 
                 if (spacesAvailableBoard1[i].image.sprite == onClickIcons[2])
                 {
-                    spacesAvailableBoard1[i].image.sprite = onClickIcons[hitOrMiss];
-                    hasPlayed1 = true;
+                    if(spacesAvailableBoard1[i].GetComponent<buttonController>().target == null)
+                    {
+                         spacesAvailableBoard1[i].image.sprite = onClickIcons[0]
+;                        hasPlayed1 = true;
+                    }
+
+                    else
+                    {
+                        spacesAvailableBoard1[i].GetComponent<buttonController>().target.Hit();
+                        spacesAvailableBoard1[i].image.sprite = onClickIcons[1];
+                        hasPlayed1 = true;
+                    }
                     break;
                 }
             }
@@ -147,8 +158,18 @@ public class BoardInteraction : MonoBehaviour
 
                 if (spacesAvailableBoard2[i].image.sprite == onClickIcons[2])
                 {
-                    spacesAvailableBoard2[i].image.sprite = onClickIcons[hitOrMiss];
-                    hasPlayed2 = true;
+                    if (spacesAvailableBoard2[i].GetComponent<buttonController>().target == null)
+                    {
+                        spacesAvailableBoard2[i].image.sprite = onClickIcons[0];
+                        hasPlayed2 = true;
+                    }
+
+                    else
+                    {
+                        spacesAvailableBoard2[i].GetComponent<buttonController>().target.Hit();
+                        spacesAvailableBoard2[i].image.sprite = onClickIcons[1];
+                        hasPlayed2 = true;
+                    }
                     break;
                 }
             }

@@ -21,7 +21,7 @@ public class ShipPartController : MonoBehaviour
 
     public void Hit()
     {
-        Debug.Log("derp");
+        hit = true;
     }
 
     private void ResetPos()
