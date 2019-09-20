@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+* 
+*/
 public class BoardInteraction : MonoBehaviour
 {
     public ShipPartController shipController;
@@ -13,7 +16,9 @@ public class BoardInteraction : MonoBehaviour
     public bool player1Turn = true, player2Turn = false;
     public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton;
 
-    // Start is called before the first frame update
+    /**
+    * Start is called before the first frame update.
+    */
     void Start()
     {
 
@@ -25,13 +30,17 @@ public class BoardInteraction : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    /**
+    *  Update is called once per frame.
+    */
     void Update()
     {
 
     }
 
-    //Separate script for the buttons on the Player1 Board to place hit or miss sprites on the respected spaces
+    /**
+    * Separate script for the buttons on the Player1 Board to place hit or miss sprites on the respected spaces.
+    */
     public void BattleshipSpacesBoard1(int num)
     {
         if (player1Turn)
@@ -54,7 +63,9 @@ public class BoardInteraction : MonoBehaviour
         }
     }
 
-    //Separate script for the buttons on the Player2 Board to place hit orm iss sprites on the respected spaces
+    /**
+    * Separate script for the buttons on the Player2 Board to place hit or miss sprites on the respected spaces.
+    */
     public void BattleshipSpacesBoard2(int num)
     {
         if (player2Turn)
@@ -80,6 +91,9 @@ public class BoardInteraction : MonoBehaviour
         }
     }
 
+    /**
+    * 
+    */
     public void YesButtonReset()
     {
         for(int i = 0; i < spacesAvailableBoard1.Length; i++)
@@ -93,6 +107,9 @@ public class BoardInteraction : MonoBehaviour
         }
     }
 
+    /**
+    * 
+    */
     public void FireButtonLockIn()
     {
         bool hasPlayed1 = false, hasPlayed2 = false;
@@ -206,6 +223,9 @@ public class BoardInteraction : MonoBehaviour
         }
     }
 
+    /**
+    * 
+    */
     public void ConfirmButtonInteractableOff()
     {
         for(int i = 0; i < spacesAvailableBoard1.Length; i++)
@@ -215,6 +235,9 @@ public class BoardInteraction : MonoBehaviour
         }
     }
 
+    /**
+    * 
+    */
     public void StartButtonCommencePlay()
     {
         for(int i = 0; i < spacesAvailableBoard1.Length; i++)

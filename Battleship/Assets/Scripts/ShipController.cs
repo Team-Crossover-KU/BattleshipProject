@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+* 
+*/
 public class ShipController : MonoBehaviour
 {
     bool allPartsDestroyed = false;
@@ -10,13 +13,17 @@ public class ShipController : MonoBehaviour
     public int shipLength = 0;
     public GameObject shipPart;
 
-    // Start is called before the first frame update
+    /**
+    * Start is called before the first frame update.
+    */
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    /**
+    * Update is called once per frame.
+    */
     void Update()
     {
         //spawn
@@ -27,7 +34,9 @@ public class ShipController : MonoBehaviour
         }
     }
 
-    //for n length, spawn ship parts 
+    /**
+    * for n length, spawn ship parts 
+    */
     void Spawn()
     {
         //for loop for spawning
@@ -39,13 +48,17 @@ public class ShipController : MonoBehaviour
         }
     }
 
-    //setter for ship length
+    /**
+    * setter for ship length.
+    */
     public void SetShipLength(int n)
     {
         shipLength = n;
     }
 
-    //Check 
+    /**
+    * Check.
+    */
     void checkParts()
     {
 

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+* 
+*/
 public class TeamController : MonoBehaviour
 {
     public List<ShipController> Ships;
@@ -9,13 +12,17 @@ public class TeamController : MonoBehaviour
     bool isNumShipsSelected = false;
     public GameObject ship;
 
-    // Start is called before the first frame update
+    /**
+    * Start is called before the first frame update.
+    */
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+    /**
+    * Update is called once per frame.
+    */
     void Update()
     {
         if (isNumShipsSelected == false && numberOfShips > 0)
@@ -26,11 +33,17 @@ public class TeamController : MonoBehaviour
 
     }
 
+    /**
+    * 
+    */
     public void SetNumberOfShips(int shipAmmount)
     {
         numberOfShips = shipAmmount;
     }
 
+    /**
+    * 
+    */
     void spawnShips(int length)
     {
         for (int i = 0; numberOfShips > i; i++)
@@ -41,6 +54,9 @@ public class TeamController : MonoBehaviour
         }
     }
 
+    /**
+    * 
+    */
     bool allShipsDestoryed()
     {
         return false;
