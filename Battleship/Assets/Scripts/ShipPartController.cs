@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShipPartController : MonoBehaviour
 {
     Collider2D collide;
-    bool hit = false;
+    public bool hit = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class ShipPartController : MonoBehaviour
 
     }
 
-    void Hit()
+    public void Hit()
     {
 
     }
