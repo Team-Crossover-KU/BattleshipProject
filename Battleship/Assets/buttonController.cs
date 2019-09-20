@@ -30,6 +30,7 @@ public class buttonController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Something touching the board");
         target = collision.gameObject.GetComponent<ShipPartController>();
     }
 }
