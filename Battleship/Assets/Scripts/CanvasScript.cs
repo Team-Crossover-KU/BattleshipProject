@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// All UI.Buttons, Dropdowns, and UI Panels set to GameObject variables derive from the UnityEngine.UI namespace Library.
-// CanvasScript Contains all game transisitions from main menu, to ship placement menu, to main game interactions.
+
+/**
+ *CanvasScript Contains all game transisitions from main menu, to ship placement menu, to main game interactions.
+ *All UI.Buttons, Dropdowns, and UI Panels set to GameObject variables derive from the UnityEngine.UI namespace Library.
+ */
 public class CanvasScript : MonoBehaviour
 {
     int numShips;
@@ -14,8 +17,11 @@ public class CanvasScript : MonoBehaviour
     public TeamController Team1;
     public TeamController Team2;
 
-    // Start is called before the first frame update
-    // Game will start at the main menu and all Buttons will be given event listeners onClick.
+
+    /**
+    *  Start is called before the first frame update.
+    *  Game will start at the main menu and all Buttons will be given event listeners onClick
+    */
     public void Start()
     {
         GameReset();
@@ -44,8 +50,10 @@ public class CanvasScript : MonoBehaviour
         //mainMenuButton.onClick.AddListener(QuitGame);
     }
 
-    // SelectShips method will set the confirmation button to be interactable for any selection other than the empty option.
-    // value parameter will recieve the Dropdown option value.
+    /**
+    *  SelectShips method will set the confirmation button to be interactable for any selection other than the empty option.
+    *  value parameter will recieve the Dropdown option value.
+    */
     private void SelectShips(int value)
     {
         value = shipSelector.value;
@@ -62,9 +70,12 @@ public class CanvasScript : MonoBehaviour
         }
     }
 
-    // BeginShipPlacement method will disable the Ship Selection Menu and enable the Ship Placement Menu.
-    // Player Grids will be set active for players to began placing their fleets.
-    // Teams will be given a number of ships based on the shipSelector option value and be instaintiated within incremental sizes.
+
+    /**
+    *  BeginShipPlacement method will disable the Ship Selection Menu and enable the Ship Placement Menu.
+    *  Player Grids will be set active for players to began placing their fleets.
+    *  Teams will be given a number of ships based on the shipSelector option value and be instaintiated within incremental sizes.
+    */
     private void BeginShipPlacement()
     {
         Debug.Log("You have clicked the Confirm button!");
@@ -76,7 +87,9 @@ public class CanvasScript : MonoBehaviour
         Team2.SetNumberOfShips(numShips);
     }
 
-    // BackToSettings method will return the game back to the Ship Selection Menu.
+    /**
+    *  BackToSettings method will return the game back to the Ship Selection Menu.
+    */ 
     private void BackToSettings()
     {
         Debug.Log("You have clicked the Return button!");
@@ -86,8 +99,10 @@ public class CanvasScript : MonoBehaviour
         battleshipGrids.SetActive(false);
     }
 
-    // StartGame method will start the Battleship game once all ships have been placed.
-    // Ship Placement menu will be closed and the game will proceed to the Battleship Game.
+    /**
+    *  StartGame method will start the Battleship game once all ships have been placed.
+    *  Ship Placement menu will be closed and the game will proceed to the Battleship Game.
+    */
     private void StartGame()
     {
         Debug.Log("You have clicked the StartGame button!");
@@ -96,7 +111,9 @@ public class CanvasScript : MonoBehaviour
         gameUIPanel.SetActive(true);
     }
 
-    // PauseGame method will pull up the pause menu once the Pause button is clicked.
+    /**
+    *  PauseGame method will pull up the pause menu once the Pause button is clicked.
+    */
     private void PauseGame()
     {
         Debug.Log("You have clicked the Pause button!");
@@ -110,7 +127,9 @@ public class CanvasScript : MonoBehaviour
         //mainMenuButton.interactable = true;
     }
 
-    // ResumeGame method will disable the Pause menu and return back to the game.
+    /**
+    *  ResumeGame method will disable the Pause menu and return back to the game.
+    */
     private void ResumeGame()
     {
         Debug.Log("You have clicked the Resume button!");
@@ -119,8 +138,10 @@ public class CanvasScript : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
-    // QuitGame method will end the game once the user provides confirmation by clicking the Yes Button.
-    // Clicking the No button will return the user back to the pause menu.
+    /**
+    *  QuitGame method will end the game once the user provides confirmation by clicking the Yes Button.
+    *  Clicking the No button will return the user back to the pause menu.
+    */
     public void QuitGame()
     {
         Debug.Log("You have clicked the Quit button!");
@@ -131,7 +152,9 @@ public class CanvasScript : MonoBehaviour
         //mainMenuButton.interactable = false;
     }
 
-    // GameReset method will start/restart the game at the Ship Selection menu on either yesButton.onClick or at the start of the program.
+    /**
+    *  GameReset method will start/restart the game at the Ship Selection menu on either yesButton(dot)onClick or at the start of the program.
+    */
     public void GameReset()
     {
         shipSelector.value = 0;
