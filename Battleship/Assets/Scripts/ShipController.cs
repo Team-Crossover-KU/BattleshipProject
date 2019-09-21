@@ -43,7 +43,9 @@ public class ShipController : MonoBehaviour
         for (int i = 0; shipLength > i; i++)
         {
             parts.Add(Instantiate(shipPart, this.transform).GetComponent<ShipPartController>());
-            parts[i].transform.position = new Vector3(i * shipPart.transform.localScale.x, 0, 0);
+            parts[i].transform.position = new Vector3(this.transform.position.x + i * parts[i].transform.localScale.x, 
+                                                      this.transform.position.y, 
+                                                      this.transform.position.z);
             Debug.Log(i);
         }
     }

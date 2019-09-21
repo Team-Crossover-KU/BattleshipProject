@@ -17269,12 +17269,12 @@ PrefabInstance:
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -465.5
+      value: -190
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -183
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
@@ -20861,6 +20861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469257be61735a34991634b71ba3a92c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shipController: {fileID: 0}
   hitOrMiss: 1
   onClickIcons:
   - {fileID: 21300000, guid: e614e2b7211307e4da94e591cdce2eae, type: 3}
@@ -21786,12 +21787,12 @@ PrefabInstance:
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -465.5
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -183
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
@@ -21801,17 +21802,17 @@ PrefabInstance:
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
