@@ -3,7 +3,7 @@ var searchData=
   ['setnumberofships_23',['SetNumberOfShips',['../class_team_controller.html#a46b67b076e5a22fe7313f57b0faaec3a',1,'TeamController']]],
   ['setshiplength_24',['SetShipLength',['../class_ship_controller.html#a3d6a729c3b24840453b1cf53fda2271e',1,'ShipController']]],
   ['ship_25',['ship',['../class_team_controller.html#a39328ca274b0fc932eb696aba1cf42c9',1,'TeamController']]],
-  ['shipcontroller_26',['ShipController',['../class_ship_controller.html',1,'']]],
+  ['shipcontroller_26',['ShipController',['../class_ship_controller.html',1,'ShipController'],['../class_board_interaction.html#ac535f3e46b39768ad305f0a7b73adbb8',1,'BoardInteraction.shipController()']]],
   ['shipcontroller_2ecs_27',['ShipController.cs',['../_ship_controller_8cs.html',1,'']]],
   ['shiplength_28',['shipLength',['../class_ship_controller.html#ab35058c403a477e6a1cff738d07010df',1,'ShipController']]],
   ['shippart_29',['shipPart',['../class_ship_controller.html#a1e8e1a56821001bd0fff9c1da89e35e4',1,'ShipController']]],
