@@ -9,13 +9,15 @@ public class ShipPartController : MonoBehaviour
 {
     Collider2D collide;
     public bool hit = false;
+    public bool isMoving = false;
+
 
     /**
     * Start is called before the first frame update.
     */
     void Start()
     {
-
+        
     }
 
     /**
@@ -23,7 +25,10 @@ public class ShipPartController : MonoBehaviour
     */
     void Update()
     {
-
+        if (isMoving)
+        {
+            transform.parent.transform.position = Input.mousePosition;
+        }
     }
 
     /**
@@ -41,6 +46,19 @@ public class ShipPartController : MonoBehaviour
     {
 
     }
+    
+    
+    private void OnMouseDown()
+    {
+        Debug.Log("TouchedShip");
+        isMoving = true;
+    }
+
+    private void OnMouseUp()
+    {
+        isMoving = false;
+    }
+    
 
     /**
     * 

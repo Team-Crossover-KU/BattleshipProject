@@ -32,6 +32,7 @@ public class ShipController : MonoBehaviour
             Spawn();
             isSpawned = true;
         }
+
     }
 
     /**

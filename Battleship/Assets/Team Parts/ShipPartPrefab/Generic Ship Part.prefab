@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: 0
+  isMoving: 0
 --- !u!212 &8984776860408630202
 SpriteRenderer:
   m_ObjectHideFlags: 0
