@@ -8,6 +8,7 @@ using UnityEngine;
 public class ShipPartController : MonoBehaviour
 {
     Collider2D collide;
+    ShipController parent;
     public bool hit = false;
     public bool isMoving = false;
 
@@ -17,7 +18,7 @@ public class ShipPartController : MonoBehaviour
     */
     void Start()
     {
-        
+        parent = transform.parent.GetComponent<ShipController>();
     }
 
     /**
@@ -28,6 +29,26 @@ public class ShipPartController : MonoBehaviour
         if (isMoving)
         {
             transform.parent.transform.position = Input.mousePosition;
+            if (Input.GetKeyDown("a"))
+            {
+                parent.FaceLeft();
+            }
+            else if (Input.GetKeyDown("d"))
+            {
+                parent.FaceRight();
+            }
+            else if (Input.GetKeyDown("s"))
+            {
+                parent.FaceDown();
+            }
+            else if (Input.GetKeyDown("w"))
+            {
+                parent.FaceUp();
+            }
+        }
+        else
+        {
+
         }
     }
 

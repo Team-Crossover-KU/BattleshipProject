@@ -59,6 +59,28 @@ public class ShipController : MonoBehaviour
         shipLength = n;
     }
 
+    public void FaceRight()
+    {
+        transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
+    }
+
+    public void FaceUp()
+    {
+        transform.rotation = Quaternion.AngleAxis(90, Vector3.forward);
+    }
+
+    public void FaceLeft()
+    {
+        transform.rotation = Quaternion.AngleAxis(180, Vector3.forward);
+    }
+
+    public void FaceDown()
+    {
+        transform.rotation = Quaternion.AngleAxis(270, Vector3.forward);
+    }
+
+    
+    
     /**
     * Check.
     */
