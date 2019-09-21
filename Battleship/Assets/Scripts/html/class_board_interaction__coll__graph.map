@@ -1,5 +1,6 @@
 <map id="BoardInteraction" name="BoardInteraction">
-<area shape="rect" id="node1" title=" " alt="" coords="20,145,227,355"/>
+<area shape="rect" id="node1" title=" " alt="" coords="25,272,232,481"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,116,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="140,5,232,83"/>
+<area shape="rect" id="node4" href="$class_ship_part_controller.html" title=" " alt="" coords="65,132,192,209"/>
+<area shape="rect" id="node3" title=" " alt="" coords="216,132,308,209"/>
 </map>
