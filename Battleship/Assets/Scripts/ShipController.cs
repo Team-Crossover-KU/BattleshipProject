@@ -9,6 +9,10 @@ public class ShipController : MonoBehaviour
 {
     bool allPartsDestroyed = false;
     bool isSpawned = false;
+    bool partcheck = false;
+    public bool isMoving = false;
+    public bool shipReadyToPair = false;
+    public Vector3 startPos;
     public List<ShipPartController> parts;
     public int shipLength = 0;
     public GameObject shipPart;
@@ -31,8 +35,10 @@ public class ShipController : MonoBehaviour
         {
             Spawn();
             isSpawned = true;
+            startPos = transform.position;
         }
 
+        checkParts();
     }
 
     /**
@@ -84,8 +90,31 @@ public class ShipController : MonoBehaviour
     /**
     * Check.
     */
-    void checkParts()
+    public void checkParts()
     {
+        if (isMoving)
+        {
+            partcheck = true;
+            foreach (ShipPartController part in parts)
+            {
+                if (!part.partReadyToPair)
+                    partcheck = false;
+            }
+        }
+    }
+
+    public void AttemptBond()
+    {
+        if (partcheck)
+        {
+            shipReadyToPair = true;
+        }
+        else
+        {
+            transform.position = startPos;
+            transform.rotation = Quaternion.identity;
+        }
+        
 
     }
 

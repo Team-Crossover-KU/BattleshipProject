@@ -10,7 +10,9 @@ public class ShipPartController : MonoBehaviour
     Collider2D collide;
     ShipController parent;
     public bool hit = false;
-    public bool isMoving = false;
+    
+    public bool partReadyToPair = false;
+    
 
 
     /**
@@ -26,7 +28,7 @@ public class ShipPartController : MonoBehaviour
     */
     void Update()
     {
-        if (isMoving)
+        if (parent.isMoving)
         {
             transform.parent.transform.position = Input.mousePosition;
             if (Input.GetKeyDown("a"))
@@ -72,12 +74,13 @@ public class ShipPartController : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("TouchedShip");
-        isMoving = true;
+        parent.isMoving = true;
     }
 
     private void OnMouseUp()
     {
-        isMoving = false;
+        parent.isMoving = false;
+        parent.AttemptBond();
     }
     
 
@@ -86,6 +89,16 @@ public class ShipPartController : MonoBehaviour
     */
     private void OnTriggerEnter2D (Collider2D collision)
     {
-        
+        partReadyToPair = true;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        partReadyToPair = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        partReadyToPair = false;
     }
 }
