@@ -10,6 +10,7 @@ public class ShipPartController : MonoBehaviour
     Collider2D collide;
     ShipController parent;
     public bool hit = false;
+    public SpriteRenderer rend;
     
     public bool partReadyToPair = false;
     
@@ -21,6 +22,7 @@ public class ShipPartController : MonoBehaviour
     void Start()
     {
         parent = transform.parent.GetComponent<ShipController>();
+        rend = GetComponent<SpriteRenderer>();
     }
 
     /**

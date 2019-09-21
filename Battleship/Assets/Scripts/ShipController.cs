@@ -98,9 +98,17 @@ public class ShipController : MonoBehaviour
             foreach (ShipPartController part in parts)
             {
                 if (!part.partReadyToPair)
+                {
                     partcheck = false;
+                    part.rend.color = Color.red;
+                }
+                else
+                {
+                    part.rend.color = Color.green;
+                }
             }
         }
+        
     }
 
     public void AttemptBond()
@@ -114,6 +122,8 @@ public class ShipController : MonoBehaviour
             transform.position = startPos;
             transform.rotation = Quaternion.identity;
         }
+
+
         
 
     }

@@ -50,7 +50,7 @@ public class TeamController : MonoBehaviour
         {
             Ships.Add(Instantiate(ship, this.transform.position,Quaternion.identity,this.transform).GetComponent<ShipController>());
             Ships[i].transform.position = new Vector3(this.transform.position.x, 
-                                                      this.transform.position.y + i * 25, 
+                                                      this.transform.position.y + i * 30, 
                                                       this.transform.position.z);
             Ships[i].SetShipLength(i+1);
             Debug.Log(i);
