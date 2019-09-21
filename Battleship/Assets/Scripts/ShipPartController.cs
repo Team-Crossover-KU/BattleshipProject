@@ -91,6 +91,10 @@ public class ShipPartController : MonoBehaviour
     */
     private void OnTriggerEnter2D (Collider2D collision)
     {
+        if (parent.shipTeam == 1)
+        {
+
+        }
         partReadyToPair = true;
     }
 

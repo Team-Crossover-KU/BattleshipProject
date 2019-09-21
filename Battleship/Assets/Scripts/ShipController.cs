@@ -15,6 +15,7 @@ public class ShipController : MonoBehaviour
     public Vector3 startPos;
     public List<ShipPartController> parts;
     public int shipLength = 0;
+    public int shipTeam = 0;
     public GameObject shipPart;
 
     /**

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 23573378}
   m_Layer: 5
   m_Name: B8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,7 +285,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &23573379
 MonoBehaviour:
@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 25099361}
   m_Layer: 5
   m_Name: G2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 28823529}
   m_Layer: 5
   m_Name: H1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -647,7 +647,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &28823530
 MonoBehaviour:
@@ -756,7 +756,7 @@ GameObject:
   - component: {fileID: 42271385}
   m_Layer: 5
   m_Name: B2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,7 +1014,7 @@ GameObject:
   - component: {fileID: 51695637}
   m_Layer: 5
   m_Name: D6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &51695638
 MonoBehaviour:
@@ -1272,7 +1272,7 @@ GameObject:
   - component: {fileID: 61737606}
   m_Layer: 5
   m_Name: F6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1421,7 +1421,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &61737607
 MonoBehaviour:
@@ -1571,7 +1571,7 @@ GameObject:
   - component: {fileID: 94591491}
   m_Layer: 5
   m_Name: B7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1720,7 +1720,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &94591492
 MonoBehaviour:
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 122561240}
   m_Layer: 5
   m_Name: G8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1980,7 +1980,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &122561241
 MonoBehaviour:
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 131478305}
   m_Layer: 5
   m_Name: E7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2161,7 +2161,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &131478306
 MonoBehaviour:
@@ -2193,7 +2193,7 @@ GameObject:
   - component: {fileID: 132568278}
   m_Layer: 5
   m_Name: G1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2342,7 +2342,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &132568279
 MonoBehaviour:
@@ -2567,7 +2567,7 @@ GameObject:
   - component: {fileID: 143775066}
   m_Layer: 5
   m_Name: E8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2748,7 +2748,7 @@ GameObject:
   - component: {fileID: 202309094}
   m_Layer: 5
   m_Name: A6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2897,7 +2897,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &202309095
 MonoBehaviour:
@@ -2929,7 +2929,7 @@ GameObject:
   - component: {fileID: 227624494}
   m_Layer: 5
   m_Name: F1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3078,7 +3078,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &227624495
 MonoBehaviour:
@@ -3110,7 +3110,7 @@ GameObject:
   - component: {fileID: 230699111}
   m_Layer: 5
   m_Name: B1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3558,7 +3558,7 @@ GameObject:
   - component: {fileID: 261958541}
   m_Layer: 5
   m_Name: A3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3707,7 +3707,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &261958542
 MonoBehaviour:
@@ -3739,7 +3739,7 @@ GameObject:
   - component: {fileID: 266796203}
   m_Layer: 5
   m_Name: E2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3920,7 +3920,7 @@ GameObject:
   - component: {fileID: 279158272}
   m_Layer: 5
   m_Name: C5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4101,7 +4101,7 @@ GameObject:
   - component: {fileID: 286951759}
   m_Layer: 5
   m_Name: D1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4359,7 +4359,7 @@ GameObject:
   - component: {fileID: 298805716}
   m_Layer: 5
   m_Name: F5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4617,7 +4617,7 @@ GameObject:
   - component: {fileID: 318831316}
   m_Layer: 5
   m_Name: F7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4766,7 +4766,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &318831317
 MonoBehaviour:
@@ -4798,7 +4798,7 @@ GameObject:
   - component: {fileID: 320961037}
   m_Layer: 5
   m_Name: F8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4947,7 +4947,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &320961038
 MonoBehaviour:
@@ -4979,7 +4979,7 @@ GameObject:
   - component: {fileID: 322655768}
   m_Layer: 5
   m_Name: F1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5236,7 +5236,7 @@ GameObject:
   - component: {fileID: 452919349}
   m_Layer: 5
   m_Name: F7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5494,7 +5494,7 @@ GameObject:
   - component: {fileID: 457518186}
   m_Layer: 5
   m_Name: C5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5643,7 +5643,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &457518187
 MonoBehaviour:
@@ -5675,7 +5675,7 @@ GameObject:
   - component: {fileID: 461349148}
   m_Layer: 5
   m_Name: D3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5856,7 +5856,7 @@ GameObject:
   - component: {fileID: 466561505}
   m_Layer: 5
   m_Name: G7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6005,7 +6005,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &466561506
 MonoBehaviour:
@@ -6037,7 +6037,7 @@ GameObject:
   - component: {fileID: 514912270}
   m_Layer: 5
   m_Name: D4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6325,7 +6325,7 @@ GameObject:
   - component: {fileID: 544359373}
   m_Layer: 5
   m_Name: G5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6506,7 +6506,7 @@ GameObject:
   - component: {fileID: 545164686}
   m_Layer: 5
   m_Name: H8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6847,7 +6847,7 @@ GameObject:
   - component: {fileID: 568059073}
   m_Layer: 5
   m_Name: E8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6996,7 +6996,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &568059074
 MonoBehaviour:
@@ -7028,7 +7028,7 @@ GameObject:
   - component: {fileID: 587734438}
   m_Layer: 5
   m_Name: G8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7286,7 +7286,7 @@ GameObject:
   - component: {fileID: 592051566}
   m_Layer: 5
   m_Name: H3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7435,7 +7435,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &592051567
 MonoBehaviour:
@@ -7467,7 +7467,7 @@ GameObject:
   - component: {fileID: 603456398}
   m_Layer: 5
   m_Name: D8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7648,7 +7648,7 @@ GameObject:
   - component: {fileID: 605542780}
   m_Layer: 5
   m_Name: A2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7797,7 +7797,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &605542781
 MonoBehaviour:
@@ -7829,7 +7829,7 @@ GameObject:
   - component: {fileID: 635584254}
   m_Layer: 5
   m_Name: F2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8093,7 +8093,7 @@ GameObject:
   - component: {fileID: 644330073}
   m_Layer: 5
   m_Name: H1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8274,7 +8274,7 @@ GameObject:
   - component: {fileID: 676641354}
   m_Layer: 5
   m_Name: F3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8455,7 +8455,7 @@ GameObject:
   - component: {fileID: 682026314}
   m_Layer: 5
   m_Name: H4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8636,7 +8636,7 @@ GameObject:
   - component: {fileID: 698347678}
   m_Layer: 5
   m_Name: F8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8817,7 +8817,7 @@ GameObject:
   - component: {fileID: 698701300}
   m_Layer: 5
   m_Name: C7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8998,7 +8998,7 @@ GameObject:
   - component: {fileID: 703372385}
   m_Layer: 5
   m_Name: E2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9147,7 +9147,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &703372386
 MonoBehaviour:
@@ -9333,7 +9333,7 @@ GameObject:
   - component: {fileID: 714569925}
   m_Layer: 5
   m_Name: H2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9514,7 +9514,7 @@ GameObject:
   - component: {fileID: 732444270}
   m_Layer: 5
   m_Name: H3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9895,7 +9895,7 @@ GameObject:
   - component: {fileID: 763717335}
   m_Layer: 5
   m_Name: H2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10044,7 +10044,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &763717336
 MonoBehaviour:
@@ -10164,7 +10164,7 @@ GameObject:
   - component: {fileID: 781163173}
   m_Layer: 5
   m_Name: F4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10345,7 +10345,7 @@ GameObject:
   - component: {fileID: 794096985}
   m_Layer: 5
   m_Name: C1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10494,7 +10494,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &794096986
 MonoBehaviour:
@@ -10615,7 +10615,7 @@ GameObject:
   - component: {fileID: 804555749}
   m_Layer: 5
   m_Name: C7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10764,7 +10764,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &804555750
 MonoBehaviour:
@@ -10796,7 +10796,7 @@ GameObject:
   - component: {fileID: 807484753}
   m_Layer: 5
   m_Name: E4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10945,7 +10945,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &807484754
 MonoBehaviour:
@@ -10977,7 +10977,7 @@ GameObject:
   - component: {fileID: 809045687}
   m_Layer: 5
   m_Name: C1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11227,7 +11227,7 @@ GameObject:
   - component: {fileID: 820908193}
   m_Layer: 5
   m_Name: G4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11376,7 +11376,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &820908194
 MonoBehaviour:
@@ -11408,7 +11408,7 @@ GameObject:
   - component: {fileID: 831751884}
   m_Layer: 5
   m_Name: G5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11557,7 +11557,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &831751885
 MonoBehaviour:
@@ -11589,7 +11589,7 @@ GameObject:
   - component: {fileID: 840590045}
   m_Layer: 5
   m_Name: B5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11846,7 +11846,7 @@ GameObject:
   - component: {fileID: 857167460}
   m_Layer: 5
   m_Name: D4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11995,7 +11995,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &857167461
 MonoBehaviour:
@@ -12191,7 +12191,7 @@ GameObject:
   - component: {fileID: 862771816}
   m_Layer: 5
   m_Name: H4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12340,7 +12340,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &862771817
 MonoBehaviour:
@@ -12372,7 +12372,7 @@ GameObject:
   - component: {fileID: 871973869}
   m_Layer: 5
   m_Name: D7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12792,7 +12792,7 @@ GameObject:
   - component: {fileID: 899804815}
   m_Layer: 5
   m_Name: B8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12973,7 +12973,7 @@ GameObject:
   - component: {fileID: 931049998}
   m_Layer: 5
   m_Name: G6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13122,7 +13122,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &931049999
 MonoBehaviour:
@@ -13154,7 +13154,7 @@ GameObject:
   - component: {fileID: 947200660}
   m_Layer: 5
   m_Name: E3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13408,7 +13408,7 @@ GameObject:
   - component: {fileID: 957445208}
   m_Layer: 5
   m_Name: A5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13589,7 +13589,7 @@ GameObject:
   - component: {fileID: 967463868}
   m_Layer: 5
   m_Name: F6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13845,7 +13845,7 @@ GameObject:
   - component: {fileID: 975186160}
   m_Layer: 5
   m_Name: F5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13994,7 +13994,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &975186161
 MonoBehaviour:
@@ -14144,7 +14144,7 @@ GameObject:
   - component: {fileID: 1009291807}
   m_Layer: 5
   m_Name: C2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14293,7 +14293,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1009291808
 MonoBehaviour:
@@ -14325,7 +14325,7 @@ GameObject:
   - component: {fileID: 1009486752}
   m_Layer: 5
   m_Name: C3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14506,7 +14506,7 @@ GameObject:
   - component: {fileID: 1017954086}
   m_Layer: 5
   m_Name: A7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14687,7 +14687,7 @@ GameObject:
   - component: {fileID: 1019750726}
   m_Layer: 5
   m_Name: C2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14868,7 +14868,7 @@ GameObject:
   - component: {fileID: 1026188472}
   m_Layer: 5
   m_Name: E5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15049,7 +15049,7 @@ GameObject:
   - component: {fileID: 1026317490}
   m_Layer: 5
   m_Name: D1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15198,7 +15198,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1026317491
 MonoBehaviour:
@@ -15498,7 +15498,7 @@ GameObject:
   - component: {fileID: 1088488400}
   m_Layer: 5
   m_Name: D5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15887,7 +15887,7 @@ GameObject:
   - component: {fileID: 1111118260}
   m_Layer: 5
   m_Name: E3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16036,7 +16036,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1111118261
 MonoBehaviour:
@@ -16068,7 +16068,7 @@ GameObject:
   - component: {fileID: 1119671161}
   m_Layer: 5
   m_Name: G7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16249,7 +16249,7 @@ GameObject:
   - component: {fileID: 1124620361}
   m_Layer: 5
   m_Name: D2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16398,7 +16398,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1124620362
 MonoBehaviour:
@@ -16430,7 +16430,7 @@ GameObject:
   - component: {fileID: 1126618402}
   m_Layer: 5
   m_Name: G1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16806,7 +16806,7 @@ GameObject:
   - component: {fileID: 1142840923}
   m_Layer: 5
   m_Name: C8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16987,7 +16987,7 @@ GameObject:
   - component: {fileID: 1157565200}
   m_Layer: 5
   m_Name: B2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17136,7 +17136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1157565201
 MonoBehaviour:
@@ -17308,7 +17308,7 @@ GameObject:
   - component: {fileID: 1193896574}
   m_Layer: 5
   m_Name: B5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17457,7 +17457,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1193896575
 MonoBehaviour:
@@ -17484,6 +17484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Team1
+      objectReference: {fileID: 0}
+    - target: {fileID: 650811732520273546, guid: 07e8e81dd78beff4e8d423eb32703fc0,
+        type: 3}
+      propertyPath: team
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
@@ -17558,7 +17563,7 @@ GameObject:
   - component: {fileID: 1219898973}
   m_Layer: 5
   m_Name: A1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17825,7 +17830,7 @@ GameObject:
   - component: {fileID: 1223090402}
   m_Layer: 5
   m_Name: G3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17974,7 +17979,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1223090403
 MonoBehaviour:
@@ -18006,7 +18011,7 @@ GameObject:
   - component: {fileID: 1224752080}
   m_Layer: 5
   m_Name: E5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18155,7 +18160,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1224752081
 MonoBehaviour:
@@ -18187,7 +18192,7 @@ GameObject:
   - component: {fileID: 1232994808}
   m_Layer: 5
   m_Name: D5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18336,7 +18341,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1232994809
 MonoBehaviour:
@@ -18368,7 +18373,7 @@ GameObject:
   - component: {fileID: 1257292426}
   m_Layer: 5
   m_Name: H5
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18549,7 +18554,7 @@ GameObject:
   - component: {fileID: 1259524184}
   m_Layer: 5
   m_Name: G3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18998,7 +19003,7 @@ GameObject:
   - component: {fileID: 1305729666}
   m_Layer: 5
   m_Name: G6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19179,7 +19184,7 @@ GameObject:
   - component: {fileID: 1321435423}
   m_Layer: 5
   m_Name: A6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19360,7 +19365,7 @@ GameObject:
   - component: {fileID: 1343206996}
   m_Layer: 5
   m_Name: C4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19509,7 +19514,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1343206997
 MonoBehaviour:
@@ -19541,7 +19546,7 @@ GameObject:
   - component: {fileID: 1358924607}
   m_Layer: 5
   m_Name: A4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19722,7 +19727,7 @@ GameObject:
   - component: {fileID: 1365961405}
   m_Layer: 5
   m_Name: E4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19903,7 +19908,7 @@ GameObject:
   - component: {fileID: 1414207344}
   m_Layer: 5
   m_Name: A8
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20084,7 +20089,7 @@ GameObject:
   - component: {fileID: 1415623749}
   m_Layer: 5
   m_Name: E1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20233,7 +20238,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1415623750
 MonoBehaviour:
@@ -20265,7 +20270,7 @@ GameObject:
   - component: {fileID: 1417429686}
   m_Layer: 5
   m_Name: C8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20414,7 +20419,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1417429687
 MonoBehaviour:
@@ -20446,7 +20451,7 @@ GameObject:
   - component: {fileID: 1428422817}
   m_Layer: 5
   m_Name: D7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20595,7 +20600,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1428422818
 MonoBehaviour:
@@ -20627,7 +20632,7 @@ GameObject:
   - component: {fileID: 1434731619}
   m_Layer: 5
   m_Name: D6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20808,7 +20813,7 @@ GameObject:
   - component: {fileID: 1450932547}
   m_Layer: 5
   m_Name: F2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20957,7 +20962,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1450932548
 MonoBehaviour:
@@ -21328,7 +21333,7 @@ GameObject:
   - component: {fileID: 1521916092}
   m_Layer: 5
   m_Name: C3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21477,7 +21482,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1521916093
 MonoBehaviour:
@@ -21521,7 +21526,7 @@ GameObject:
   - component: {fileID: 1554667711}
   m_Layer: 5
   m_Name: H6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21702,7 +21707,7 @@ GameObject:
   - component: {fileID: 1563912741}
   m_Layer: 5
   m_Name: E7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22067,6 +22072,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Team2
       objectReference: {fileID: 0}
+    - target: {fileID: 650811732520273546, guid: 07e8e81dd78beff4e8d423eb32703fc0,
+        type: 3}
+      propertyPath: team
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5273550604471418449, guid: 07e8e81dd78beff4e8d423eb32703fc0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22140,7 +22150,7 @@ GameObject:
   - component: {fileID: 1626681342}
   m_Layer: 5
   m_Name: A4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22289,7 +22299,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1626681343
 MonoBehaviour:
@@ -22609,7 +22619,7 @@ GameObject:
   - component: {fileID: 1693396329}
   m_Layer: 5
   m_Name: D2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22908,7 +22918,7 @@ GameObject:
   - component: {fileID: 1711104077}
   m_Layer: 5
   m_Name: H7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23089,7 +23099,7 @@ GameObject:
   - component: {fileID: 1712020150}
   m_Layer: 5
   m_Name: H5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23238,7 +23248,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1712020151
 MonoBehaviour:
@@ -23270,7 +23280,7 @@ GameObject:
   - component: {fileID: 1716081889}
   m_Layer: 5
   m_Name: E6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23451,7 +23461,7 @@ GameObject:
   - component: {fileID: 1726882029}
   m_Layer: 5
   m_Name: A1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23600,7 +23610,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1726882030
 MonoBehaviour:
@@ -23632,7 +23642,7 @@ GameObject:
   - component: {fileID: 1755725675}
   m_Layer: 5
   m_Name: D3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23781,7 +23791,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1755725676
 MonoBehaviour:
@@ -23922,7 +23932,7 @@ GameObject:
   - component: {fileID: 1771438298}
   m_Layer: 5
   m_Name: H7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24071,7 +24081,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1771438299
 MonoBehaviour:
@@ -24103,7 +24113,7 @@ GameObject:
   - component: {fileID: 1788153714}
   m_Layer: 5
   m_Name: F3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24252,7 +24262,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1788153715
 MonoBehaviour:
@@ -24284,7 +24294,7 @@ GameObject:
   - component: {fileID: 1790793711}
   m_Layer: 5
   m_Name: G2 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24433,7 +24443,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1790793712
 MonoBehaviour:
@@ -24465,7 +24475,7 @@ GameObject:
   - component: {fileID: 1817824744}
   m_Layer: 5
   m_Name: B7
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24723,7 +24733,7 @@ GameObject:
   - component: {fileID: 1823802616}
   m_Layer: 5
   m_Name: B6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24904,7 +24914,7 @@ GameObject:
   - component: {fileID: 1826463500}
   m_Layer: 5
   m_Name: F4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25053,7 +25063,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1826463501
 MonoBehaviour:
@@ -25085,7 +25095,7 @@ GameObject:
   - component: {fileID: 1827175439}
   m_Layer: 5
   m_Name: H8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25234,7 +25244,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1827175440
 MonoBehaviour:
@@ -25343,7 +25353,7 @@ GameObject:
   - component: {fileID: 1852497669}
   m_Layer: 5
   m_Name: E1
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25524,7 +25534,7 @@ GameObject:
   - component: {fileID: 1853433017}
   m_Layer: 5
   m_Name: A3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25705,7 +25715,7 @@ GameObject:
   - component: {fileID: 1864350301}
   m_Layer: 5
   m_Name: A7 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25854,7 +25864,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1864350302
 MonoBehaviour:
@@ -26004,7 +26014,7 @@ GameObject:
   - component: {fileID: 1894664484}
   m_Layer: 5
   m_Name: A2
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26303,7 +26313,7 @@ GameObject:
   - component: {fileID: 1931997640}
   m_Layer: 5
   m_Name: C6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26452,7 +26462,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1931997641
 MonoBehaviour:
@@ -26484,7 +26494,7 @@ GameObject:
   - component: {fileID: 1937443794}
   m_Layer: 5
   m_Name: B4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26665,7 +26675,7 @@ GameObject:
   - component: {fileID: 1944853003}
   m_Layer: 5
   m_Name: E6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26814,7 +26824,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1944853004
 MonoBehaviour:
@@ -26846,7 +26856,7 @@ GameObject:
   - component: {fileID: 1945893704}
   m_Layer: 5
   m_Name: A5 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26995,7 +27005,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1945893705
 MonoBehaviour:
@@ -27103,7 +27113,7 @@ GameObject:
   - component: {fileID: 1959525150}
   m_Layer: 5
   m_Name: G4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27284,7 +27294,7 @@ GameObject:
   - component: {fileID: 1980054074}
   m_Layer: 5
   m_Name: C4
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27465,7 +27475,7 @@ GameObject:
   - component: {fileID: 1990411251}
   m_Layer: 5
   m_Name: B3
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27646,7 +27656,7 @@ GameObject:
   - component: {fileID: 1997683024}
   m_Layer: 5
   m_Name: A8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27795,7 +27805,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1997683025
 MonoBehaviour:
@@ -27827,7 +27837,7 @@ GameObject:
   - component: {fileID: 2034211168}
   m_Layer: 5
   m_Name: C6
-  m_TagString: Untagged
+  m_TagString: P1BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28008,7 +28018,7 @@ GameObject:
   - component: {fileID: 2040528582}
   m_Layer: 5
   m_Name: D8 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28157,7 +28167,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2040528583
 MonoBehaviour:
@@ -28189,7 +28199,7 @@ GameObject:
   - component: {fileID: 2050436978}
   m_Layer: 5
   m_Name: B6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28338,7 +28348,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2050436979
 MonoBehaviour:
@@ -28370,7 +28380,7 @@ GameObject:
   - component: {fileID: 2057085477}
   m_Layer: 5
   m_Name: H6 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28519,7 +28529,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2057085478
 MonoBehaviour:
@@ -28822,7 +28832,7 @@ GameObject:
   - component: {fileID: 2117018948}
   m_Layer: 5
   m_Name: B4 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28971,7 +28981,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2117018949
 MonoBehaviour:
@@ -29003,7 +29013,7 @@ GameObject:
   - component: {fileID: 2122746209}
   m_Layer: 5
   m_Name: B1 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29152,7 +29162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2122746210
 MonoBehaviour:
@@ -29184,7 +29194,7 @@ GameObject:
   - component: {fileID: 2133826536}
   m_Layer: 5
   m_Name: B3 (1)
-  m_TagString: Untagged
+  m_TagString: P2BoardOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29333,7 +29343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 50}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2133826537
 MonoBehaviour:

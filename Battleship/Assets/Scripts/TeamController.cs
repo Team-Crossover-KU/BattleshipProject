@@ -11,6 +11,7 @@ public class TeamController : MonoBehaviour
     public int numberOfShips;
     bool isNumShipsSelected = false;
     public GameObject ship;
+    public int team = 0;
 
     /**
     * Start is called before the first frame update.
@@ -53,6 +54,7 @@ public class TeamController : MonoBehaviour
                                                       this.transform.position.y + i * 30, 
                                                       this.transform.position.z);
             Ships[i].SetShipLength(i+1);
+            Ships[i].shipTeam = team;
             Debug.Log(i);
         }
     }
