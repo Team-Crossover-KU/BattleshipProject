@@ -14,6 +14,7 @@ public class TeamController : MonoBehaviour
     public bool loseCheck = false;
     public bool placeCheck = false;
     public int team = 0;
+    public int shipsLeft = 0;
 
     /**
     * Start is called before the first frame update.
@@ -32,6 +33,7 @@ public class TeamController : MonoBehaviour
         {
             spawnShips(numberOfShips);
             isNumShipsSelected = true;
+            shipsLeft = numberOfShips;
         }
     }
 
@@ -63,14 +65,17 @@ public class TeamController : MonoBehaviour
     public void checkForLoss()
     {
         loseCheck = true;
+        shipsLeft = 0;
         foreach (ShipController ship in Ships)
         {
             if (!ship.destoryCheck)
             {
                 loseCheck = false;
-
+                shipsLeft++;
             }
         }
+
+        
     }
 
     public void disappearShips()
@@ -101,6 +106,7 @@ public class TeamController : MonoBehaviour
             }
         }
     }
+
 
     /**
     * 
