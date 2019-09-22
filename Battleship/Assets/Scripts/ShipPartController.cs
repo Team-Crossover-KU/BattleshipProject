@@ -72,14 +72,6 @@ public class ShipPartController : MonoBehaviour
         hit = true;
         parent.hitCheck();
     }
-
-    /**
-    * 
-    */
-    private void ResetPos()
-    {
-
-    }
     
     
     private void OnMouseDown()
