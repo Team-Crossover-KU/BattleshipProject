@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hit_96',['Hit',['../class_ship_part_controller.html#a78fb913c2aba0151fb9dbabde78d9d7e',1,'ShipPartController']]],
-  ['hitcheck_97',['hitCheck',['../class_ship_controller.html#ad2ef31f253c2f3f7dc4c89ff747682f5',1,'ShipController']]]
+  ['gamereset_104',['GameReset',['../class_canvas_script.html#a494f3b3939e2e0d572c8859c4e853800',1,'CanvasScript']]]
 ];

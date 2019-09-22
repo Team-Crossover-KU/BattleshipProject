@@ -1,5 +1,5 @@
 <map id="ShipController" name="ShipController">
-<area shape="rect" id="node1" title=" " alt="" coords="5,345,137,628"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,375,137,687"/>
 <area shape="rect" id="node2" title=" " alt="" coords="31,5,141,83"/>
-<area shape="rect" id="node3" href="$class_team_controller.html" title=" " alt="" coords="88,132,241,283"/>
+<area shape="rect" id="node3" href="$class_team_controller.html" title=" " alt="" coords="88,132,241,312"/>
 </map>

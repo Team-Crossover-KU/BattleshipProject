@@ -109,12 +109,12 @@ Collaboration diagram for BoardInteraction:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_board_interaction__coll__graph.png" border="0" usemap="#_board_interaction_coll__map" alt="Collaboration graph"/></div>
 <map name="_board_interaction_coll__map" id="_board_interaction_coll__map">
-<area shape="rect" title=" " alt="" coords="5,904,212,1113"/>
+<area shape="rect" title=" " alt="" coords="5,963,212,1172"/>
 <area shape="rect" title=" " alt="" coords="27,5,137,83"/>
-<area shape="rect" href="class_ship_part_controller.html" title=" " alt="" coords="43,691,174,841"/>
-<area shape="rect" href="class_ship_controller.html" title=" " alt="" coords="95,345,227,628"/>
-<area shape="rect" href="class_team_controller.html" title=" " alt="" coords="145,132,299,283"/>
-<area shape="rect" title=" " alt="" coords="199,727,291,805"/>
+<area shape="rect" href="class_ship_part_controller.html" title=" " alt="" coords="43,749,174,900"/>
+<area shape="rect" href="class_ship_controller.html" title=" " alt="" coords="95,375,227,687"/>
+<area shape="rect" href="class_team_controller.html" title=" " alt="" coords="145,132,299,312"/>
+<area shape="rect" title=" " alt="" coords="199,786,291,863"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -166,7 +166,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Separate script for the buttons on the Player1 Board to place hit or miss sprites on the respected spaces. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>: On-click function for the array of buttons that make up the battleship grid for Player1. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: On-click places a checkmark to let the user know which coordinate they currently have picked on the Player1 battleship grid. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>Num is the index of the button pressed on-click in spacesAvailableBoard1 to set the sprite to a checkmark. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 
 </div>
 </div>
@@ -185,7 +193,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Separate script for the buttons on the Player2 Board to place hit or miss sprites on the respected spaces. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>: On-click function for the array of buttons that make up the battleship grid for Player2. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: On-click places a checkmark to let the user know which coordinate they currently have picked on the Player2 battleship grid. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>Num is the index of the button pressed on-click in spacesAvailableBoard2 to set the sprite to a checkmark. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 
 </div>
 </div>
@@ -203,6 +219,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>: A player presses the 'Confirm' button on the ship selection panel. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: Sets both boards to not be interactive, making sure players don't press buttons while on the ship selection panel. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 
 </div>
 </div>
@@ -220,6 +245,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>: A player presses the 'Fire' button </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: A player, depending on whose turn it is, locks in their choice to fire, turning the temporary checkmark into a 'Miss' or 'Hit' sprite on the button they chose to attack. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 
 </div>
 </div>
@@ -237,6 +271,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>: A player presses the 'Start' button after setting their ships. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: Sets Player1's board to interactive and Player2's board to NOT be interactive, forcing whoever is playing as Player1 to go first. This also sets the buttons' sprites to nothing. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 
 </div>
 </div>
@@ -254,6 +297,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>: A player presses the 'Yes' button to exit to the main menu. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: The buttons' sprites get reset to nothing, sets the buttons to be interactable for the next game. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 
 </div>
 </div>
@@ -357,7 +409,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_board_interaction_8cs.html">BoardInteraction.cs</a></li>
+<li>Fall 2019/EECS448 Software Engineering/BattleshipProject/Battleship/Assets/Scripts/<a class="el" href="_board_interaction_8cs.html">BoardInteraction.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
