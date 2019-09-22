@@ -12,7 +12,7 @@ public class CanvasScript : MonoBehaviour
 {
     int numShips;
     public Dropdown shipSelector;
-    public UnityEngine.UI.Button confirmButton, startButton, switchButton, returnButton, fireButton, revealShipsButton, pauseButton, continueButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
+    public UnityEngine.UI.Button confirmButton, startButton, switchButton, returnButton, fireButton, revealShipsButton, pauseButton, continueButton, resumeButton, quitButton, yesButton, noButton, mainMenuButton;
     public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, battleshipGrids, switchPanel, pauseMenu, gameOverMenu, confirmationPanel, gameController;
     public GameObject player1Board, player2Board;
     public TeamController Team1;
@@ -53,8 +53,7 @@ public class CanvasScript : MonoBehaviour
         noButton.onClick.AddListener(PauseGame);
 
         // Game Over Menu Button Listener Events.
-        //replayButton.onClick.AddListener(BeginShipPlacement);
-        //mainMenuButton.onClick.AddListener(QuitGame);
+        mainMenuButton.onClick.AddListener(QuitGame);
     }
 
     /**
@@ -65,10 +64,23 @@ public class CanvasScript : MonoBehaviour
         if (Team1.placeCheck == true && Team2.placeCheck == true)
         {
             startButton.interactable = true;
+            Team1.checkForLoss();
+            Team2.checkForLoss();
         }
         else
         {
             startButton.interactable = false;
+        }
+
+        
+        if (Team1.loseCheck == true || Team2.loseCheck == true)
+        {
+            shipSelectorPanel.SetActive(false);
+            gameUIPanel.SetActive(false);
+            battleshipGrids.SetActive(false);
+            switchPanel.SetActive(false);
+            pauseMenu.SetActive(false);
+            gameOverMenu.SetActive(true);
         }
     }
 
@@ -109,6 +121,7 @@ public class CanvasScript : MonoBehaviour
         shipSelectorPanel.SetActive(false);
         shipPlacementPanel.SetActive(true);
         battleshipGrids.SetActive(true);
+        gameOverMenu.SetActive(false);
         Team1.SetNumberOfShips(numShips);
         Team2.SetNumberOfShips(numShips);
     }
@@ -216,8 +229,7 @@ public class CanvasScript : MonoBehaviour
         confirmationPanel.SetActive(false);
         quitButton.interactable = true;
         resumeButton.interactable = true;
-        //replayButton.interactable = true;
-        //mainMenuButton.interactable = true;
+        mainMenuButton.interactable = true;
     }
 
     /**
@@ -243,8 +255,7 @@ public class CanvasScript : MonoBehaviour
         confirmationPanel.SetActive(true);
         quitButton.interactable = false;
         resumeButton.interactable = false;
-        //replayButton.interactable = false;
-        //mainMenuButton.interactable = false;
+        mainMenuButton.interactable = false;
     }
 
     /**
@@ -260,8 +271,7 @@ public class CanvasScript : MonoBehaviour
         startButton.interactable = false;
         quitButton.interactable = true;
         resumeButton.interactable = true;
-        //replayButton.interactable = true;
-        //mainMenuButton.interactable = true;
+        mainMenuButton.interactable = true;
 
         player1Board.GetComponent<Image>().enabled = false;
         player2Board.GetComponent<Image>().enabled = true;

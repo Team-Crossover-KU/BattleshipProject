@@ -292,8 +292,6 @@ public class BoardInteraction : MonoBehaviour
             player2Board.GetComponent<Image>().enabled = false;
             spacesAvailableBoard1[i].image.sprite = null;
             spacesAvailableBoard2[i].image.sprite = null;
-
-
         }
     }
 }
