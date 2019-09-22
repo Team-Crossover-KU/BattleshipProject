@@ -153,7 +153,7 @@ public class CanvasScript : MonoBehaviour
     /**
     * @pre: Ship Placement Menu must be set active.
     * @pre: SwitchPlayers Method will listen for the Switch Button onClick event.
-    * @post: SwitchPlayers Method will switch the image enabling of the playerboards.
+    * @post: SwitchPlayers Method will switch players during the Ship Placement Menu.
     * @param: None.
     * @return: None. 
     */
@@ -191,9 +191,9 @@ public class CanvasScript : MonoBehaviour
 
     /**
     * @pre: Ship Placement menu must be active.
-    * @pre: DisplayShips Method will listen for the Switch Button onClick event.
+    * @pre: DisplayShips Method will listen for the Reveal Ships Button onClick event.
     * @post: DisplayShips Method will allow the players to toggle the visibility of the players ships.
-    * @post: Player Board images should be enable.
+    * @post: Player Board images should be enabled for the opposing player.
     * @param: None.
     * @return: None.
     */
@@ -276,7 +276,6 @@ public class CanvasScript : MonoBehaviour
         confirmationPanel.SetActive(false);
         quitButton.interactable = true;
         resumeButton.interactable = true;
-        mainMenuButton.interactable = true;
     }
 
     /**
@@ -306,7 +305,6 @@ public class CanvasScript : MonoBehaviour
         confirmationPanel.SetActive(true);
         quitButton.interactable = false;
         resumeButton.interactable = false;
-        mainMenuButton.interactable = false;
     }
 
     /**
@@ -322,7 +320,6 @@ public class CanvasScript : MonoBehaviour
         confirmButton.interactable = false;
         quitButton.interactable = true;
         resumeButton.interactable = true;
-        mainMenuButton.interactable = true;
 
         player1Board.GetComponent<Image>().enabled = false;
         player1PlacmentMessage.SetActive(true);
