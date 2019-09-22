@@ -29,7 +29,10 @@ public class ShipPartController : MonoBehaviour
     }
 
     /**
-    * Update is called once per frame.
+    * @pre Update is called once per frame.
+    * @post If ship is moving, check for WASD input and rotate ship accordingly.
+    * @param none 
+    * @return none
     */
     void Update()
     {
