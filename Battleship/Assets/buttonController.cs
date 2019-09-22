@@ -35,13 +35,13 @@ public class buttonController : MonoBehaviour
         if (collision.gameObject.GetComponent<ShipPartController>().partTeam == buttonTeam
             && collision.gameObject.GetComponent<ShipPartController>().parent.shipReadyToPair)
         {
+            Debug.Log(collision);
             target = collision.gameObject.GetComponent<ShipPartController>();
             this.tag = "Closed";
         }
         else
         {
-            Debug.Log(collision.gameObject.GetComponent<ShipPartController>().partTeam);
-            Debug.Log(collision.gameObject.GetComponent<ShipPartController>().parent.shipReadyToPair);
+
         }
         
     }

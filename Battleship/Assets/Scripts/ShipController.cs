@@ -161,6 +161,7 @@ public class ShipController : MonoBehaviour
             {
                 part.bound = true;
                 part.bondTarget.tag = "Closed";
+                part.bondTarget.target = part;
                 team.checkPlacement();
             }
         }
