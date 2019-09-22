@@ -32,7 +32,6 @@ public class TeamController : MonoBehaviour
             spawnShips(numberOfShips);
             isNumShipsSelected = true;
         }
-
     }
 
     /**
@@ -73,11 +72,24 @@ public class TeamController : MonoBehaviour
         }
     }
 
+    public void disappearShips()
+    {
+        foreach (ShipController ship in Ships)
+        {
+            ship.disappear();
+        }
+    }
+
+    public void appearShips()
+    {
+        foreach (ShipController ship in Ships)
+        {
+            ship.appear();
+        }
+    }
+
     /**
     * 
     */
-    bool allShipsDestoryed()
-    {
-        return false;
-    }
+
 }

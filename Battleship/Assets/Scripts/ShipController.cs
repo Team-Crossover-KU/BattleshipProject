@@ -118,6 +118,22 @@ public class ShipController : MonoBehaviour
         
     }
 
+    public void disappear()
+    {
+        foreach (ShipPartController part in parts)
+        {
+            part.rend.enabled = false;
+        }
+    }
+
+    public void appear()
+    {
+        foreach (ShipPartController part in parts)
+        {
+            part.rend.enabled = true;
+        }
+    }
+
     public void hitCheck()
     {
         destoryCheck = true;
@@ -152,9 +168,6 @@ public class ShipController : MonoBehaviour
             transform.position = startPos;
             transform.rotation = Quaternion.identity;
         }
-
-
-        
 
     }
 
