@@ -54,6 +54,7 @@ public class ShipController : MonoBehaviour
             parts[i].transform.position = new Vector3(this.transform.position.x + i * parts[i].transform.localScale.x, 
                                                       this.transform.position.y, 
                                                       this.transform.position.z);
+            parts[i].partTeam = shipTeam;
             Debug.Log(i);
         }
     }

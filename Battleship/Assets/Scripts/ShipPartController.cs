@@ -8,9 +8,10 @@ using UnityEngine;
 public class ShipPartController : MonoBehaviour
 {
     Collider2D collide;
-    ShipController parent;
+    public ShipController parent;
     public bool hit = false;
     public SpriteRenderer rend;
+    public int partTeam;
     
     public bool partReadyToPair = false;
     
@@ -75,8 +76,12 @@ public class ShipPartController : MonoBehaviour
     
     private void OnMouseDown()
     {
-        Debug.Log("TouchedShip");
-        parent.isMoving = true;
+        if (!parent.shipReadyToPair)
+        {
+            Debug.Log("TouchedShip");
+            parent.isMoving = true;
+        }
+
     }
 
     private void OnMouseUp()
@@ -91,20 +96,35 @@ public class ShipPartController : MonoBehaviour
     */
     private void OnTriggerEnter2D (Collider2D collision)
     {
-        if (parent.shipTeam == 1)
+        if (collision.tag == "Open")
         {
-
+            if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
+            {
+                partReadyToPair = true;
+            }
         }
-        partReadyToPair = true;
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        partReadyToPair = true;
+        if (collision.tag == "Open")
+        {
+            if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
+            {
+                partReadyToPair = true;
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        partReadyToPair = false;
+        //if (collision.tag == "Open")
+        {
+            //if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
+            {
+                partReadyToPair = false;
+            }
+        }
     }
 }

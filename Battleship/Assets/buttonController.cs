@@ -6,6 +6,7 @@ public class buttonController : MonoBehaviour
 {
     public ShipPartController target;
     public Collider2D collide;
+    public int buttonTeam;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +29,16 @@ public class buttonController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("Something touching the board");
-        if (collision.gameObject.GetComponent<ShipPartController>() != null)
-        target = collision.gameObject.GetComponent<ShipPartController>();
+        if (collision.gameObject.GetComponent<ShipPartController>().partTeam == buttonTeam 
+            && this.tag == "Open"
+            && collision.gameObject.GetComponent<ShipPartController>().parent.shipReadyToPair)
+        {
+            target = collision.gameObject.GetComponent<ShipPartController>();
+            this.tag = "Closed";
+        }
+        
     }
 }

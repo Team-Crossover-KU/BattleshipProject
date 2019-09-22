@@ -6,8 +6,8 @@ TagManager:
   tags:
   - ShipPlacementPannel
   - ShipSelectorPanel
-  - P1BoardOpen
-  - P2BoardOpen
+  - Open
+  - Closed
   layers:
   - Default
   - TransparentFX
