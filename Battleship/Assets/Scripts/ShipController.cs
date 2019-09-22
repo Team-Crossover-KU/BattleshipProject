@@ -21,7 +21,10 @@ public class ShipController : MonoBehaviour
     public GameObject shipPart;
 
     /**
-    * Start is called before the first frame update.
+    * @pre Start is called before the first frame update
+    * @post Set the transform of the TeamController to the parent's TeamController
+    * @param None
+    * @return None
     */
     void Start()
     {
@@ -32,7 +35,10 @@ public class ShipController : MonoBehaviour
     }
 
     /**
-    * Update is called once per frame.
+    * @pre Update is called once per frame.
+    * @post Spawn correct number of ships of the correct size if not spawned
+    * @param None
+    * @return None
     */
     void Update()
     {
@@ -48,7 +54,10 @@ public class ShipController : MonoBehaviour
     }
 
     /**
-    * for n length, spawn ship parts 
+    * @pre Called by Update() when not all ships are spawned
+    * @post For n length, spawn ship parts 
+    * @param None
+    * @return None
     */
     void Spawn()
     {
@@ -65,38 +74,67 @@ public class ShipController : MonoBehaviour
     }
 
     /**
-    * setter for ship length.
-    */
+     * @pre Ship must exist
+     * @post Sets ship length.
+     * @param int n - length of the ship
+     * @return None
+     */
     public void SetShipLength(int n)
     {
         shipLength = n;
     }
 
+    /**
+     * @pre Ship nmust exist
+     * @post Rotates the ship to face right
+     * @param None
+     * @return None
+     */
     public void FaceRight()
     {
         transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
     }
 
+    /**
+     * @pre Ship must exist
+     * @post Rotates the ship to face up
+     * @param None
+     * @return None
+     */
     public void FaceUp()
     {
         transform.rotation = Quaternion.AngleAxis(90, Vector3.forward);
     }
 
+    /**
+     * @pre Ship must exist
+     * @post Rotates the ship to face left
+     * @param None 
+     * @return None
+     */
     public void FaceLeft()
     {
         transform.rotation = Quaternion.AngleAxis(180, Vector3.forward);
     }
 
+    /**
+     * @pre Ship must exist
+     * @post Rotates the ship to face down
+     * @param None
+     * @return None
+     */
     public void FaceDown()
     {
         transform.rotation = Quaternion.AngleAxis(270, Vector3.forward);
     }
 
-    
-    
     /**
-    * Check.
-    */
+     * @pre Ship must exist
+     * @post Checks each part of the ship to see if moving and renders 
+     * green/red depending on whether or not they're in valid spots.
+     * @param None
+     * @return None
+     */
     public void checkParts()
     {
         if (isMoving)
@@ -123,6 +161,12 @@ public class ShipController : MonoBehaviour
         
     }
 
+    /**
+     * @pre Ship must exist - assumes thip part is visible
+     * @post Disables the ship part rendering to "dissapear the part"
+     * @param None 
+     * @return None
+     */
     public void disappear()
     {
         foreach (ShipPartController part in parts)
@@ -131,6 +175,12 @@ public class ShipController : MonoBehaviour
         }
     }
 
+    /**
+     * @pre Ship must exist - assumes ship part is not visible
+     * @post Renders the ship part.
+     * @param None
+     * @return None
+     */
     public void appear()
     {
         foreach (ShipPartController part in parts)
@@ -139,6 +189,12 @@ public class ShipController : MonoBehaviour
         }
     }
 
+    /**
+     * @pre Ship part must exist
+     * @post Checks each part of the ship for their individual hit flags, checks for a while destroyed ship, check for all ships lost.
+     * @param None
+     * @return None
+     */
     public void hitCheck()
     {
         destoryCheck = true;
@@ -157,6 +213,12 @@ public class ShipController : MonoBehaviour
         }
     }
 
+    /**
+     * @pre Ship was placed with mouse on board.
+     * @post Attempts to bond the ship to the game board in valid location
+     * @param None
+     * @return None
+     */
     public void AttemptBond()
     {
         if (partCheck)
