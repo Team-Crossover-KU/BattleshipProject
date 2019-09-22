@@ -100,7 +100,7 @@ Inheritance diagram for CanvasScript:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_canvas_script__inherit__graph.png" border="0" usemap="#_canvas_script_inherit__map" alt="Inheritance graph"/></div>
 <map name="_canvas_script_inherit__map" id="_canvas_script_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,144,311"/>
+<area shape="rect" title=" " alt="" coords="5,131,144,325"/>
 <area shape="rect" title=" " alt="" coords="19,5,130,83"/>
 </map>
 </div>
@@ -109,10 +109,10 @@ Collaboration diagram for CanvasScript:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_canvas_script__coll__graph.png" border="0" usemap="#_canvas_script_coll__map" alt="Collaboration graph"/></div>
 <map name="_canvas_script_coll__map" id="_canvas_script_coll__map">
-<area shape="rect" title=" " alt="" coords="70,389,209,525"/>
+<area shape="rect" title=" " alt="" coords="70,419,209,569"/>
 <area shape="rect" title=" " alt="" coords="5,5,116,83"/>
-<area shape="rect" href="class_team_controller.html" title=" " alt="" coords="63,132,216,312"/>
-<area shape="rect" title=" " alt="" coords="240,183,332,261"/>
+<area shape="rect" href="class_team_controller.html" title=" " alt="" coords="63,132,216,341"/>
+<area shape="rect" title=" " alt="" coords="240,198,332,275"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70a440038707f7d44d9d80b982951974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a494f3b3939e2e0d572c8859c4e853800"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas_script.html#a494f3b3939e2e0d572c8859c4e853800">GameReset</a> ()</td></tr>
 <tr class="separator:a494f3b3939e2e0d572c8859c4e853800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ca0ec658c22a30f63577a8d0f3f9f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas_script.html#a68ca0ec658c22a30f63577a8d0f3f9f1">RestartGame</a> ()</td></tr>
+<tr class="separator:a68ca0ec658c22a30f63577a8d0f3f9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -155,10 +157,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section pre"><dt>Precondition</dt><dd>: GameReset method will first be called by start to begin Battleship Game. </dd>
-<dd>
-: GameReset method will listen for an onClick event from the Yes Button. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>: GameReset method will start/restart the game at the Ship Selection menu on either yesButton(dot)onClick or at the start of the program. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>: GameReset method will first be called by start to begin Battleship Game. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: GameReset method will start the game at the Ship Selection menu at the start of the program. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -189,12 +196,54 @@ Here is the caller graph for this function:</div>
 <dl class="section post"><dt>Postcondition</dt><dd>: QuitGame method will set the Confirm Selection Panel, from here the user will provide confirmation to call GameReset. </dd>
 <dd>
 : Clicking the No button will return the user back to the pause menu. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_canvas_script_a70a440038707f7d44d9d80b982951974_icgraph.png" border="0" usemap="#class_canvas_script_a70a440038707f7d44d9d80b982951974_icgraph" alt=""/></div>
 <map name="class_canvas_script_a70a440038707f7d44d9d80b982951974_icgraph" id="class_canvas_script_a70a440038707f7d44d9d80b982951974_icgraph">
 <area shape="rect" title=" " alt="" coords="184,5,345,32"/>
+<area shape="rect" href="class_canvas_script.html#a83f135bf296cd6e9ea9cc295bddaf55c" title=" " alt="" coords="5,5,136,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68ca0ec658c22a30f63577a8d0f3f9f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ca0ec658c22a30f63577a8d0f3f9f1">&#9670;&nbsp;</a></span>RestartGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanvasScript.RestartGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>: RestartGame method will listen for an onClick event from either the Yes Button or the Return Button. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>: RestartGame method will reload the scene, back to the Ship Selection Main Menu. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_canvas_script_a68ca0ec658c22a30f63577a8d0f3f9f1_icgraph.png" border="0" usemap="#class_canvas_script_a68ca0ec658c22a30f63577a8d0f3f9f1_icgraph" alt=""/></div>
+<map name="class_canvas_script_a68ca0ec658c22a30f63577a8d0f3f9f1_icgraph" id="class_canvas_script_a68ca0ec658c22a30f63577a8d0f3f9f1_icgraph">
+<area shape="rect" title=" " alt="" coords="184,5,363,32"/>
 <area shape="rect" href="class_canvas_script.html#a83f135bf296cd6e9ea9cc295bddaf55c" title=" " alt="" coords="5,5,136,32"/>
 </map>
 </div>
@@ -217,14 +266,22 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <dl class="section pre"><dt>Precondition</dt><dd>: Start is called before the first frame update. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>: Game will start at the main menu and all Buttons will be given event listeners onClick </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td>None. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: None. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_canvas_script_a83f135bf296cd6e9ea9cc295bddaf55c_cgraph.png" border="0" usemap="#class_canvas_script_a83f135bf296cd6e9ea9cc295bddaf55c_cgraph" alt=""/></div>
 <map name="class_canvas_script_a83f135bf296cd6e9ea9cc295bddaf55c_cgraph" id="class_canvas_script_a83f135bf296cd6e9ea9cc295bddaf55c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,136,57"/>
-<area shape="rect" href="class_canvas_script.html#a494f3b3939e2e0d572c8859c4e853800" title=" " alt="" coords="184,5,355,32"/>
-<area shape="rect" href="class_canvas_script.html#a70a440038707f7d44d9d80b982951974" title=" " alt="" coords="189,56,350,83"/>
+<area shape="rect" title=" " alt="" coords="5,56,136,83"/>
+<area shape="rect" href="class_canvas_script.html#a494f3b3939e2e0d572c8859c4e853800" title=" " alt="" coords="188,5,359,32"/>
+<area shape="rect" href="class_canvas_script.html#a70a440038707f7d44d9d80b982951974" title=" " alt="" coords="193,56,354,83"/>
+<area shape="rect" href="class_canvas_script.html#a68ca0ec658c22a30f63577a8d0f3f9f1" title=" " alt="" coords="184,107,363,133"/>
 </map>
 </div>
 
