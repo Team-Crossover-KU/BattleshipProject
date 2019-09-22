@@ -168,6 +168,8 @@ public class CanvasScript : MonoBehaviour
             player1PlacmentMessage.SetActive(true);
             player2Board.GetComponent<Image>().enabled = true;
             player2PlacmentMessage.SetActive(false);
+            Team1.appearShips();
+            Team2.disappearShips();
         }
         else
         {
@@ -175,6 +177,8 @@ public class CanvasScript : MonoBehaviour
             player1PlacmentMessage.SetActive(false);
             player2Board.GetComponent<Image>().enabled = false;
             player2PlacmentMessage.SetActive(true);
+            Team2.appearShips();
+            Team1.disappearShips();
         }
     }
 
@@ -198,7 +202,8 @@ public class CanvasScript : MonoBehaviour
     * @post: DisplayShips Method will allow the players to toggle the visibility of the players ships.
     * @post: Player Board images should be enabled for the opposing player.
     * @param: None.
-    * @return: None.
+    * @return
+    * : None.
     */
     private void DisplayShips()
     {
@@ -279,6 +284,7 @@ public class CanvasScript : MonoBehaviour
         Team1.disappearShips();
         Team2.disappearShips();
         showShips = false;
+
         confirmationPanel.SetActive(false);
         quitButton.interactable = true;
         resumeButton.interactable = true;
