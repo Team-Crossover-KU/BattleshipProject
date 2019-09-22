@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /**
  *  @class description: CanvasScript Contains all game transisitions from main menu, to ship placement menu, to main game interactions.
@@ -17,7 +18,6 @@ public class CanvasScript : MonoBehaviour
     public TeamController Team1;
     public TeamController Team2;
 
-
     /**
     *  @pre: Start is called before the first frame update.
     *  @post: Game will start at the main menu and all Buttons will be given event listeners onClick
@@ -31,7 +31,7 @@ public class CanvasScript : MonoBehaviour
         confirmButton.onClick.AddListener(BeginShipPlacement);
 
         // Ship Placement Menu Buttons Listener Events.
-        returnButton.onClick.AddListener(BackToSettings);
+        returnButton.onClick.AddListener(RestartGame);
         switchButton.onClick.AddListener(SwitchPlayers);
         startButton.onClick.AddListener(StartGame);
 
@@ -47,12 +47,27 @@ public class CanvasScript : MonoBehaviour
         quitButton.onClick.AddListener(QuitGame);
 
         // Confirmation Menu Button Listener Events.
-        yesButton.onClick.AddListener(GameReset);
+        yesButton.onClick.AddListener(RestartGame);
         noButton.onClick.AddListener(PauseGame);
 
         // Game Over Menu Button Listener Events.
         //replayButton.onClick.AddListener(BeginShipPlacement);
         //mainMenuButton.onClick.AddListener(QuitGame);
+    }
+
+    /**
+    * Update is called once per frame
+    */
+    void Update()
+    {
+        if (Team1.placeCheck == true && Team2.placeCheck == true)
+        {
+            startButton.interactable = true;
+        }
+        else
+        {
+            startButton.interactable = false;
+        }
     }
 
     /**
@@ -140,6 +155,11 @@ public class CanvasScript : MonoBehaviour
         gameUIPanel.SetActive(true);
     }
 
+    private void EnableStartButton()
+    {
+        
+    }
+
     /**
     *  @pre: StartGame method will listen for the Start Button onClick event.
     *  @post: StartGame method will start the Battleship game once all ships have been placed.
@@ -154,6 +174,8 @@ public class CanvasScript : MonoBehaviour
         player1Board.GetComponent<Image>().enabled = true;
         player2Board.GetComponent<Image>().enabled = false;
         gameUIPanel.SetActive(true);
+        Team1.disappearShips();
+        Team2.disappearShips();
     }
 
     /**
@@ -219,6 +241,7 @@ public class CanvasScript : MonoBehaviour
         shipSelector.value = 0;
 
         confirmButton.interactable = false;
+        startButton.interactable = false;
         quitButton.interactable = true;
         resumeButton.interactable = true;
         //replayButton.interactable = true;
@@ -235,5 +258,10 @@ public class CanvasScript : MonoBehaviour
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         confirmationPanel.SetActive(false);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
