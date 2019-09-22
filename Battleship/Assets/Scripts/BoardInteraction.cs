@@ -11,23 +11,12 @@ using UnityEngine.UI;
 public class BoardInteraction : MonoBehaviour
 {
 
-    //Array of sprites holding the images for the 'Hit', 'Miss', and 'Temporary' actions.
-    public Sprite[] onClickIcons;
-
-    //Array of the buttons associated with Player1's board.
-    public Button[] spacesAvailableBoard1;
-
-    //Array of the butotns associated with Player2's board.
-    public Button[] spacesAvailableBoard2;
-
-    //Forces player1's turn to be first when starting the game. Bools switch after each player presses the 'Fire' button.
-    public bool player1Turn = true, player2Turn = false;
-
-    //UI Button variables to attach my own functions to UI buttons dealing with board sets and resets.
-    public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton;
-
-    //Gameobject variables to handle activity of UI panels and images.
-    public GameObject gameUIPanel, battleshipGrids, switchPanel, player1Board, player2Board;
+    public Sprite[] onClickIcons; //!< Array of sprites holding the images for the 'Hit', 'Miss', and 'Temporary' actions.
+    public Button[] spacesAvailableBoard1; //!< Array of the buttons associated with Player1's board.
+    public Button[] spacesAvailableBoard2; //!< Array of the butotns associated with Player2's board.
+    public bool player1Turn = true, player2Turn = false; //!< Forces player1's turn to be first when starting the game. Bools switch after each player presses the 'Fire' button.
+    public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton; //!< UI Button variables to attach my own functions to UI buttons dealing with board sets and resets.
+    public GameObject gameUIPanel, battleshipGrids, switchPanel, player1Board, player2Board; //!< Gameobject variables to handle activity of UI panels and images.
 
     /**
     * @pre: Start is called before the first frame update.
