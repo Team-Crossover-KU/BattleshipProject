@@ -276,6 +276,9 @@ public class CanvasScript : MonoBehaviour
         gameUIPanel.SetActive(false);
         battleshipGrids.SetActive(false);
         pauseMenu.SetActive(true);
+        Team1.disappearShips();
+        Team2.disappearShips();
+        showShips = false;
         confirmationPanel.SetActive(false);
         quitButton.interactable = true;
         resumeButton.interactable = true;
