@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quitgame_98',['QuitGame',['../class_canvas_script.html#a70a440038707f7d44d9d80b982951974',1,'CanvasScript']]]
+  ['hit_105',['Hit',['../class_ship_part_controller.html#a78fb913c2aba0151fb9dbabde78d9d7e',1,'ShipPartController']]],
+  ['hitcheck_106',['hitCheck',['../class_ship_controller.html#ad2ef31f253c2f3f7dc4c89ff747682f5',1,'ShipController']]]
 ];

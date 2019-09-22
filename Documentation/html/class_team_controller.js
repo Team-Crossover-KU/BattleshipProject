@@ -1,6 +1,8 @@
 var class_team_controller =
 [
+    [ "appearShips", "class_team_controller.html#a3e7448bde32e7edf36386cd522ffd1fa", null ],
     [ "checkForLoss", "class_team_controller.html#abb2416ff397b999b31bee4c3e3bd18bb", null ],
+    [ "disappearShips", "class_team_controller.html#a009283c92a316df4084a63669ffa2551", null ],
     [ "SetNumberOfShips", "class_team_controller.html#a46b67b076e5a22fe7313f57b0faaec3a", null ],
     [ "loseCheck", "class_team_controller.html#a92fe094edc405b965e4f071618473649", null ],
     [ "numberOfShips", "class_team_controller.html#a3a0b05bd37574601bfa02cfa08c99fa0", null ],

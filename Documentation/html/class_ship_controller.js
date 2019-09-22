@@ -1,7 +1,9 @@
 var class_ship_controller =
 [
+    [ "appear", "class_ship_controller.html#a91965bca38605ac7f926701d79feab2f", null ],
     [ "AttemptBond", "class_ship_controller.html#a264aa9f5b5210ddf3a96622b6c004e8a", null ],
     [ "checkParts", "class_ship_controller.html#a6dcc27573d0c57fad04008d47c14d5b4", null ],
+    [ "disappear", "class_ship_controller.html#ac2ee02504fd655f744b12cc383e83c64", null ],
     [ "FaceDown", "class_ship_controller.html#a07fd806c2a997f0acfd9f3eb29d35ff6", null ],
     [ "FaceLeft", "class_ship_controller.html#a5401bbb0e4b36bbc947b703aa3403650", null ],
     [ "FaceRight", "class_ship_controller.html#a25b8cf8d7ffcf88395ad381d2d01d7ae", null ],
