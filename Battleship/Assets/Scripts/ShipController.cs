@@ -5,30 +5,30 @@ using UnityEngine;
 /**
 * 
 */
-public class ShipPartController : MonoBehaviour
+public class ShipController : MonoBehaviour
 {
-    Collider2D collide;
-    public ShipController parent;
-    public bool hit = false;
-    public bool bound = false;
-    public SpriteRenderer rend;
-    public buttonController bondTarget;
-    public int partTeam;
-
-    public bool partReadyToPair = false;
-
-
+    bool allPartsDestroyed = false;
+    bool isSpawned = false;
+    bool partCheck = false;
+    public bool destoryCheck = false;
+    public bool isMoving = false;
+    public bool shipReadyToPair = false;
+    public Vector3 startPos;
+    public List<ShipPartController> parts;
+    public TeamController team;
+    public int shipLength = 0;
+    public int shipTeam = 0;
+    public GameObject shipPart;
 
     /**
-    * @pre Start is called before the first frame update.
-    * @post Render the ship part at the transform location of the parent.
-    * @param none
-    * @return none
+    * Start is called before the first frame update.
     */
     void Start()
     {
-        parent = transform.parent.GetComponent<ShipController>();
-        rend = GetComponent<SpriteRenderer>();
+        if (transform.parent != null)
+        {
+            team = transform.parent.GetComponent<TeamController>();
+        }
     }
 
     /**
@@ -36,129 +36,167 @@ public class ShipPartController : MonoBehaviour
     */
     void Update()
     {
-        if (parent.isMoving)
+        //spawn
+        if (isSpawned == false && shipLength > 0)
         {
-            transform.parent.transform.position = Input.mousePosition;
-            if (Input.GetKeyDown("a"))
+            Spawn();
+            isSpawned = true;
+            startPos = transform.position;
+        }
+
+        checkParts();
+    }
+
+    /**
+    * for n length, spawn ship parts 
+    */
+    void Spawn()
+    {
+        //for loop for spawning
+        for (int i = 0; shipLength > i; i++)
+        {
+            parts.Add(Instantiate(shipPart, this.transform).GetComponent<ShipPartController>());
+            parts[i].transform.position = new Vector3(this.transform.position.x + i * parts[i].transform.localScale.x, 
+                                                      this.transform.position.y, 
+                                                      this.transform.position.z);
+            parts[i].partTeam = shipTeam;
+            Debug.Log(i);
+        }
+    }
+
+    /**
+    * setter for ship length.
+    */
+    public void SetShipLength(int n)
+    {
+        shipLength = n;
+    }
+
+    public void FaceRight()
+    {
+        transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
+    }
+
+    public void FaceUp()
+    {
+        transform.rotation = Quaternion.AngleAxis(90, Vector3.forward);
+    }
+
+    public void FaceLeft()
+    {
+        transform.rotation = Quaternion.AngleAxis(180, Vector3.forward);
+    }
+
+    public void FaceDown()
+    {
+        transform.rotation = Quaternion.AngleAxis(270, Vector3.forward);
+    }
+
+    
+    
+    /**
+    * Check.
+    */
+    public void checkParts()
+    {
+        if (isMoving)
+        {
+            partCheck = true;
+            foreach (ShipPartController part in parts)
             {
-                parent.FaceLeft();
-            }
-            else if (Input.GetKeyDown("d"))
-            {
-                parent.FaceRight();
-            }
-            else if (Input.GetKeyDown("s"))
-            {
-                parent.FaceDown();
-            }
-            else if (Input.GetKeyDown("w"))
-            {
-                parent.FaceUp();
+                part.rend.sortingLayerName = "Moving";
+                if (!part.partReadyToPair)
+                {
+                    partCheck = false;
+                    part.rend.color = Color.red;
+                }
+                else
+                {
+                    part.rend.color = Color.green;
+                }
             }
         }
         else
         {
+            
+        }
+        
+    }
 
+    public void disappear()
+    {
+        foreach (ShipPartController part in parts)
+        {
+            part.rend.enabled = false;
         }
     }
 
-    /**
-    * @pre Ship part was hit.
-    * @post Render the ship part at the transform location of the parent.
-    * @param none
-    * @return none
-    */
-    public void Hit()
+    public void appear()
     {
-        hit = true;
-        parent.hitCheck();
-    }
-
-    /**
-    * @pre Ship is ready to pair to the board
-    * @post allow the mouse to move the ship
-    * @param none
-    * @return none
-    */
-    private void OnMouseDown()
-    {
-        if (!parent.shipReadyToPair)
+        foreach (ShipPartController part in parts)
         {
-            Debug.Log("TouchedShip");
-            parent.isMoving = true;
+            part.rend.enabled = true;
         }
-
     }
 
-    /**
-    * @pre User released mouse
-    * @post Parent ship isMoving flag changed to false
-    * @param none
-    * @return none
-    */
-    private void OnMouseUp()
+    public void hitCheck()
     {
-
-        if (!bound)
-            parent.AttemptBond();
-        parent.isMoving = false;
-    }
-
-
-    /**
-    * @pre Another object enters a trigger collider attached to this object. 2D only.
-    * @post if the collision tag is open, and if button controller's buttonTeam equals partTeam,
-    * set bondTarget to collision's buttonController.
-    * @param Collider2D collision
-    * @return none
-    */
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Open")
+        destoryCheck = true;
+        foreach (ShipPartController part in parts)
         {
-            if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
+            if (!part.hit)
             {
-                partReadyToPair = true;
-                bondTarget = collision.GetComponent<buttonController>();
+                destoryCheck = false;
+                
             }
         }
 
-    }
-
-    /**
-     * @pre called when two collision collider is in contact with this 
-     * object's collider nearly every fram.
-     * @post maintaain pairing with both colliders
-     * @param Collider2D collision
-     * @return none
-     */
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.tag == "Open")
+        if (destoryCheck == true)
         {
-            if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
-            {
-                partReadyToPair = true;
-                bondTarget = collision.GetComponent<buttonController>();
-            }
+            team.checkForLoss();
         }
     }
 
-    /**
-     * @pre Colliders between collison and this object's collider are no longer in contact.
-     * @post change state of collider pairing once the colliders are no longer in contact.
-     * @param Collider2D collision
-     * @return none
-     */
-    private void OnTriggerExit2D(Collider2D collision)
+    public void AttemptBond()
     {
-        if (collision.tag == "Open")
+        if (partCheck)
         {
-            if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
+            shipReadyToPair = true;
+            foreach (ShipPartController part in parts)
             {
-                partReadyToPair = false;
-                bondTarget = null;
+                part.bound = true;
+                part.bondTarget.tag = "Closed";
+                part.bondTarget.target = part;
+                
+                team.checkPlacement();
             }
         }
+        else
+        {
+            transform.position = startPos;
+            transform.rotation = Quaternion.identity;
+        }
+
+        foreach (ShipPartController part in parts)
+        {
+            part.rend.sortingLayerName = "Default";
+            part.rend.color = Color.white;
+        }
     }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
