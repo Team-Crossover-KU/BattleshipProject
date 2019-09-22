@@ -65,6 +65,7 @@ public class ShipPartController : MonoBehaviour
     public void Hit()
     {
         hit = true;
+        parent.hitCheck();
     }
 
     /**

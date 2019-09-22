@@ -11,6 +11,7 @@ public class TeamController : MonoBehaviour
     public int numberOfShips;
     bool isNumShipsSelected = false;
     public GameObject ship;
+    public bool loseCheck = false;
     public int team = 0;
 
     /**
@@ -56,6 +57,19 @@ public class TeamController : MonoBehaviour
             Ships[i].SetShipLength(i+1);
             Ships[i].shipTeam = team;
             Debug.Log(i);
+        }
+    }
+
+    public void checkForLoss()
+    {
+        loseCheck = true;
+        foreach (ShipController ship in Ships)
+        {
+            if (!ship.destoryCheck)
+            {
+                loseCheck = false;
+
+            }
         }
     }
 

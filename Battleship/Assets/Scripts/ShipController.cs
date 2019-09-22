@@ -9,11 +9,13 @@ public class ShipController : MonoBehaviour
 {
     bool allPartsDestroyed = false;
     bool isSpawned = false;
-    bool partcheck = false;
+    bool partCheck = false;
+    public bool destoryCheck = false;
     public bool isMoving = false;
     public bool shipReadyToPair = false;
     public Vector3 startPos;
     public List<ShipPartController> parts;
+    public TeamController team;
     public int shipLength = 0;
     public int shipTeam = 0;
     public GameObject shipPart;
@@ -23,7 +25,10 @@ public class ShipController : MonoBehaviour
     */
     void Start()
     {
-        
+        if (transform.parent != null)
+        {
+            team = transform.parent.GetComponent<TeamController>();
+        }
     }
 
     /**
@@ -96,12 +101,12 @@ public class ShipController : MonoBehaviour
     {
         if (isMoving)
         {
-            partcheck = true;
+            partCheck = true;
             foreach (ShipPartController part in parts)
             {
                 if (!part.partReadyToPair)
                 {
-                    partcheck = false;
+                    partCheck = false;
                     part.rend.color = Color.red;
                 }
                 else
@@ -113,9 +118,27 @@ public class ShipController : MonoBehaviour
         
     }
 
+    public void hitCheck()
+    {
+        destoryCheck = true;
+        foreach (ShipPartController part in parts)
+        {
+            if (!part.hit)
+            {
+                destoryCheck = false;
+                
+            }
+        }
+
+        if (destoryCheck == true)
+        {
+            team.checkForLoss();
+        }
+    }
+
     public void AttemptBond()
     {
-        if (partcheck)
+        if (partCheck)
         {
             shipReadyToPair = true;
             foreach (ShipPartController part in parts)
