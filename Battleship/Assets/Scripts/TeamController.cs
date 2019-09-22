@@ -12,6 +12,7 @@ public class TeamController : MonoBehaviour
     bool isNumShipsSelected = false;
     public GameObject ship;
     public bool loseCheck = false;
+    public bool placeCheck = false;
     public int team = 0;
 
     /**
@@ -85,6 +86,19 @@ public class TeamController : MonoBehaviour
         foreach (ShipController ship in Ships)
         {
             ship.appear();
+        }
+    }
+
+    public void checkPlacement()
+    {
+        placeCheck = true;
+        foreach (ShipController ship in Ships)
+        {
+            if (!ship.shipReadyToPair)
+            {
+                placeCheck = false;
+
+            }
         }
     }
 
