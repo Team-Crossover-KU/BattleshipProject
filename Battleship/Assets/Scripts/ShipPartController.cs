@@ -89,9 +89,10 @@ public class ShipPartController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        parent.isMoving = false;
+        
         if (!bound)
         parent.AttemptBond();
+        parent.isMoving = false;
     }
     
 
@@ -125,9 +126,9 @@ public class ShipPartController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //if (collision.tag == "Open")
+        if (collision.tag == "Open")
         {
-            //if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
+            if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
             {
                 partReadyToPair = false;
                 bondTarget = null;
