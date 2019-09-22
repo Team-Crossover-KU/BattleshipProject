@@ -1,0 +1,175 @@
+\hypertarget{class_board_interaction}{}\doxysection{Board\+Interaction Class Reference}
+\label{class_board_interaction}\index{BoardInteraction@{BoardInteraction}}
+Inheritance diagram for Board\+Interaction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_board_interaction}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_board_interaction_a953512b2e8a6ae184433948af4f568ef}{Battleship\+Spaces\+Board1}} (int num)
+\item 
+void \mbox{\hyperlink{class_board_interaction_a8b09170d05fc72ebb6fffdf10f26712d}{Battleship\+Spaces\+Board2}} (int num)
+\item 
+void \mbox{\hyperlink{class_board_interaction_aaa4b47f28fd22f5b4747056eba30e23b}{Yes\+Button\+Reset}} ()
+\item 
+void \mbox{\hyperlink{class_board_interaction_a2f90971fcd65db11a7d8c6b0d8dab2dc}{Fire\+Button\+Lock\+In}} ()
+\item 
+void \mbox{\hyperlink{class_board_interaction_aea6a360f4045f2881c99ce39b75ba522}{Confirm\+Button\+Interactable\+Off}} ()
+\item 
+void \mbox{\hyperlink{class_board_interaction_a03b1bb56e785cdc76ae7b9050cb266ba}{Start\+Button\+Commence\+Play}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_interaction_ac535f3e46b39768ad305f0a7b73adbb8}\label{class_board_interaction_ac535f3e46b39768ad305f0a7b73adbb8}} 
+\mbox{\hyperlink{class_ship_part_controller}{Ship\+Part\+Controller}} {\bfseries ship\+Controller}
+\item 
+\mbox{\Hypertarget{class_board_interaction_a44acebfc0e134eae0b02211001ab3cd3}\label{class_board_interaction_a44acebfc0e134eae0b02211001ab3cd3}} 
+int {\bfseries hit\+Or\+Miss} = 1
+\item 
+\mbox{\Hypertarget{class_board_interaction_a5865dd13eca2eeea1ab75363d8025f82}\label{class_board_interaction_a5865dd13eca2eeea1ab75363d8025f82}} 
+Sprite\mbox{[}$\,$\mbox{]} {\bfseries on\+Click\+Icons}
+\item 
+\mbox{\Hypertarget{class_board_interaction_a2cb48633d49096b0479036b0a34ca8e0}\label{class_board_interaction_a2cb48633d49096b0479036b0a34ca8e0}} 
+Button\mbox{[}$\,$\mbox{]} {\bfseries spaces\+Available\+Board1}
+\item 
+\mbox{\Hypertarget{class_board_interaction_a199923c86920503c8ecde3db3f7b958e}\label{class_board_interaction_a199923c86920503c8ecde3db3f7b958e}} 
+Button\mbox{[}$\,$\mbox{]} {\bfseries spaces\+Available\+Board2}
+\item 
+\mbox{\Hypertarget{class_board_interaction_ab09e46e5d3d9e349a31f31ad362524b7}\label{class_board_interaction_ab09e46e5d3d9e349a31f31ad362524b7}} 
+bool {\bfseries player1\+Turn} = true
+\item 
+\mbox{\Hypertarget{class_board_interaction_af6410ecca47e07b34a07c193809dee3c}\label{class_board_interaction_af6410ecca47e07b34a07c193809dee3c}} 
+Unity\+Engine.\+U\+I.\+Button {\bfseries yes\+Button}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_interaction_a953512b2e8a6ae184433948af4f568ef}\label{class_board_interaction_a953512b2e8a6ae184433948af4f568ef}} 
+\index{BoardInteraction@{BoardInteraction}!BattleshipSpacesBoard1@{BattleshipSpacesBoard1}}
+\index{BattleshipSpacesBoard1@{BattleshipSpacesBoard1}!BoardInteraction@{BoardInteraction}}
+\doxysubsubsection{\texorpdfstring{BattleshipSpacesBoard1()}{BattleshipSpacesBoard1()}}
+{\footnotesize\ttfamily void Board\+Interaction.\+Battleship\+Spaces\+Board1 (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: On-\/click function for the array of buttons that make up the battleship grid for Player1. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: On-\/click places a checkmark to let the user know which coordinate they currently have picked on the Player1 battleship grid. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em } & Num is the index of the button pressed on-\/click in spaces\+Available\+Board1 to set the sprite to a checkmark. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_interaction_a8b09170d05fc72ebb6fffdf10f26712d}\label{class_board_interaction_a8b09170d05fc72ebb6fffdf10f26712d}} 
+\index{BoardInteraction@{BoardInteraction}!BattleshipSpacesBoard2@{BattleshipSpacesBoard2}}
+\index{BattleshipSpacesBoard2@{BattleshipSpacesBoard2}!BoardInteraction@{BoardInteraction}}
+\doxysubsubsection{\texorpdfstring{BattleshipSpacesBoard2()}{BattleshipSpacesBoard2()}}
+{\footnotesize\ttfamily void Board\+Interaction.\+Battleship\+Spaces\+Board2 (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: On-\/click function for the array of buttons that make up the battleship grid for Player2. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: On-\/click places a checkmark to let the user know which coordinate they currently have picked on the Player2 battleship grid. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em } & Num is the index of the button pressed on-\/click in spaces\+Available\+Board2 to set the sprite to a checkmark. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_interaction_aea6a360f4045f2881c99ce39b75ba522}\label{class_board_interaction_aea6a360f4045f2881c99ce39b75ba522}} 
+\index{BoardInteraction@{BoardInteraction}!ConfirmButtonInteractableOff@{ConfirmButtonInteractableOff}}
+\index{ConfirmButtonInteractableOff@{ConfirmButtonInteractableOff}!BoardInteraction@{BoardInteraction}}
+\doxysubsubsection{\texorpdfstring{ConfirmButtonInteractableOff()}{ConfirmButtonInteractableOff()}}
+{\footnotesize\ttfamily void Board\+Interaction.\+Confirm\+Button\+Interactable\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: A player presses the \textquotesingle{}Confirm\textquotesingle{} button on the ship selection panel. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: Sets both boards to not be interactive, making sure players don\textquotesingle{}t press buttons while on the ship selection panel. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em } & None. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_interaction_a2f90971fcd65db11a7d8c6b0d8dab2dc}\label{class_board_interaction_a2f90971fcd65db11a7d8c6b0d8dab2dc}} 
+\index{BoardInteraction@{BoardInteraction}!FireButtonLockIn@{FireButtonLockIn}}
+\index{FireButtonLockIn@{FireButtonLockIn}!BoardInteraction@{BoardInteraction}}
+\doxysubsubsection{\texorpdfstring{FireButtonLockIn()}{FireButtonLockIn()}}
+{\footnotesize\ttfamily void Board\+Interaction.\+Fire\+Button\+Lock\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: A player presses the \textquotesingle{}Fire\textquotesingle{} button 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: A player, depending on whose turn it is, locks in their choice to fire, turning the temporary checkmark into a \textquotesingle{}Miss\textquotesingle{} or \textquotesingle{}Hit\textquotesingle{} sprite on the button they chose to attack. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em } & None. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_interaction_a03b1bb56e785cdc76ae7b9050cb266ba}\label{class_board_interaction_a03b1bb56e785cdc76ae7b9050cb266ba}} 
+\index{BoardInteraction@{BoardInteraction}!StartButtonCommencePlay@{StartButtonCommencePlay}}
+\index{StartButtonCommencePlay@{StartButtonCommencePlay}!BoardInteraction@{BoardInteraction}}
+\doxysubsubsection{\texorpdfstring{StartButtonCommencePlay()}{StartButtonCommencePlay()}}
+{\footnotesize\ttfamily void Board\+Interaction.\+Start\+Button\+Commence\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: A player presses the \textquotesingle{}Start\textquotesingle{} button after setting their ships. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: Sets Player1\textquotesingle{}s board to interactive and Player2\textquotesingle{}s board to N\+OT be interactive, forcing whoever is playing as Player1 to go first. This also sets the buttons\textquotesingle{} sprites to nothing. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em } & None. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_interaction_aaa4b47f28fd22f5b4747056eba30e23b}\label{class_board_interaction_aaa4b47f28fd22f5b4747056eba30e23b}} 
+\index{BoardInteraction@{BoardInteraction}!YesButtonReset@{YesButtonReset}}
+\index{YesButtonReset@{YesButtonReset}!BoardInteraction@{BoardInteraction}}
+\doxysubsubsection{\texorpdfstring{YesButtonReset()}{YesButtonReset()}}
+{\footnotesize\ttfamily void Board\+Interaction.\+Yes\+Button\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: A player presses the \textquotesingle{}Yes\textquotesingle{} button to exit to the main menu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: The buttons\textquotesingle{} sprites get reset to nothing, sets the buttons to be interactable for the next game. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em } & None. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Battleship\+Project/\+Battleship/\+Assets/\+Scripts/Board\+Interaction.\+cs\end{DoxyCompactItemize}

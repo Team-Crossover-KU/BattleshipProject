@@ -1,0 +1,65 @@
+\hypertarget{class_ship_part_controller}{}\doxysection{Ship\+Part\+Controller Class Reference}
+\label{class_ship_part_controller}\index{ShipPartController@{ShipPartController}}
+Inheritance diagram for Ship\+Part\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ship_part_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ship_part_controller_a78fb913c2aba0151fb9dbabde78d9d7e}{Hit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ship_part_controller_a20b54b30c6d0678999ac57d7acc34993}\label{class_ship_part_controller_a20b54b30c6d0678999ac57d7acc34993}} 
+\mbox{\hyperlink{class_ship_controller}{Ship\+Controller}} {\bfseries parent}
+\item 
+\mbox{\Hypertarget{class_ship_part_controller_a30c4f09b490c4f060926a91c23f38c64}\label{class_ship_part_controller_a30c4f09b490c4f060926a91c23f38c64}} 
+bool {\bfseries hit} = false
+\item 
+\mbox{\Hypertarget{class_ship_part_controller_adb7db9bc5c9937e17ab58d82b41311d3}\label{class_ship_part_controller_adb7db9bc5c9937e17ab58d82b41311d3}} 
+bool {\bfseries bound} = false
+\item 
+\mbox{\Hypertarget{class_ship_part_controller_ad943f59890afaec83ad10473e821557d}\label{class_ship_part_controller_ad943f59890afaec83ad10473e821557d}} 
+Sprite\+Renderer {\bfseries rend}
+\item 
+\mbox{\Hypertarget{class_ship_part_controller_a7c8f4adcccca38838878d3818b218727}\label{class_ship_part_controller_a7c8f4adcccca38838878d3818b218727}} 
+\mbox{\hyperlink{classbutton_controller}{button\+Controller}} {\bfseries bond\+Target}
+\item 
+\mbox{\Hypertarget{class_ship_part_controller_abd111023775f689f07fdb7a7bb2a96bc}\label{class_ship_part_controller_abd111023775f689f07fdb7a7bb2a96bc}} 
+int {\bfseries part\+Team}
+\item 
+\mbox{\Hypertarget{class_ship_part_controller_ac44cc4cbd70e6f35e7669a18d792413d}\label{class_ship_part_controller_ac44cc4cbd70e6f35e7669a18d792413d}} 
+bool {\bfseries part\+Ready\+To\+Pair} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ship_part_controller_a78fb913c2aba0151fb9dbabde78d9d7e}\label{class_ship_part_controller_a78fb913c2aba0151fb9dbabde78d9d7e}} 
+\index{ShipPartController@{ShipPartController}!Hit@{Hit}}
+\index{Hit@{Hit}!ShipPartController@{ShipPartController}}
+\doxysubsubsection{\texorpdfstring{Hit()}{Hit()}}
+{\footnotesize\ttfamily void Ship\+Part\+Controller.\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: Ship has been hit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: Set hit flag to true, then call parent ship \mbox{\hyperlink{class_ship_controller}{Ship\+Controller}} to check all ship parts. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em } & None \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Battleship\+Project/\+Battleship/\+Assets/\+Scripts/Ship\+Part\+Controller.\+cs\end{DoxyCompactItemize}

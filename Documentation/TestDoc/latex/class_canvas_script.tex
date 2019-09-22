@@ -1,0 +1,86 @@
+\hypertarget{class_canvas_script}{}\doxysection{Canvas\+Script Class Reference}
+\label{class_canvas_script}\index{CanvasScript@{CanvasScript}}
+Inheritance diagram for Canvas\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_canvas_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_script_a83f135bf296cd6e9ea9cc295bddaf55c}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_canvas_script_a70a440038707f7d44d9d80b982951974}{Quit\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_canvas_script_a494f3b3939e2e0d572c8859c4e853800}{Game\+Reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_canvas_script_a6329c40c058fdd900505ca08d53e5eb3}\label{class_canvas_script_a6329c40c058fdd900505ca08d53e5eb3}} 
+Dropdown {\bfseries ship\+Selector}
+\item 
+\mbox{\Hypertarget{class_canvas_script_aa5a0792eef1d9a33e3fd034190f0fd9e}\label{class_canvas_script_aa5a0792eef1d9a33e3fd034190f0fd9e}} 
+Unity\+Engine.\+U\+I.\+Button {\bfseries confirm\+Button}
+\item 
+\mbox{\Hypertarget{class_canvas_script_ad6218ce209482a7b10560b2cb28c0443}\label{class_canvas_script_ad6218ce209482a7b10560b2cb28c0443}} 
+Game\+Object {\bfseries ship\+Selector\+Panel}
+\item 
+\mbox{\Hypertarget{class_canvas_script_ae4c03851394038a320ef1b5270a7a189}\label{class_canvas_script_ae4c03851394038a320ef1b5270a7a189}} 
+Game\+Object {\bfseries player1\+Board}
+\item 
+\mbox{\Hypertarget{class_canvas_script_ae2280400c9388188da61dd5122dea733}\label{class_canvas_script_ae2280400c9388188da61dd5122dea733}} 
+\mbox{\hyperlink{class_team_controller}{Team\+Controller}} {\bfseries Team1}
+\item 
+\mbox{\Hypertarget{class_canvas_script_a2a7bc78df588c0f8a427d2c05eeb4395}\label{class_canvas_script_a2a7bc78df588c0f8a427d2c05eeb4395}} 
+\mbox{\hyperlink{class_team_controller}{Team\+Controller}} {\bfseries Team2}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_canvas_script_a494f3b3939e2e0d572c8859c4e853800}\label{class_canvas_script_a494f3b3939e2e0d572c8859c4e853800}} 
+\index{CanvasScript@{CanvasScript}!GameReset@{GameReset}}
+\index{GameReset@{GameReset}!CanvasScript@{CanvasScript}}
+\doxysubsubsection{\texorpdfstring{GameReset()}{GameReset()}}
+{\footnotesize\ttfamily void Canvas\+Script.\+Game\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: Game\+Reset method will first be called by start to begin Battleship Game. 
+
+\+: Game\+Reset method will listen for an on\+Click event from the Yes Button. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: Game\+Reset method will start/restart the game at the Ship Selection menu on either yes\+Button(dot)on\+Click or at the start of the program. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_canvas_script_a70a440038707f7d44d9d80b982951974}\label{class_canvas_script_a70a440038707f7d44d9d80b982951974}} 
+\index{CanvasScript@{CanvasScript}!QuitGame@{QuitGame}}
+\index{QuitGame@{QuitGame}!CanvasScript@{CanvasScript}}
+\doxysubsubsection{\texorpdfstring{QuitGame()}{QuitGame()}}
+{\footnotesize\ttfamily void Canvas\+Script.\+Quit\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+Quit\+Game method wil listen for an on\+Click event from either the Quit Button or the Main Menu Button. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: Quit\+Game method will set the Confirm Selection Panel, from here the user will provide confirmation to call Game\+Reset. 
+
+\+: Clicking the No button will return the user back to the pause menu. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_canvas_script_a83f135bf296cd6e9ea9cc295bddaf55c}\label{class_canvas_script_a83f135bf296cd6e9ea9cc295bddaf55c}} 
+\index{CanvasScript@{CanvasScript}!Start@{Start}}
+\index{Start@{Start}!CanvasScript@{CanvasScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Canvas\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: Start is called before the first frame update. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\+: Game will start at the main menu and all Buttons will be given event listeners on\+Click 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Battleship\+Project/\+Battleship/\+Assets/\+Scripts/Canvas\+Script.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{class_ship_controller}{}\doxysection{Ship\+Controller Class Reference}
+\label{class_ship_controller}\index{ShipController@{ShipController}}
+Inheritance diagram for Ship\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ship_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ship_controller_a3d6a729c3b24840453b1cf53fda2271e}{Set\+Ship\+Length}} (int n)
+\item 
+\mbox{\Hypertarget{class_ship_controller_a25b8cf8d7ffcf88395ad381d2d01d7ae}\label{class_ship_controller_a25b8cf8d7ffcf88395ad381d2d01d7ae}} 
+void {\bfseries Face\+Right} ()
+\item 
+\mbox{\Hypertarget{class_ship_controller_a32d5ba78def3958d175cb0a8f2795564}\label{class_ship_controller_a32d5ba78def3958d175cb0a8f2795564}} 
+void {\bfseries Face\+Up} ()
+\item 
+\mbox{\Hypertarget{class_ship_controller_a5401bbb0e4b36bbc947b703aa3403650}\label{class_ship_controller_a5401bbb0e4b36bbc947b703aa3403650}} 
+void {\bfseries Face\+Left} ()
+\item 
+\mbox{\Hypertarget{class_ship_controller_a07fd806c2a997f0acfd9f3eb29d35ff6}\label{class_ship_controller_a07fd806c2a997f0acfd9f3eb29d35ff6}} 
+void {\bfseries Face\+Down} ()
+\item 
+void \mbox{\hyperlink{class_ship_controller_a6dcc27573d0c57fad04008d47c14d5b4}{check\+Parts}} ()
+\item 
+\mbox{\Hypertarget{class_ship_controller_ac2ee02504fd655f744b12cc383e83c64}\label{class_ship_controller_ac2ee02504fd655f744b12cc383e83c64}} 
+void {\bfseries disappear} ()
+\item 
+\mbox{\Hypertarget{class_ship_controller_a91965bca38605ac7f926701d79feab2f}\label{class_ship_controller_a91965bca38605ac7f926701d79feab2f}} 
+void {\bfseries appear} ()
+\item 
+\mbox{\Hypertarget{class_ship_controller_ad2ef31f253c2f3f7dc4c89ff747682f5}\label{class_ship_controller_ad2ef31f253c2f3f7dc4c89ff747682f5}} 
+void {\bfseries hit\+Check} ()
+\item 
+\mbox{\Hypertarget{class_ship_controller_a264aa9f5b5210ddf3a96622b6c004e8a}\label{class_ship_controller_a264aa9f5b5210ddf3a96622b6c004e8a}} 
+void {\bfseries Attempt\+Bond} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ship_controller_a6ab2f4e1eab3e091fc3ab76738a066c0}\label{class_ship_controller_a6ab2f4e1eab3e091fc3ab76738a066c0}} 
+bool {\bfseries destory\+Check} = false
+\item 
+\mbox{\Hypertarget{class_ship_controller_a511d6f82ec19d1ad6c0f9be6d10dc78d}\label{class_ship_controller_a511d6f82ec19d1ad6c0f9be6d10dc78d}} 
+bool {\bfseries is\+Moving} = false
+\item 
+\mbox{\Hypertarget{class_ship_controller_af7fd41d0c89520512273ab0c7dfeb483}\label{class_ship_controller_af7fd41d0c89520512273ab0c7dfeb483}} 
+bool {\bfseries ship\+Ready\+To\+Pair} = false
+\item 
+\mbox{\Hypertarget{class_ship_controller_a869f26be6a93375b41624a83b09c70f8}\label{class_ship_controller_a869f26be6a93375b41624a83b09c70f8}} 
+Vector3 {\bfseries start\+Pos}
+\item 
+\mbox{\Hypertarget{class_ship_controller_a97b82f26c54b48371472e09427f6533b}\label{class_ship_controller_a97b82f26c54b48371472e09427f6533b}} 
+List$<$ \mbox{\hyperlink{class_ship_part_controller}{Ship\+Part\+Controller}} $>$ {\bfseries parts}
+\item 
+\mbox{\Hypertarget{class_ship_controller_af53f1a48258c5192c94b5732958d0c73}\label{class_ship_controller_af53f1a48258c5192c94b5732958d0c73}} 
+\mbox{\hyperlink{class_team_controller}{Team\+Controller}} {\bfseries team}
+\item 
+\mbox{\Hypertarget{class_ship_controller_ab35058c403a477e6a1cff738d07010df}\label{class_ship_controller_ab35058c403a477e6a1cff738d07010df}} 
+int {\bfseries ship\+Length} = 0
+\item 
+\mbox{\Hypertarget{class_ship_controller_a5a2f0e6fcee4ce6dca3a3d5a75d93f4a}\label{class_ship_controller_a5a2f0e6fcee4ce6dca3a3d5a75d93f4a}} 
+int {\bfseries ship\+Team} = 0
+\item 
+\mbox{\Hypertarget{class_ship_controller_a1e8e1a56821001bd0fff9c1da89e35e4}\label{class_ship_controller_a1e8e1a56821001bd0fff9c1da89e35e4}} 
+Game\+Object {\bfseries ship\+Part}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ship_controller_a6dcc27573d0c57fad04008d47c14d5b4}\label{class_ship_controller_a6dcc27573d0c57fad04008d47c14d5b4}} 
+\index{ShipController@{ShipController}!checkParts@{checkParts}}
+\index{checkParts@{checkParts}!ShipController@{ShipController}}
+\doxysubsubsection{\texorpdfstring{checkParts()}{checkParts()}}
+{\footnotesize\ttfamily void Ship\+Controller.\+check\+Parts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check. \mbox{\Hypertarget{class_ship_controller_a3d6a729c3b24840453b1cf53fda2271e}\label{class_ship_controller_a3d6a729c3b24840453b1cf53fda2271e}} 
+\index{ShipController@{ShipController}!SetShipLength@{SetShipLength}}
+\index{SetShipLength@{SetShipLength}!ShipController@{ShipController}}
+\doxysubsubsection{\texorpdfstring{SetShipLength()}{SetShipLength()}}
+{\footnotesize\ttfamily void Ship\+Controller.\+Set\+Ship\+Length (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+setter for ship length. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Battleship\+Project/\+Battleship/\+Assets/\+Scripts/Ship\+Controller.\+cs\end{DoxyCompactItemize}
