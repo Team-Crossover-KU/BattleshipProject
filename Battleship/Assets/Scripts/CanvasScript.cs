@@ -5,9 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 /**
- *  @class description: CanvasScript Contains all game transisitions from main menu, to ship placement menu, to main game interactions.
- *  @libraries cited: All UI.Buttons, Dropdowns, and UI Panels set to GameObject variables derive from the UnityEngine.UI namespace Library.
- */
+*  @class description: CanvasScript Contains all game transisitions from main menu, to ship placement menu, to main game interactions.
+*  @libraries cited: All UI.Buttons, Dropdowns, and UI Panels set to GameObject variables derive from the UnityEngine.UI Library.
+*  @libraries cited: UnityEngine.SceneManagement library was used for the Sceen Manager to reload the game scene.
+*  @libraries cited: UnityEngine library uses the default Start and Update methods created in every .cs file.
+*/
 public class CanvasScript : MonoBehaviour
 {
     int numShips;
@@ -20,8 +22,10 @@ public class CanvasScript : MonoBehaviour
     bool showShips = false;
 
     /**
-    *  @pre: Start is called before the first frame update.
-    *  @post: Game will start at the main menu and all Buttons will be given event listeners onClick
+    * @pre: Start is called before the first frame update.
+    * @post: Game will start at the main menu and all Buttons will be given event listeners onClick 
+    * @param: None.
+    * @return: None.
     */
     public void Start()
     {
@@ -57,7 +61,12 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    * Update is called once per frame
+    * @post: Update is called once per frame
+    * @post: Update method will check if all the Team's ships are placed on the board.
+    * @post: Afterwards it will enable the Start Button and the game will proceed.
+    * @post: Once A player loses, the Game Over Screen will pop up.
+    * @param: None.
+    * @return: None.
     */
     void Update()
     {
@@ -85,9 +94,10 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: Program will start at the Ship Selection Menu or Ship Selection Menu is active.
-    *  @param: value parameter will recieve the Dropdown option value.
-    *  @post: SelectShips method will set the confirmation button to be interactable for any selection other than the empty option.
+    * @pre: Program will start at the Ship Selection Menu or Ship Selection Menu is active.
+    * @param: value parameter will recieve the Dropdown option value.
+    * @post: SelectShips method will set the confirmation button to be interactable for any selection other than the empty option.
+    * @return: None.
     */
     private void SelectShips(int value)
     {
@@ -107,12 +117,14 @@ public class CanvasScript : MonoBehaviour
 
 
     /**
-    *  @pre: Teams will be given a number of ships based on the shipSelector option value and be instaintiated within incremental sizes.
-    *  @pre: BeginShipPlacement will listen for the Confirm Button onClick event.
-    *  @pre: Confirm Button is active.
-    *  @post: BeginShipPlacement method will disable the Ship Selection Menu and enable the Ship Placement Menu.
-    *  @post: Player Grids will be set active for players to began placing their fleets. Grid images will be disabled until ship placement is complete.
-    *  @post: Player Fleets will be instantiated for players to place ships into the grids.
+    * @pre: Teams will be given a number of ships based on the shipSelector option value and be instaintiated within incremental sizes.
+    * @pre: BeginShipPlacement will listen for the Confirm Button onClick event.
+    * @pre: Confirm Button is active.
+    * @post: BeginShipPlacement method will disable the Ship Selection Menu and enable the Ship Placement Menu.
+    * @post: Player Grids will be set active for players to began placing their fleets. Grid images will be disabled until ship placement is complete.
+    * @post: Player Fleets will be instantiated for players to place ships into the grids.
+    * @param: None.
+    * @return: None.
     */
     private void BeginShipPlacement()
     {
@@ -127,22 +139,11 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: BackToSettings method will listen for the Return Button onClick event.
-    *  @post: BackToSettings method will return the game back to the Ship Selection Menu.
-    */ 
-    private void BackToSettings()
-    {
-        Debug.Log("You have clicked the Return button!");
-
-        shipSelectorPanel.SetActive(true);
-        shipPlacementPanel.SetActive(false);
-        battleshipGrids.SetActive(false);
-    }
-
-    /**
-    *  @pre: Ship Placement Menu must be set active.
-    *  @pre: SwitchPlayers Method will listen for the Switch Button onClick event.
-    *  @post: SwitchPlayers Method will switch the image enabling of the playerboards. 
+    * @pre: Ship Placement Menu must be set active.
+    * @pre: SwitchPlayers Method will listen for the Switch Button onClick event.
+    * @post: SwitchPlayers Method will switch the image enabling of the playerboards.
+    * @param: None.
+    * @return: None. 
     */
     private void SwitchPlayers()
     {
@@ -159,9 +160,11 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: SwitchPanel must be active. An Attack must be confirmed.
-    *  @pre: PlayersAreSwitched Method will listen for the Continue Button onClick event.
-    *  @post: Game will resume after Continue Button onClick event.
+    * @pre: SwitchPanel must be active. An Attack must be confirmed.
+    * @pre: PlayersAreSwitched Method will listen for the Continue Button onClick event.
+    * @post: Game will resume after Continue Button onClick event.
+    * @param: None.
+    * @return: None.
     */
     private void PlayersAreSwitched()
     {
@@ -170,6 +173,14 @@ public class CanvasScript : MonoBehaviour
         gameUIPanel.SetActive(true);
     }
 
+    /**
+    * @pre: Ship Placement menu must be active.
+    * @pre: DisplayShips Method will listen for the Switch Button onClick event.
+    * @post: DisplayShips Method will allow the players to toggle the visibility of the players ships.
+    * @post: Player Board images should be enable.
+    * @param: None.
+    * @return: None.
+    */
     private void DisplayShips()
     {
         if(showShips == false)
@@ -187,10 +198,12 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: StartGame method will listen for the Start Button onClick event.
-    *  @post: StartGame method will start the Battleship game once all ships have been placed.
-    *  @post: StartGame method will enable player board images.
-    *  @post: Ship Placement menu will be closed and the game will proceed to the Battleship Game.
+    * @pre: StartGame method will listen for the Start Button onClick event.
+    * @post: StartGame method will start the Battleship game once all ships have been placed.
+    * @post: StartGame method will enable player board images.
+    * @post: Ship Placement menu will be closed and the game will proceed to the Battleship Game.
+    * @param: None.
+    * @return: None.
     */
     private void StartGame()
     {
@@ -205,8 +218,10 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: Fire method will listen for the Fire Button onClick event.
-    *  @post: Fire method will report in game console that the Fire Button has been clicked.
+    * @pre: Fire method will listen for the Fire Button onClick event.
+    * @post: Fire method will report in game console that the Fire Button has been clicked.
+    * @param: None.
+    * @return: None.
     */
     private void Fire()
     {
@@ -217,8 +232,10 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: PauseGame method will listen for an onClick event from either the Pause Button or the No Button.
-    *  @post: PauseGame method will pull up the pause menu once the Pause button is clicked.
+    * @pre: PauseGame method will listen for an onClick event from either the Pause Button or the No Button.
+    * @post: PauseGame method will pull up the pause menu once the Pause button is clicked.
+    * @param: None.
+    * @return: None.
     */
     private void PauseGame()
     {
@@ -233,8 +250,10 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: ResumeGame method will listen for an onClick event from the Resume Button while the Pause Menu is active.
-    *  @post: ResumeGame method will disable the Pause menu and return back to the game.
+    * @pre: ResumeGame method will listen for an onClick event from the Resume Button while the Pause Menu is active.
+    * @post: ResumeGame method will disable the Pause menu and return back to the game.
+    * @param: None.
+    * @return: None.
     */
     private void ResumeGame()
     {
@@ -245,9 +264,11 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre QuitGame method wil listen for an onClick event from either the Quit Button or the Main Menu Button.
-    *  @post: QuitGame method will set the Confirm Selection Panel, from here the user will provide confirmation to call GameReset.
-    *  @post: Clicking the No button will return the user back to the pause menu.
+    * @pre QuitGame method wil listen for an onClick event from either the Quit Button or the Main Menu Button.
+    * @post: QuitGame method will set the Confirm Selection Panel, from here the user will provide confirmation to call GameReset.
+    * @post: Clicking the No button will return the user back to the pause menu.
+    * @param: None.
+    * @return: None.
     */
     public void QuitGame()
     {
@@ -259,9 +280,10 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-    *  @pre: GameReset method will first be called by start to begin Battleship Game.
-    *  @pre: GameReset method will listen for an onClick event from the Yes Button.
-    *  @post: GameReset method will start/restart the game at the Ship Selection menu on either yesButton(dot)onClick or at the start of the program.
+    * @pre: GameReset method will first be called by start to begin Battleship Game.
+    * @post: GameReset method will start the game at the Ship Selection menu at the start of the program.
+    * @param: None.
+    * @return: None.
     */
     public void GameReset()
     {
@@ -286,6 +308,12 @@ public class CanvasScript : MonoBehaviour
         confirmationPanel.SetActive(false);
     }
 
+    /**
+    * @pre: RestartGame method will listen for an onClick event from either the Yes Button or the Return Button.
+    * @post: RestartGame method will reload the scene, back to the Ship Selection Main Menu.
+    * @param: None.
+    * @return: None.
+    */
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
