@@ -13,6 +13,7 @@ public class CanvasScript : MonoBehaviour
     public Dropdown shipSelector;
     public UnityEngine.UI.Button confirmButton, startButton, returnButton, pauseButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
     public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, battleshipGrids, pauseMenu, gameOverMenu, confirmationPanel, gameController;
+    public GameObject player1Board, player2Board;
     public TeamController Team1;
     public TeamController Team2;
 
@@ -76,7 +77,7 @@ public class CanvasScript : MonoBehaviour
     *  @pre: BeginShipPlacement will listen for the Confirm Button onClick event.
     *  @pre: Confirm Button is active.
     *  @post: BeginShipPlacement method will disable the Ship Selection Menu and enable the Ship Placement Menu.
-    *  @post: Player Grids will be set active for players to began placing their fleets.
+    *  @post: Player Grids will be set active for players to began placing their fleets. Grid images will be disabled until ship placement is complete.
     *  @post: Player Fleets will be instantiated for players to place ships into the grids.
     */
     private void BeginShipPlacement()
@@ -86,6 +87,8 @@ public class CanvasScript : MonoBehaviour
         shipSelectorPanel.SetActive(false);
         shipPlacementPanel.SetActive(true);
         battleshipGrids.SetActive(true);
+        player1Board.GetComponent<Image>().enabled = false;
+        player2Board.GetComponent<Image>().enabled = false;
         Team1.SetNumberOfShips(numShips);
         Team2.SetNumberOfShips(numShips);
     }
@@ -106,6 +109,7 @@ public class CanvasScript : MonoBehaviour
     /**
     *  @pre: StartGame method will listen for the Start Button onClick event.
     *  @post: StartGame method will start the Battleship game once all ships have been placed.
+    *  @post: StartGame method will enable player board images.
     *  @post: Ship Placement menu will be closed and the game will proceed to the Battleship Game.
     */
     private void StartGame()
@@ -113,6 +117,8 @@ public class CanvasScript : MonoBehaviour
         Debug.Log("You have clicked the StartGame button!");
 
         shipPlacementPanel.SetActive(false);
+        player1Board.GetComponent<Image>().enabled = true;
+        player2Board.GetComponent<Image>().enabled = true;
         gameUIPanel.SetActive(true);
     }
 

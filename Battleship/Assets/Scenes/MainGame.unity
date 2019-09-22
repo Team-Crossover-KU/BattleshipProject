@@ -8082,7 +8082,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 209
+  orthographic size: 257.78098
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -12199,7 +12199,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858817115}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -17276,7 +17276,9 @@ MonoBehaviour:
   pauseMenu: {fileID: 426972636}
   gameOverMenu: {fileID: 1595192959}
   confirmationPanel: {fileID: 1959039277}
-  gameController: {fileID: 0}
+  gameController: {fileID: 1495956188}
+  player1Board: {fileID: 858817115}
+  player2Board: {fileID: 880459670}
   Team1: {fileID: 1539823599}
   Team2: {fileID: 803207233}
 --- !u!114 &1163036479
