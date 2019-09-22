@@ -10,14 +10,12 @@ using UnityEngine.UI;
 */
 public class BoardInteraction : MonoBehaviour
 {
-    public ShipPartController shipController;
-    public int hitOrMiss = 1; //0 for a miss, 1 for a hit
-    public Sprite[] onClickIcons; //hit or miss icons
-    public Button[] spacesAvailableBoard1; //Buttons on Board1
-    public Button[] spacesAvailableBoard2; //Buttons on Board2
-    public bool player1Turn = true, player2Turn = false;
-    public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton;
-    public GameObject gameUIPanel, battleshipGrids, switchPanel, player1Board, player2Board;
+    public Sprite[] onClickIcons; //!< Array of sprites for 'Hit', 'Miss', and 'Mark'
+    public Button[] spacesAvailableBoard1; //!< Array of buttons for Player1's board.
+    public Button[] spacesAvailableBoard2; //!< Array of buttons for Player2's board.
+    public bool player1Turn = true, player2Turn = false; //!< Player1 forced to go first. Switch after players use up their turn.
+    public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton; //!< Button objects for boardInteraction event listeners
+    public GameObject gameUIPanel, battleshipGrids, switchPanel, player1Board, player2Board; //!< GameObjects for UI panels
 
     /**
     * @pre: Start is called before the first frame update.
