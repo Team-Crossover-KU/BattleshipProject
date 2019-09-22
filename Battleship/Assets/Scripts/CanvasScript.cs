@@ -12,11 +12,12 @@ public class CanvasScript : MonoBehaviour
 {
     int numShips;
     public Dropdown shipSelector;
-    public UnityEngine.UI.Button confirmButton, startButton, switchButton, returnButton, fireButton, pauseButton, continueButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
+    public UnityEngine.UI.Button confirmButton, startButton, switchButton, returnButton, fireButton, revealShipsButton, pauseButton, continueButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
     public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, battleshipGrids, switchPanel, pauseMenu, gameOverMenu, confirmationPanel, gameController;
     public GameObject player1Board, player2Board;
     public TeamController Team1;
     public TeamController Team2;
+    bool showShips = false;
 
     /**
     *  @pre: Start is called before the first frame update.
@@ -37,6 +38,7 @@ public class CanvasScript : MonoBehaviour
 
         // Game Button Listener Events.
         fireButton.onClick.AddListener(Fire);
+        revealShipsButton.onClick.AddListener(DisplayShips);
         pauseButton.onClick.AddListener(PauseGame);
 
         // Switch Players Panel Listener Events.
@@ -155,9 +157,20 @@ public class CanvasScript : MonoBehaviour
         gameUIPanel.SetActive(true);
     }
 
-    private void EnableStartButton()
+    private void DisplayShips()
     {
-        
+        if(showShips == false)
+        {
+            Team1.appearShips();
+            Team2.appearShips();
+            showShips = true;
+        }
+        else
+        {
+            Team1.disappearShips();
+            Team2.disappearShips();
+            showShips = false;
+        }
     }
 
     /**
@@ -185,6 +198,9 @@ public class CanvasScript : MonoBehaviour
     private void Fire()
     {
         Debug.Log("Fire!");
+        Team1.disappearShips();
+        Team2.disappearShips();
+        showShips = false;
     }
 
     /**
