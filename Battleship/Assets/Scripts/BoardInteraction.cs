@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /**
-* 
+* @class description: BoardInteraction handles grid button presses and the Fire/Yes/Confirm/Start
+* UI buttons
+* @libraries: Libary used for UI is UnityEngine.UI
 */
 public class BoardInteraction : MonoBehaviour
 {
@@ -17,7 +19,10 @@ public class BoardInteraction : MonoBehaviour
     public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton;
 
     /**
-    * Start is called before the first frame update.
+    * @pre: Start is called before the first frame update.
+    * @post Start will be ready to handle UI button pressed events.
+    * @param: None.
+    * @return: None.
     */
     void Start()
     {
@@ -31,15 +36,12 @@ public class BoardInteraction : MonoBehaviour
     }
 
     /**
-    *  Update is called once per frame.
-    */
-    void Update()
-    {
-
-    }
-
-    /**
-    * Separate script for the buttons on the Player1 Board to place hit or miss sprites on the respected spaces.
+    * @pre: On-click function for the array of buttons that make up the battleship grid for Player1.
+    * @post: On-click places a checkmark to let the user know which coordinate they currently have
+    * picked on the Player1 battleship grid.
+    * @param: Num is the index of the button pressed on-click in spacesAvailableBoard1
+    * to set the sprite to a checkmark.
+    * @return: None.
     */
     public void BattleshipSpacesBoard1(int num)
     {
@@ -64,7 +66,12 @@ public class BoardInteraction : MonoBehaviour
     }
 
     /**
-    * Separate script for the buttons on the Player2 Board to place hit or miss sprites on the respected spaces.
+    * @pre: On-click function for the array of buttons that make up the battleship grid for Player2.
+    * @post: On-click places a checkmark to let the user know which coordinate they currently have
+    * picked on the Player2 battleship grid.
+    * @param: Num is the index of the button pressed on-click in spacesAvailableBoard2 
+    * to set the sprite to a checkmark.
+    * @return: None.
     */
     public void BattleshipSpacesBoard2(int num)
     {
@@ -92,7 +99,11 @@ public class BoardInteraction : MonoBehaviour
     }
 
     /**
-    * 
+    * @pre: A player presses the 'Yes' button to exit to the main menu.
+    * @post: The buttons' sprites get reset to nothing, sets the buttons to be interactable
+    * for the next game.
+    * @param: None.
+    * @return: None.
     */
     public void YesButtonReset()
     {
@@ -108,7 +119,11 @@ public class BoardInteraction : MonoBehaviour
     }
 
     /**
-    * 
+    * @pre: A player presses the 'Fire' button
+    * @post: A player, depending on whose turn it is, locks in their choice to fire,
+    * turning the temporary checkmark into a 'Miss' or 'Hit' sprite on the button they chose to attack.
+    * @param: None.
+    * @return: None.
     */
     public void FireButtonLockIn()
     {
@@ -224,7 +239,11 @@ public class BoardInteraction : MonoBehaviour
     }
 
     /**
-    * 
+    * @pre: A player presses the 'Confirm' button on the ship selection panel.
+    * @post: Sets both boards to not be interactive, making sure players don't press buttons
+    * while on the ship selection panel.
+    * @param: None.
+    * @return: None.
     */
     public void ConfirmButtonInteractableOff()
     {
@@ -236,7 +255,11 @@ public class BoardInteraction : MonoBehaviour
     }
 
     /**
-    * 
+    * @pre: A player presses the 'Start' button after setting their ships.
+    * @post: Sets Player1's board to interactive and Player2's board to NOT be interactive,
+    * forcing whoever is playing as Player1 to go first. This also sets the buttons' sprites to nothing.
+    * @param: None.
+    * @return: None.
     */
     public void StartButtonCommencePlay()
     {
