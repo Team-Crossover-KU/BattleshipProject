@@ -104,6 +104,7 @@ public class ShipController : MonoBehaviour
             partCheck = true;
             foreach (ShipPartController part in parts)
             {
+                part.rend.sortingLayerName = "Moving";
                 if (!part.partReadyToPair)
                 {
                     partCheck = false;
@@ -114,6 +115,10 @@ public class ShipController : MonoBehaviour
                     part.rend.color = Color.green;
                 }
             }
+        }
+        else
+        {
+            
         }
         
     }
@@ -162,6 +167,7 @@ public class ShipController : MonoBehaviour
                 part.bound = true;
                 part.bondTarget.tag = "Closed";
                 part.bondTarget.target = part;
+                
                 team.checkPlacement();
             }
         }
@@ -171,6 +177,11 @@ public class ShipController : MonoBehaviour
             transform.rotation = Quaternion.identity;
         }
 
+        foreach (ShipPartController part in parts)
+        {
+            part.rend.sortingLayerName = "Default";
+            part.rend.color = Color.white;
+        }
     }
 
 
