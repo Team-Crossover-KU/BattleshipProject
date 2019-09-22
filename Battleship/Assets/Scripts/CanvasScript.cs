@@ -110,8 +110,10 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-     *
-     */
+    *  @pre: Ship Placement Menu must be set active.
+    *  @pre: SwitchPlayers Method will listen for the Switch Button onClick event.
+    *  @post: SwitchPlayers Method will switch the image enabling of the playerboards. 
+    */
     private void SwitchPlayers()
     {
         if (player1Board.GetComponent<Image>().enabled == true)
@@ -127,8 +129,10 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
-     *
-     */
+    *  @pre: SwitchPanel must be active. An Attack must be confirmed.
+    *  @pre: PlayersAreSwitched Method will listen for the Continue Button onClick event.
+    *  @post: Game will resume after Continue Button onClick event.
+    */
     private void PlayersAreSwitched()
     {
         switchPanel.SetActive(false);

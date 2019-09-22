@@ -163,6 +163,9 @@ public class BoardInteraction : MonoBehaviour
                 player1Board.GetComponent<Image>().enabled = false;
                 player2Turn = true;
                 player2Board.GetComponent<Image>().enabled = true;
+                gameUIPanel.SetActive(false);
+                battleshipGrids.SetActive(false);
+                switchPanel.SetActive(true);
             }
             else
             {
@@ -170,11 +173,10 @@ public class BoardInteraction : MonoBehaviour
                 player1Board.GetComponent<Image>().enabled = true;
                 player2Turn = false;
                 player2Board.GetComponent<Image>().enabled = false;
+                gameUIPanel.SetActive(false);
+                battleshipGrids.SetActive(false);
+                switchPanel.SetActive(true);
             }
-
-            gameUIPanel.SetActive(false);
-            battleshipGrids.SetActive(false);
-            switchPanel.SetActive(true);
         }
 
         else if (player2Turn)
@@ -225,6 +227,9 @@ public class BoardInteraction : MonoBehaviour
                 player1Board.GetComponent<Image>().enabled = true;
                 player2Turn = false;
                 player2Board.GetComponent<Image>().enabled = false;
+                battleshipGrids.SetActive(false);
+                gameUIPanel.SetActive(false);
+                switchPanel.SetActive(true);
             }
             else
             {
@@ -232,11 +237,10 @@ public class BoardInteraction : MonoBehaviour
                 player1Board.GetComponent<Image>().enabled = false;
                 player2Turn = true;
                 player2Board.GetComponent<Image>().enabled = true;
+                battleshipGrids.SetActive(false);
+                gameUIPanel.SetActive(false);
+                switchPanel.SetActive(true);
             }
-
-            battleshipGrids.SetActive(false);
-            gameUIPanel.SetActive(false);
-            switchPanel.SetActive(true);
         }
     }
 
