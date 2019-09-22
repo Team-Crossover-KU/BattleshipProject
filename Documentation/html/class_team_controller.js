@@ -10,5 +10,6 @@ var class_team_controller =
     [ "placeCheck", "class_team_controller.html#a48d422543197547f1fefbe6bf09cf399", null ],
     [ "ship", "class_team_controller.html#a39328ca274b0fc932eb696aba1cf42c9", null ],
     [ "Ships", "class_team_controller.html#a7eddb79e291460237693f54b9209844c", null ],
+    [ "shipsLeft", "class_team_controller.html#a4623f252edb0afb3e3e02cdf36ef3ad7", null ],
     [ "team", "class_team_controller.html#af1ad858fff94a07172e7c42d9690f51a", null ]
 ];

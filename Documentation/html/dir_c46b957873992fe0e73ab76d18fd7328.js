@@ -7,7 +7,7 @@ var dir_c46b957873992fe0e73ab76d18fd7328 =
       [ "CanvasScript", "class_canvas_script.html", "class_canvas_script" ]
     ] ],
     [ "ShipController.cs", "_ship_controller_8cs.html", [
-      [ "ShipPartController", "class_ship_part_controller.html", "class_ship_part_controller" ]
+      [ "ShipController", "class_ship_controller.html", "class_ship_controller" ]
     ] ],
     [ "ShipPartController.cs", "_ship_part_controller_8cs.html", [
       [ "ShipPartController", "class_ship_part_controller.html", "class_ship_part_controller" ]

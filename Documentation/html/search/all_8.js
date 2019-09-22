@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numberofships_20',['numberOfShips',['../class_team_controller.html#a3a0b05bd37574601bfa02cfa08c99fa0',1,'TeamController']]]
+  ['losecheck_32',['loseCheck',['../class_team_controller.html#a92fe094edc405b965e4f071618473649',1,'TeamController']]]
 ];
