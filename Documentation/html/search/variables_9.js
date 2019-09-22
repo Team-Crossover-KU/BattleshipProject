@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['parent_127',['parent',['../class_ship_part_controller.html#a20b54b30c6d0678999ac57d7acc34993',1,'ShipPartController']]],
-  ['partreadytopair_128',['partReadyToPair',['../class_ship_part_controller.html#ac44cc4cbd70e6f35e7669a18d792413d',1,'ShipPartController']]],
-  ['parts_129',['parts',['../class_ship_controller.html#a97b82f26c54b48371472e09427f6533b',1,'ShipController']]],
-  ['partteam_130',['partTeam',['../class_ship_part_controller.html#abd111023775f689f07fdb7a7bb2a96bc',1,'ShipPartController']]],
-  ['player1board_131',['player1Board',['../class_canvas_script.html#ae4c03851394038a320ef1b5270a7a189',1,'CanvasScript']]],
-  ['player1turn_132',['player1Turn',['../class_board_interaction.html#ab09e46e5d3d9e349a31f31ad362524b7',1,'BoardInteraction']]]
+  ['ship_91',['ship',['../class_team_controller.html#a39328ca274b0fc932eb696aba1cf42c9',1,'TeamController']]],
+  ['ships_92',['Ships',['../class_team_controller.html#a7eddb79e291460237693f54b9209844c',1,'TeamController']]],
+  ['shipselector_93',['shipSelector',['../class_canvas_script.html#a6329c40c058fdd900505ca08d53e5eb3',1,'CanvasScript']]],
+  ['shipselectorpanel_94',['shipSelectorPanel',['../class_canvas_script.html#ad6218ce209482a7b10560b2cb28c0443',1,'CanvasScript']]],
+  ['spacesavailableboard1_95',['spacesAvailableBoard1',['../class_board_interaction.html#a2cb48633d49096b0479036b0a34ca8e0',1,'BoardInteraction']]],
+  ['spacesavailableboard2_96',['spacesAvailableBoard2',['../class_board_interaction.html#a199923c86920503c8ecde3db3f7b958e',1,'BoardInteraction']]]
 ];

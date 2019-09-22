@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['losecheck_124',['loseCheck',['../class_team_controller.html#a92fe094edc405b965e4f071618473649',1,'TeamController']]]
+  ['onclickicons_83',['onClickIcons',['../class_board_interaction.html#a5865dd13eca2eeea1ab75363d8025f82',1,'BoardInteraction']]]
 ];
