@@ -16,7 +16,7 @@ public class CanvasScript : MonoBehaviour
     public Dropdown shipSelector;
     public UnityEngine.UI.Button confirmButton, startButton, switchButton, returnButton, fireButton, revealShipsButton, pauseButton, continueButton, resumeButton, quitButton, yesButton, noButton, mainMenuButton;
     public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, battleshipGrids, switchPanel, pauseMenu, gameOverMenu, confirmationPanel, gameController;
-    public GameObject player1Board, player2Board, player1PlacmentMessage, player2PlacmentMessage, player2WinMessage, player1WinMessage;
+    public GameObject player1Board, player2Board, player1PlacmentMessage, player2PlacmentMessage, player1ShipsRemainingMessage, player2ShipsRemainingMessage, player2WinMessage, player1WinMessage;
     public TeamController Team1;
     public TeamController Team2;
     public BoardInteraction BattleshipBoard;
@@ -65,6 +65,7 @@ public class CanvasScript : MonoBehaviour
     * @post: Update is called once per frame
     * @post: Update method will check if all the Team's ships are placed on the board.
     * @post: Afterwards it will enable the Start Button and the game will proceed.
+    * @post: Update method will check for any ships lost or if a player is lost, and notify the players.
     * @post: Once A player loses, the Game Over Screen will pop up.
     * @param: None.
     * @return: None.
@@ -76,13 +77,15 @@ public class CanvasScript : MonoBehaviour
             startButton.interactable = true;
             Team1.checkForLoss();
             Team2.checkForLoss();
+            player1ShipsRemainingMessage.GetComponent<Text>().text = "Ships remaining: " + Team1.shipsLeft;
+            player2ShipsRemainingMessage.GetComponent<Text>().text = "Ships remaining: " + Team2.shipsLeft;
         }
         else
         {
             startButton.interactable = false;
         }
 
-        
+
         if (Team1.loseCheck == true || Team2.loseCheck == true)
         {
             if (Team1.loseCheck == true)
@@ -116,7 +119,7 @@ public class CanvasScript : MonoBehaviour
         value = shipSelector.value;
         Debug.Log("You have selected " + value + " ships");
 
-        if(value > 0)
+        if (value > 0)
         {
             confirmButton.interactable = true;
             numShips = value;
