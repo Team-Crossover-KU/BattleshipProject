@@ -16,9 +16,10 @@ public class CanvasScript : MonoBehaviour
     public Dropdown shipSelector;
     public UnityEngine.UI.Button confirmButton, startButton, switchButton, returnButton, fireButton, revealShipsButton, pauseButton, continueButton, resumeButton, quitButton, yesButton, noButton, mainMenuButton;
     public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, battleshipGrids, switchPanel, pauseMenu, gameOverMenu, confirmationPanel, gameController;
-    public GameObject player1Board, player2Board;
+    public GameObject player1Board, player2Board, player1PlacmentMessage, player2PlacmentMessage, player2WinMessage, player1WinMessage;
     public TeamController Team1;
     public TeamController Team2;
+    public BoardInteraction BattleshipBoard;
     bool showShips = false;
 
     /**
@@ -57,7 +58,7 @@ public class CanvasScript : MonoBehaviour
         noButton.onClick.AddListener(PauseGame);
 
         // Game Over Menu Button Listener Events.
-        mainMenuButton.onClick.AddListener(QuitGame);
+        mainMenuButton.onClick.AddListener(RestartGame);
     }
 
     /**
@@ -84,6 +85,17 @@ public class CanvasScript : MonoBehaviour
         
         if (Team1.loseCheck == true || Team2.loseCheck == true)
         {
+            if (Team1.loseCheck == true)
+            {
+                player1WinMessage.SetActive(false);
+                player2WinMessage.SetActive(true);
+            }
+            else if (Team2.loseCheck == true)
+            {
+                player1WinMessage.SetActive(true);
+                player2WinMessage.SetActive(false);
+            }
+
             shipSelectorPanel.SetActive(false);
             gameUIPanel.SetActive(false);
             battleshipGrids.SetActive(false);
@@ -150,12 +162,16 @@ public class CanvasScript : MonoBehaviour
         if (player1Board.GetComponent<Image>().enabled == true)
         {
             player1Board.GetComponent<Image>().enabled = false;
+            player1PlacmentMessage.SetActive(true);
             player2Board.GetComponent<Image>().enabled = true;
+            player2PlacmentMessage.SetActive(false);
         }
         else
         {
             player1Board.GetComponent<Image>().enabled = true;
+            player1PlacmentMessage.SetActive(false);
             player2Board.GetComponent<Image>().enabled = false;
+            player2PlacmentMessage.SetActive(true);
         }
     }
 
@@ -183,17 +199,31 @@ public class CanvasScript : MonoBehaviour
     */
     private void DisplayShips()
     {
-        if(showShips == false)
+        if (BattleshipBoard.player1Turn)
         {
-            Team1.appearShips();
-            Team2.appearShips();
-            showShips = true;
+            if (showShips == false)
+            {
+                Team2.appearShips();
+                showShips = true;
+            }
+            else
+            {
+                Team2.disappearShips();
+                showShips = false;
+            }
         }
-        else
+        else if (BattleshipBoard.player2Turn)
         {
-            Team1.disappearShips();
-            Team2.disappearShips();
-            showShips = false;
+            if (showShips == false)
+            {
+                Team1.appearShips();
+                showShips = true;
+            }
+            else
+            {
+                Team1.disappearShips();
+                showShips = false;
+            }
         }
     }
 
@@ -290,13 +320,14 @@ public class CanvasScript : MonoBehaviour
         shipSelector.value = 0;
 
         confirmButton.interactable = false;
-        startButton.interactable = false;
         quitButton.interactable = true;
         resumeButton.interactable = true;
         mainMenuButton.interactable = true;
 
         player1Board.GetComponent<Image>().enabled = false;
+        player1PlacmentMessage.SetActive(true);
         player2Board.GetComponent<Image>().enabled = true;
+        player2PlacmentMessage.SetActive(false);
 
         shipSelectorPanel.SetActive(true);
         shipPlacementPanel.SetActive(false);
