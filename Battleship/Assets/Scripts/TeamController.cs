@@ -25,7 +25,10 @@ public class TeamController : MonoBehaviour
     }
 
     /**
-    * Update is called once per frame.
+    * @pre Update is called once per frame.
+    * @post Spawn ships if needed, keep number of selected ships true, update number of ships remaining.
+    * @param None
+    * @return None
     */
     void Update()
     {
@@ -38,16 +41,22 @@ public class TeamController : MonoBehaviour
     }
 
     /**
-    * 
-    */
+     * @pre Number of ships has been selected by the user
+     * @post Set numberofShips
+     * @param int shipAmount
+     * @return None
+     */
     public void SetNumberOfShips(int shipAmmount)
     {
         numberOfShips = shipAmmount;
     }
 
     /**
-    * 
-    */
+     * @pre Initial Number of ships is known
+     * @post Spawn shps of correct size for the team
+     * @param int Length
+     * @return None
+     */
     void spawnShips(int length)
     {
         for (int i = 0; numberOfShips > i; i++)
@@ -62,6 +71,12 @@ public class TeamController : MonoBehaviour
         }
     }
 
+    /**
+     * @pre Called when a ship part has been hit, then ship calls this function in Team
+     * @post If any ships remain, set lossCheck to false
+     * @param None
+     * @return None
+     */
     public void checkForLoss()
     {
         loseCheck = true;
@@ -78,6 +93,12 @@ public class TeamController : MonoBehaviour
         
     }
 
+    /**
+    * @pre Team must have ships
+    * @post Disable rendering for all ships in the Team 
+    * @param None
+    * @return None
+    */
     public void disappearShips()
     {
         foreach (ShipController ship in Ships)
@@ -86,6 +107,12 @@ public class TeamController : MonoBehaviour
         }
     }
 
+    /**
+     * @pre Team must have ships
+     * @post Renders all ships within the Team
+     * @param None
+     * @return None
+     */
     public void appearShips()
     {
         foreach (ShipController ship in Ships)
@@ -94,6 +121,12 @@ public class TeamController : MonoBehaviour
         }
     }
 
+    /**
+     * @pre Called when ShipController AttemptBond() is called
+     * @post Checks each ship in the team for correct placement
+     * @param None
+     * @return None
+     */
     public void checkPlacement()
     {
         placeCheck = true;
@@ -106,10 +139,4 @@ public class TeamController : MonoBehaviour
             }
         }
     }
-
-
-    /**
-    * 
-    */
-
 }
