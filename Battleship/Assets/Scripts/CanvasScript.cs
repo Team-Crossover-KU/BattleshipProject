@@ -11,8 +11,8 @@ public class CanvasScript : MonoBehaviour
 {
     int numShips;
     public Dropdown shipSelector;
-    public UnityEngine.UI.Button confirmButton, startButton, returnButton, pauseButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
-    public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, battleshipGrids, pauseMenu, gameOverMenu, confirmationPanel, gameController;
+    public UnityEngine.UI.Button confirmButton, startButton, switchButton, returnButton, fireButton, pauseButton, continueButton, resumeButton, quitButton, yesButton, noButton, replayButton, mainMenuButton;
+    public GameObject shipSelectorPanel, shipPlacementPanel, gameUIPanel, battleshipGrids, switchPanel, pauseMenu, gameOverMenu, confirmationPanel, gameController;
     public GameObject player1Board, player2Board;
     public TeamController Team1;
     public TeamController Team2;
@@ -32,10 +32,15 @@ public class CanvasScript : MonoBehaviour
 
         // Ship Placement Menu Buttons Listener Events.
         returnButton.onClick.AddListener(BackToSettings);
+        switchButton.onClick.AddListener(SwitchPlayers);
         startButton.onClick.AddListener(StartGame);
 
         // Game Button Listener Events.
+        fireButton.onClick.AddListener(Fire);
         pauseButton.onClick.AddListener(PauseGame);
+
+        // Switch Players Panel Listener Events.
+        continueButton.onClick.AddListener(PlayersAreSwitched);
 
         // Pause Menu Button Listener Events.
         resumeButton.onClick.AddListener(ResumeGame);
@@ -87,8 +92,6 @@ public class CanvasScript : MonoBehaviour
         shipSelectorPanel.SetActive(false);
         shipPlacementPanel.SetActive(true);
         battleshipGrids.SetActive(true);
-        player1Board.GetComponent<Image>().enabled = false;
-        player2Board.GetComponent<Image>().enabled = false;
         Team1.SetNumberOfShips(numShips);
         Team2.SetNumberOfShips(numShips);
     }
@@ -107,6 +110,33 @@ public class CanvasScript : MonoBehaviour
     }
 
     /**
+     *
+     */
+    private void SwitchPlayers()
+    {
+        if (player1Board.GetComponent<Image>().enabled == true)
+        {
+            player1Board.GetComponent<Image>().enabled = false;
+            player2Board.GetComponent<Image>().enabled = true;
+        }
+        else
+        {
+            player1Board.GetComponent<Image>().enabled = true;
+            player2Board.GetComponent<Image>().enabled = false;
+        }
+    }
+
+    /**
+     *
+     */
+    private void PlayersAreSwitched()
+    {
+        switchPanel.SetActive(false);
+        battleshipGrids.SetActive(true);
+        gameUIPanel.SetActive(true);
+    }
+
+    /**
     *  @pre: StartGame method will listen for the Start Button onClick event.
     *  @post: StartGame method will start the Battleship game once all ships have been placed.
     *  @post: StartGame method will enable player board images.
@@ -118,8 +148,17 @@ public class CanvasScript : MonoBehaviour
 
         shipPlacementPanel.SetActive(false);
         player1Board.GetComponent<Image>().enabled = true;
-        player2Board.GetComponent<Image>().enabled = true;
+        player2Board.GetComponent<Image>().enabled = false;
         gameUIPanel.SetActive(true);
+    }
+
+    /**
+    *  @pre: Fire method will listen for the Fire Button onClick event.
+    *  @post: Fire method will report in game console that the Fire Button has been clicked.
+    */
+    private void Fire()
+    {
+        Debug.Log("Fire!");
     }
 
     /**
@@ -181,10 +220,14 @@ public class CanvasScript : MonoBehaviour
         //replayButton.interactable = true;
         //mainMenuButton.interactable = true;
 
+        player1Board.GetComponent<Image>().enabled = false;
+        player2Board.GetComponent<Image>().enabled = true;
+
         shipSelectorPanel.SetActive(true);
         shipPlacementPanel.SetActive(false);
         gameUIPanel.SetActive(false);
         battleshipGrids.SetActive(false);
+        switchPanel.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         confirmationPanel.SetActive(false);

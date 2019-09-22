@@ -15,6 +15,7 @@ public class BoardInteraction : MonoBehaviour
     public Button[] spacesAvailableBoard2; //Buttons on Board2
     public bool player1Turn = true, player2Turn = false;
     public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton;
+    public GameObject gameUIPanel, battleshipGrids, switchPanel, player1Board, player2Board;
 
     /**
     * Start is called before the first frame update.
@@ -159,13 +160,21 @@ public class BoardInteraction : MonoBehaviour
             if(hasPlayed1)
             {
                 player1Turn = false;
+                player1Board.GetComponent<Image>().enabled = false;
                 player2Turn = true;
+                player2Board.GetComponent<Image>().enabled = true;
             }
             else
             {
                 player1Turn = true;
+                player1Board.GetComponent<Image>().enabled = true;
                 player2Turn = false;
+                player2Board.GetComponent<Image>().enabled = false;
             }
+
+            gameUIPanel.SetActive(false);
+            battleshipGrids.SetActive(false);
+            switchPanel.SetActive(true);
         }
 
         else if (player2Turn)
@@ -213,13 +222,21 @@ public class BoardInteraction : MonoBehaviour
             if (hasPlayed2)
             {
                 player1Turn = true;
+                player1Board.GetComponent<Image>().enabled = true;
                 player2Turn = false;
+                player2Board.GetComponent<Image>().enabled = false;
             }
             else
             {
                 player1Turn = false;
+                player1Board.GetComponent<Image>().enabled = false;
                 player2Turn = true;
+                player2Board.GetComponent<Image>().enabled = true;
             }
+
+            battleshipGrids.SetActive(false);
+            gameUIPanel.SetActive(false);
+            switchPanel.SetActive(true);
         }
     }
 
@@ -243,7 +260,9 @@ public class BoardInteraction : MonoBehaviour
         for(int i = 0; i < spacesAvailableBoard1.Length; i++)
         {
             spacesAvailableBoard1[i].interactable = true;
+            player1Board.GetComponent<Image>().enabled = true;
             spacesAvailableBoard2[i].interactable = false;
+            player2Board.GetComponent<Image>().enabled = false;
             spacesAvailableBoard1[i].image.sprite = null;
             spacesAvailableBoard2[i].image.sprite = null;
 
