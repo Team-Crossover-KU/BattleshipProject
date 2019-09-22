@@ -33,7 +33,6 @@ public class buttonController : MonoBehaviour
     {
         Debug.Log("Something touching the board");
         if (collision.gameObject.GetComponent<ShipPartController>().partTeam == buttonTeam 
-            && this.tag == "Open"
             && collision.gameObject.GetComponent<ShipPartController>().parent.shipReadyToPair)
         {
             target = collision.gameObject.GetComponent<ShipPartController>();

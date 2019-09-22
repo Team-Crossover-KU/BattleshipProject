@@ -118,6 +118,11 @@ public class ShipController : MonoBehaviour
         if (partcheck)
         {
             shipReadyToPair = true;
+            foreach (ShipPartController part in parts)
+            {
+                part.bound = true;
+                part.bondTarget.tag = "Closed";
+            }
         }
         else
         {

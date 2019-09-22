@@ -10,7 +10,9 @@ public class ShipPartController : MonoBehaviour
     Collider2D collide;
     public ShipController parent;
     public bool hit = false;
+    public bool bound = false;
     public SpriteRenderer rend;
+    public buttonController bondTarget;
     public int partTeam;
     
     public bool partReadyToPair = false;
@@ -87,6 +89,7 @@ public class ShipPartController : MonoBehaviour
     private void OnMouseUp()
     {
         parent.isMoving = false;
+        if (!bound)
         parent.AttemptBond();
     }
     
@@ -101,6 +104,7 @@ public class ShipPartController : MonoBehaviour
             if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
             {
                 partReadyToPair = true;
+                bondTarget = collision.GetComponent<buttonController>();
             }
         }
 
@@ -113,6 +117,7 @@ public class ShipPartController : MonoBehaviour
             if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
             {
                 partReadyToPair = true;
+                bondTarget = collision.GetComponent<buttonController>();
             }
         }
     }
@@ -124,6 +129,7 @@ public class ShipPartController : MonoBehaviour
             //if (collision.GetComponent<buttonController>().buttonTeam == partTeam)
             {
                 partReadyToPair = false;
+                bondTarget = null;
             }
         }
     }
