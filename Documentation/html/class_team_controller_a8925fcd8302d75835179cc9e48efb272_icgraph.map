@@ -1,4 +1,5 @@
 <map id="TeamController.checkPlacement" name="TeamController.checkPlacement">
-<area shape="rect" id="node1" title=" " alt="" coords="236,5,447,32"/>
-<area shape="rect" id="node2" href="$class_ship_controller.html#a264aa9f5b5210ddf3a96622b6c004e8a" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="487,5,697,32"/>
+<area shape="rect" id="node2" href="$class_ship_controller.html#a264aa9f5b5210ddf3a96622b6c004e8a" title=" " alt="" coords="256,5,439,32"/>
+<area shape="rect" id="node3" href="$class_ship_part_controller.html#af18d6c3e84f02c93b3d1aaf079810d05" title=" " alt="" coords="5,5,208,32"/>
 </map>

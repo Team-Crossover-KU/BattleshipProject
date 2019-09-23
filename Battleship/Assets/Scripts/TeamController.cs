@@ -19,7 +19,7 @@ public class TeamController : MonoBehaviour
     /**
     * Start is called before the first frame update.
     */
-    void Start()
+    private void Start()
     {
 
     }
@@ -30,7 +30,7 @@ public class TeamController : MonoBehaviour
     * @param None
     * @return None
     */
-    void Update()
+    private void Update()
     {
         if (isNumShipsSelected == false && numberOfShips > 0)
         {
@@ -57,7 +57,7 @@ public class TeamController : MonoBehaviour
      * @param int Length
      * @return None
      */
-    void spawnShips(int length)
+    private void spawnShips(int length)
     {
         for (int i = 0; numberOfShips > i; i++)
         {

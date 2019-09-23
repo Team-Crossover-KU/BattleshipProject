@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['losecheck_116',['loseCheck',['../class_team_controller.html#a92fe094edc405b965e4f071618473649',1,'TeamController']]]
+  ['hit_190',['hit',['../class_ship_part_controller.html#a30c4f09b490c4f060926a91c23f38c64',1,'ShipPartController']]]
 ];

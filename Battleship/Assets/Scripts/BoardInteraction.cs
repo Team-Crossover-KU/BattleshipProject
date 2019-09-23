@@ -23,7 +23,7 @@ public class BoardInteraction : MonoBehaviour
     * @param: None.
     * @return: None.
     */
-    void Start()
+    private void Start()
     {
 
         yesButton.onClick.AddListener(YesButtonReset);

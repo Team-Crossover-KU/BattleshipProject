@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rend_42',['rend',['../class_ship_part_controller.html#ad943f59890afaec83ad10473e821557d',1,'ShipPartController']]],
-  ['restartgame_43',['RestartGame',['../class_canvas_script.html#a68ca0ec658c22a30f63577a8d0f3f9f1',1,'CanvasScript']]]
+  ['quitbutton_76',['quitButton',['../class_canvas_script.html#aa0e5275a69df29f60781093a9e4d89d2',1,'CanvasScript']]],
+  ['quitgame_77',['QuitGame',['../class_canvas_script.html#a70a440038707f7d44d9d80b982951974',1,'CanvasScript']]]
 ];

@@ -1,6 +1,6 @@
 <map id="ShipPartController" name="ShipPartController">
-<area shape="rect" id="node1" title=" " alt="" coords="5,793,136,944"/>
-<area shape="rect" id="node2" title=" " alt="" coords="30,5,141,83"/>
-<area shape="rect" id="node3" href="$class_ship_controller.html" title=" " alt="" coords="73,419,205,731"/>
-<area shape="rect" id="node4" href="$class_team_controller.html" title=" " alt="" coords="123,132,277,356"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,940,147,1208"/>
+<area shape="rect" id="node2" title=" " alt="" coords="35,5,146,83"/>
+<area shape="rect" id="node3" href="$class_ship_controller.html" title=" " alt="" coords="77,477,211,877"/>
+<area shape="rect" id="node4" href="$class_team_controller.html" title=" " alt="" coords="129,132,282,415"/>
 </map>

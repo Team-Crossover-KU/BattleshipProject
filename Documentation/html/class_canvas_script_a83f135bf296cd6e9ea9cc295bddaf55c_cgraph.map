@@ -1,6 +1,18 @@
 <map id="CanvasScript.Start" name="CanvasScript.Start">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,136,83"/>
-<area shape="rect" id="node2" href="$class_canvas_script.html#a494f3b3939e2e0d572c8859c4e853800" title=" " alt="" coords="188,5,359,32"/>
-<area shape="rect" id="node3" href="$class_canvas_script.html#a70a440038707f7d44d9d80b982951974" title=" " alt="" coords="193,56,354,83"/>
-<area shape="rect" id="node4" href="$class_canvas_script.html#a68ca0ec658c22a30f63577a8d0f3f9f1" title=" " alt="" coords="184,107,363,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,291,136,318"/>
+<area shape="rect" id="node2" href="$class_canvas_script.html#ae4c121496f0ba331fe52d139725bd8d3" title=" " alt="" coords="184,13,407,39"/>
+<area shape="rect" id="node4" href="$class_canvas_script.html#a164f3a453e564d2dc1fdbeca0cf9f951" title=" " alt="" coords="206,63,385,90"/>
+<area shape="rect" id="node7" href="$class_canvas_script.html#a83cc256f307fde207c076c4d1ce4feb8" title=" " alt="" coords="233,165,357,191"/>
+<area shape="rect" id="node8" href="$class_canvas_script.html#a494f3b3939e2e0d572c8859c4e853800" title=" " alt="" coords="210,317,381,343"/>
+<area shape="rect" id="node9" href="$class_canvas_script.html#a9e6d678110b751c80de5bf0960a5ddcb" title=" " alt="" coords="208,215,383,242"/>
+<area shape="rect" id="node10" href="$class_canvas_script.html#afd93cc72e3e90e4624790d4e0318b571" title=" " alt="" coords="186,367,405,394"/>
+<area shape="rect" id="node11" href="$class_canvas_script.html#a70a440038707f7d44d9d80b982951974" title=" " alt="" coords="215,418,376,445"/>
+<area shape="rect" id="node12" href="$class_canvas_script.html#a68ca0ec658c22a30f63577a8d0f3f9f1" title=" " alt="" coords="206,469,385,495"/>
+<area shape="rect" id="node13" href="$class_canvas_script.html#a21183a8b86e8d5553b0e4999060ff22f" title=" " alt="" coords="203,519,388,546"/>
+<area shape="rect" id="node14" href="$class_canvas_script.html#a7ad9e0ad2f3ec1283bc98668271103c8" title=" " alt="" coords="209,570,381,597"/>
+<area shape="rect" id="node15" href="$class_canvas_script.html#aa03df8cbd0e718d38d3279d9b675c9a4" title=" " alt="" coords="213,266,378,293"/>
+<area shape="rect" id="node16" href="$class_canvas_script.html#a910829c44fcab3ad9f67a225e0ed3c4a" title=" " alt="" coords="203,114,388,141"/>
+<area shape="rect" id="node3" href="$class_team_controller.html#a46b67b076e5a22fe7313f57b0faaec3a" title=" " alt="" coords="458,5,637,47"/>
+<area shape="rect" id="node5" href="$class_team_controller.html#a3e7448bde32e7edf36386cd522ffd1fa" title=" " alt="" coords="455,89,640,115"/>
+<area shape="rect" id="node6" href="$class_team_controller.html#a009283c92a316df4084a63669ffa2551" title=" " alt="" coords="463,157,632,199"/>
 </map>

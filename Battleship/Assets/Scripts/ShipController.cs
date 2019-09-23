@@ -26,7 +26,7 @@ public class ShipController : MonoBehaviour
     * @param None
     * @return None
     */
-    void Start()
+    private void Start()
     {
         if (transform.parent != null)
         {
@@ -40,7 +40,7 @@ public class ShipController : MonoBehaviour
     * @param None
     * @return None
     */
-    void Update()
+    private void Update()
     {
         //spawn
         if (isSpawned == false && shipLength > 0)
@@ -59,7 +59,7 @@ public class ShipController : MonoBehaviour
     * @param None
     * @return None
     */
-    void Spawn()
+    private void Spawn()
     {
         //for loop for spawning
         for (int i = 0; shipLength > i; i++)

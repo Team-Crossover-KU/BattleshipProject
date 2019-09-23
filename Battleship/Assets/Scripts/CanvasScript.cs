@@ -70,7 +70,7 @@ public class CanvasScript : MonoBehaviour
     * @param None.
     * @return None.
     */
-    void Update()
+    public void Update()
     {
         if (Team1.placeCheck == true && Team2.placeCheck == true)
         {

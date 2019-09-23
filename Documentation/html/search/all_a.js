@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['onclickicons_33',['onClickIcons',['../class_board_interaction.html#a5865dd13eca2eeea1ab75363d8025f82',1,'BoardInteraction']]]
+  ['nobutton_46',['noButton',['../class_canvas_script.html#aacc1ba922d808c6752382794ee0a17d6',1,'CanvasScript']]],
+  ['numberofships_47',['numberOfShips',['../class_team_controller.html#a3a0b05bd37574601bfa02cfa08c99fa0',1,'TeamController']]],
+  ['numships_48',['numShips',['../class_canvas_script.html#aaf2cb0da87e6b51a8b2ad4954a8a2b8f',1,'CanvasScript']]]
 ];

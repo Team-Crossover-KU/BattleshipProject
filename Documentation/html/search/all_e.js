@@ -1,23 +1,9 @@
 var searchData=
 [
-  ['setnumberofships_44',['SetNumberOfShips',['../class_team_controller.html#a46b67b076e5a22fe7313f57b0faaec3a',1,'TeamController']]],
-  ['setshiplength_45',['SetShipLength',['../class_ship_controller.html#a3d6a729c3b24840453b1cf53fda2271e',1,'ShipController']]],
-  ['ship_46',['ship',['../class_team_controller.html#a39328ca274b0fc932eb696aba1cf42c9',1,'TeamController']]],
-  ['shipcontroller_47',['ShipController',['../class_ship_controller.html',1,'']]],
-  ['shipcontroller_2ecs_48',['ShipController.cs',['../_ship_controller_8cs.html',1,'']]],
-  ['shiplength_49',['shipLength',['../class_ship_controller.html#ab35058c403a477e6a1cff738d07010df',1,'ShipController']]],
-  ['shippart_50',['shipPart',['../class_ship_controller.html#a1e8e1a56821001bd0fff9c1da89e35e4',1,'ShipController']]],
-  ['shippartcontroller_51',['ShipPartController',['../class_ship_part_controller.html',1,'']]],
-  ['shippartcontroller_2ecs_52',['ShipPartController.cs',['../_ship_part_controller_8cs.html',1,'']]],
-  ['shipreadytopair_53',['shipReadyToPair',['../class_ship_controller.html#af7fd41d0c89520512273ab0c7dfeb483',1,'ShipController']]],
-  ['ships_54',['Ships',['../class_team_controller.html#a7eddb79e291460237693f54b9209844c',1,'TeamController']]],
-  ['shipselector_55',['shipSelector',['../class_canvas_script.html#a6329c40c058fdd900505ca08d53e5eb3',1,'CanvasScript']]],
-  ['shipselectorpanel_56',['shipSelectorPanel',['../class_canvas_script.html#ad6218ce209482a7b10560b2cb28c0443',1,'CanvasScript']]],
-  ['shipsleft_57',['shipsLeft',['../class_team_controller.html#a4623f252edb0afb3e3e02cdf36ef3ad7',1,'TeamController']]],
-  ['shipteam_58',['shipTeam',['../class_ship_controller.html#a5a2f0e6fcee4ce6dca3a3d5a75d93f4a',1,'ShipController']]],
-  ['spacesavailableboard1_59',['spacesAvailableBoard1',['../class_board_interaction.html#a2cb48633d49096b0479036b0a34ca8e0',1,'BoardInteraction']]],
-  ['spacesavailableboard2_60',['spacesAvailableBoard2',['../class_board_interaction.html#a199923c86920503c8ecde3db3f7b958e',1,'BoardInteraction']]],
-  ['start_61',['Start',['../class_canvas_script.html#a83f135bf296cd6e9ea9cc295bddaf55c',1,'CanvasScript']]],
-  ['startbuttoncommenceplay_62',['StartButtonCommencePlay',['../class_board_interaction.html#a03b1bb56e785cdc76ae7b9050cb266ba',1,'BoardInteraction']]],
-  ['startpos_63',['startPos',['../class_ship_controller.html#a869f26be6a93375b41624a83b09c70f8',1,'ShipController']]]
+  ['rend_78',['rend',['../class_ship_part_controller.html#ad943f59890afaec83ad10473e821557d',1,'ShipPartController']]],
+  ['restartgame_79',['RestartGame',['../class_canvas_script.html#a68ca0ec658c22a30f63577a8d0f3f9f1',1,'CanvasScript']]],
+  ['resumebutton_80',['resumeButton',['../class_canvas_script.html#a9c1eb712eaab7813c358adfe5f90bc0f',1,'CanvasScript']]],
+  ['resumegame_81',['ResumeGame',['../class_canvas_script.html#a21183a8b86e8d5553b0e4999060ff22f',1,'CanvasScript']]],
+  ['returnbutton_82',['returnButton',['../class_canvas_script.html#a70febbca2e66fca1636a855582105130',1,'CanvasScript']]],
+  ['revealshipsbutton_83',['revealShipsButton',['../class_canvas_script.html#a42303e1f7577208adacb9014992cc221',1,'CanvasScript']]]
 ];

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['numberofships_117',['numberOfShips',['../class_team_controller.html#a3a0b05bd37574601bfa02cfa08c99fa0',1,'TeamController']]]
+  ['ismoving_191',['isMoving',['../class_ship_controller.html#a511d6f82ec19d1ad6c0f9be6d10dc78d',1,'ShipController']]],
+  ['isnumshipsselected_192',['isNumShipsSelected',['../class_team_controller.html#a92a94318a82bd04752d4357b7507737f',1,'TeamController']]],
+  ['isspawned_193',['isSpawned',['../class_ship_controller.html#af60607db529794559ae827bb60ece0cb',1,'ShipController']]]
 ];

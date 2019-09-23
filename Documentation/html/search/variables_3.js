@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gameuipanel_113',['gameUIPanel',['../class_board_interaction.html#a74393a0a50baa350e76d67851fb59fff',1,'BoardInteraction']]]
+  ['destorycheck_185',['destoryCheck',['../class_ship_controller.html#a6ab2f4e1eab3e091fc3ab76738a066c0',1,'ShipController']]]
 ];

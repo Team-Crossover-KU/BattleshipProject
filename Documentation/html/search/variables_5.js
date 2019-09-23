@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['ismoving_115',['isMoving',['../class_ship_controller.html#a511d6f82ec19d1ad6c0f9be6d10dc78d',1,'ShipController']]]
+  ['gamecontroller_187',['gameController',['../class_canvas_script.html#a69fb75eb8a023e608934f6c9ef640ce7',1,'CanvasScript']]],
+  ['gameovermenu_188',['gameOverMenu',['../class_canvas_script.html#a11e2a5a7987c4db8f0ed7af363adcb29',1,'CanvasScript']]],
+  ['gameuipanel_189',['gameUIPanel',['../class_board_interaction.html#a74393a0a50baa350e76d67851fb59fff',1,'BoardInteraction.gameUIPanel()'],['../class_canvas_script.html#a3962817dfe1e2ab1e1d22c8395147dfb',1,'CanvasScript.gameUIPanel()']]]
 ];

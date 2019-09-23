@@ -22,7 +22,7 @@ public class ShipPartController : MonoBehaviour
     /**
     * Start is called before the first frame update.
     */
-    void Start()
+    private void Start()
     {
         parent = transform.parent.GetComponent<ShipController>();
         rend = GetComponent<SpriteRenderer>();
@@ -34,7 +34,7 @@ public class ShipPartController : MonoBehaviour
     * @param none 
     * @return none
     */
-    void Update()
+    private void Update()
     {
         if (parent.isMoving)
         {

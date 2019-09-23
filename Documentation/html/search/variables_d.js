@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yesbutton_142',['yesButton',['../class_board_interaction.html#af6410ecca47e07b34a07c193809dee3c',1,'BoardInteraction']]]
+  ['quitbutton_219',['quitButton',['../class_canvas_script.html#aa0e5275a69df29f60781093a9e4d89d2',1,'CanvasScript']]]
 ];
