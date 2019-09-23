@@ -356,6 +356,10 @@ public class CanvasScript : MonoBehaviour
     */
     public void RestartGame()
     {
+        /**
+        * @works cited: The following line of code can be found in the Unity Answer Forum
+        * @works cited: https://answers.unity.com/questions/46918/reload-scene-when-dead.html
+        */
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
