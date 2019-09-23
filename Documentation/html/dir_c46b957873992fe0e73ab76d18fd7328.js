@@ -3,6 +3,9 @@ var dir_c46b957873992fe0e73ab76d18fd7328 =
     [ "BoardInteraction.cs", "_board_interaction_8cs.html", [
       [ "BoardInteraction", "class_board_interaction.html", "class_board_interaction" ]
     ] ],
+    [ "buttonController.cs", "button_controller_8cs.html", [
+      [ "buttonController", "classbutton_controller.html", "classbutton_controller" ]
+    ] ],
     [ "CanvasScript.cs", "_canvas_script_8cs.html", [
       [ "CanvasScript", "class_canvas_script.html", "class_canvas_script" ]
     ] ],

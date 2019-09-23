@@ -1,0 +1,7 @@
+<map id="buttonController" name="buttonController">
+<area shape="rect" id="node1" title=" " alt="" coords="38,205,176,341"/>
+<area shape="rect" id="node3" href="$class_ship_part_controller.html" title=" " alt="" coords="102,940,243,1193"/>
+<area shape="rect" id="node2" title=" " alt="" coords="184,5,294,83"/>
+<area shape="rect" id="node4" href="$class_ship_controller.html" title=" " alt="" coords="251,477,384,877"/>
+<area shape="rect" id="node5" href="$class_team_controller.html" title=" " alt="" coords="302,132,456,415"/>
+</map>
