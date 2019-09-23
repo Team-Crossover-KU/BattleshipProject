@@ -15,7 +15,7 @@ public class BoardInteraction : MonoBehaviour
     public Button[] spacesAvailableBoard2; //!< Array of buttons for Player2's board.
     public bool player1Turn = true, player2Turn = false; //!< Player1 forced to go first. Switch after players use up their turn.
     public UnityEngine.UI.Button yesButton, fireButton, confirmButton, startButton; //!< Button objects for boardInteraction event listeners
-    public GameObject gameUIPanel, battleshipGrids, switchPanel, player1Board, player2Board; //!< GameObjects for UI panels
+    public GameObject gameUIPanel, battleshipGrids, switchPanel, player1Board, player2Board, playerTurn; //!< GameObjects for UI panels
 
     /**
     * @pre: Start is called before the first frame update.
@@ -179,6 +179,7 @@ public class BoardInteraction : MonoBehaviour
                 gameUIPanel.SetActive(false);
                 battleshipGrids.SetActive(false);
                 switchPanel.SetActive(true);
+                playerTurn.GetComponent<Text>().text = "It's Player 1's Turn";
             }
             else
             {
@@ -189,6 +190,7 @@ public class BoardInteraction : MonoBehaviour
                 gameUIPanel.SetActive(false);
                 battleshipGrids.SetActive(false);
                 switchPanel.SetActive(true);
+                playerTurn.GetComponent<Text>().text = "It's Player 2's Turn";
             }
         }
 
@@ -243,6 +245,7 @@ public class BoardInteraction : MonoBehaviour
                 battleshipGrids.SetActive(false);
                 gameUIPanel.SetActive(false);
                 switchPanel.SetActive(true);
+                playerTurn.GetComponent<Text>().text = "It's Player 2's Turn";
             }
             else
             {
@@ -253,6 +256,7 @@ public class BoardInteraction : MonoBehaviour
                 battleshipGrids.SetActive(false);
                 gameUIPanel.SetActive(false);
                 switchPanel.SetActive(true);
+                playerTurn.GetComponent<Text>().text = "It's Player 1's Turn";
             }
         }
     }
