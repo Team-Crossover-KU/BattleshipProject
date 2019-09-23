@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['onclickicons_120',['onClickIcons',['../class_board_interaction.html#a5865dd13eca2eeea1ab75363d8025f82',1,'BoardInteraction']]]
+  ['onclickicons_118',['onClickIcons',['../class_board_interaction.html#a5865dd13eca2eeea1ab75363d8025f82',1,'BoardInteraction']]]
 ];

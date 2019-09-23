@@ -1,9 +1,7 @@
 <map id="CanvasScript" name="CanvasScript">
-<area shape="rect" id="node1" title=" " alt="" coords="64,1293,203,1444"/>
-<area shape="rect" id="node2" title=" " alt="" coords="198,5,309,83"/>
-<area shape="rect" id="node4" href="$class_team_controller.html" title=" " alt="" coords="291,132,445,356"/>
-<area shape="rect" id="node5" href="$class_board_interaction.html" title=" " alt="" coords="185,1007,391,1231"/>
-<area shape="rect" id="node6" href="$class_ship_part_controller.html" title=" " alt="" coords="248,793,379,944"/>
-<area shape="rect" id="node7" href="$class_ship_controller.html" title=" " alt="" coords="247,419,379,731"/>
-<area shape="rect" id="node3" title=" " alt="" coords="54,830,146,907"/>
+<area shape="rect" id="node1" title=" " alt="" coords="141,447,280,597"/>
+<area shape="rect" id="node2" title=" " alt="" coords="69,5,179,83"/>
+<area shape="rect" id="node4" href="$class_team_controller.html" title=" " alt="" coords="47,145,201,369"/>
+<area shape="rect" id="node5" href="$class_board_interaction.html" title=" " alt="" coords="225,153,431,362"/>
+<area shape="rect" id="node3" title=" " alt="" coords="387,5,479,83"/>
 </map>
